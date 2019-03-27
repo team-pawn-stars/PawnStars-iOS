@@ -25,6 +25,9 @@
 		6838CA2D224B149900FB802A /* ChattingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA2C224B149900FB802A /* ChattingVC.swift */; };
 		6838CA2F224B14AC00FB802A /* WritingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA2E224B14AC00FB802A /* WritingVC.swift */; };
 		6838CA31224B14DC00FB802A /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA30224B14DC00FB802A /* MyPageVC.swift */; };
+		6838CA33224B178E00FB802A /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA32224B178E00FB802A /* Shape.swift */; };
+		6838CA35224B179700FB802A /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA34224B179700FB802A /* Base.swift */; };
+		6838CA37224B17A700FB802A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA36224B17A700FB802A /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		6838CA2C224B149900FB802A /* ChattingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingVC.swift; sourceTree = "<group>"; };
 		6838CA2E224B14AC00FB802A /* WritingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingVC.swift; sourceTree = "<group>"; };
 		6838CA30224B14DC00FB802A /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
+		6838CA32224B178E00FB802A /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		6838CA34224B179700FB802A /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		6838CA36224B17A700FB802A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +125,10 @@
 		6838C9E3224B0ABE00FB802A /* PawnStars-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				6838CA15224B0ADD00FB802A /* Util */,
 				6838CA18224B0AF500FB802A /* Network */,
 				6838CA17224B0AEF00FB802A /* UI */,
 				6838CA16224B0AE500FB802A /* VC */,
-				6838CA15224B0ADD00FB802A /* Util */,
 				6838C9E4224B0ABE00FB802A /* AppDelegate.swift */,
 				6838C9EE224B0ABF00FB802A /* Assets.xcassets */,
 				6838C9F0224B0ABF00FB802A /* LaunchScreen.storyboard */,
@@ -153,6 +159,9 @@
 		6838CA15224B0ADD00FB802A /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				6838CA32224B178E00FB802A /* Shape.swift */,
+				6838CA34224B179700FB802A /* Base.swift */,
+				6838CA36224B17A700FB802A /* Colors.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -368,8 +377,11 @@
 			files = (
 				6838CA2F224B14AC00FB802A /* WritingVC.swift in Sources */,
 				6838C9ED224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld in Sources */,
+				6838CA37224B17A700FB802A /* Colors.swift in Sources */,
+				6838CA35224B179700FB802A /* Base.swift in Sources */,
 				6838CA2B224B146700FB802A /* FlexVC.swift in Sources */,
 				6838C9E7224B0ABE00FB802A /* ViewController.swift in Sources */,
+				6838CA33224B178E00FB802A /* Shape.swift in Sources */,
 				6838CA29224B143900FB802A /* PawnListVC.swift in Sources */,
 				6838CA31224B14DC00FB802A /* MyPageVC.swift in Sources */,
 				6838CA2D224B149900FB802A /* ChattingVC.swift in Sources */,

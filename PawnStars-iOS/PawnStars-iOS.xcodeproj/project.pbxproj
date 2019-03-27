@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9E4224B0ABE00FB802A /* AppDelegate.swift */; };
+		6838C9E7224B0ABE00FB802A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9E6224B0ABE00FB802A /* ViewController.swift */; };
+		6838C9EA224B0ABE00FB802A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6838C9E8224B0ABE00FB802A /* Main.storyboard */; };
+		6838C9ED224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9EB224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld */; };
+		6838C9EF224B0ABF00FB802A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6838C9EE224B0ABF00FB802A /* Assets.xcassets */; };
+		6838C9F2224B0ABF00FB802A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6838C9F0224B0ABF00FB802A /* LaunchScreen.storyboard */; };
+		6838C9FD224B0ABF00FB802A /* PawnStars_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9FC224B0ABF00FB802A /* PawnStars_iOSTests.swift */; };
+		6838CA08224B0ABF00FB802A /* PawnStars_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA07224B0ABF00FB802A /* PawnStars_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6838C9F9224B0ABF00FB802A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6838C9D9224B0ABE00FB802A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6838C9E0224B0ABE00FB802A;
+			remoteInfo = "PawnStars-iOS";
+		};
+		6838CA04224B0ABF00FB802A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6838C9D9224B0ABE00FB802A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6838C9E0224B0ABE00FB802A;
+			remoteInfo = "PawnStars-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6838C9E1224B0ABE00FB802A /* PawnStars-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PawnStars-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6838C9E4224B0ABE00FB802A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6838C9E6224B0ABE00FB802A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6838C9E9224B0ABE00FB802A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6838C9EC224B0ABE00FB802A /* PawnStars_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PawnStars_iOS.xcdatamodel; sourceTree = "<group>"; };
+		6838C9EE224B0ABF00FB802A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6838C9F1224B0ABF00FB802A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6838C9F3224B0ABF00FB802A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6838C9F8224B0ABF00FB802A /* PawnStars-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PawnStars-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6838C9FC224B0ABF00FB802A /* PawnStars_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnStars_iOSTests.swift; sourceTree = "<group>"; };
+		6838C9FE224B0ABF00FB802A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6838CA03224B0ABF00FB802A /* PawnStars-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PawnStars-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6838CA07224B0ABF00FB802A /* PawnStars_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnStars_iOSUITests.swift; sourceTree = "<group>"; };
+		6838CA09224B0ABF00FB802A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6838C9DE224B0ABE00FB802A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6838C9F5224B0ABF00FB802A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6838CA00224B0ABF00FB802A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6838C9D8224B0ABE00FB802A = {
+			isa = PBXGroup;
+			children = (
+				6838C9E3224B0ABE00FB802A /* PawnStars-iOS */,
+				6838C9FB224B0ABF00FB802A /* PawnStars-iOSTests */,
+				6838CA06224B0ABF00FB802A /* PawnStars-iOSUITests */,
+				6838C9E2224B0ABE00FB802A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6838C9E2224B0ABE00FB802A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6838C9E1224B0ABE00FB802A /* PawnStars-iOS.app */,
+				6838C9F8224B0ABF00FB802A /* PawnStars-iOSTests.xctest */,
+				6838CA03224B0ABF00FB802A /* PawnStars-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6838C9E3224B0ABE00FB802A /* PawnStars-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6838CA18224B0AF500FB802A /* Network */,
+				6838CA17224B0AEF00FB802A /* UI */,
+				6838CA16224B0AE500FB802A /* VC */,
+				6838CA15224B0ADD00FB802A /* Util */,
+				6838C9E4224B0ABE00FB802A /* AppDelegate.swift */,
+				6838C9EE224B0ABF00FB802A /* Assets.xcassets */,
+				6838C9F3224B0ABF00FB802A /* Info.plist */,
+				6838C9EB224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld */,
+			);
+			path = "PawnStars-iOS";
+			sourceTree = "<group>";
+		};
+		6838C9FB224B0ABF00FB802A /* PawnStars-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6838C9FC224B0ABF00FB802A /* PawnStars_iOSTests.swift */,
+				6838C9FE224B0ABF00FB802A /* Info.plist */,
+			);
+			path = "PawnStars-iOSTests";
+			sourceTree = "<group>";
+		};
+		6838CA06224B0ABF00FB802A /* PawnStars-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6838CA07224B0ABF00FB802A /* PawnStars_iOSUITests.swift */,
+				6838CA09224B0ABF00FB802A /* Info.plist */,
+			);
+			path = "PawnStars-iOSUITests";
+			sourceTree = "<group>";
+		};
+		6838CA15224B0ADD00FB802A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		6838CA16224B0AE500FB802A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6838C9E6224B0ABE00FB802A /* ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6838CA17224B0AEF00FB802A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6838C9E8224B0ABE00FB802A /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6838CA18224B0AF500FB802A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6838C9E0224B0ABE00FB802A /* PawnStars-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6838CA0C224B0ABF00FB802A /* Build configuration list for PBXNativeTarget "PawnStars-iOS" */;
+			buildPhases = (
+				6838C9DD224B0ABE00FB802A /* Sources */,
+				6838C9DE224B0ABE00FB802A /* Frameworks */,
+				6838C9DF224B0ABE00FB802A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PawnStars-iOS";
+			productName = "PawnStars-iOS";
+			productReference = 6838C9E1224B0ABE00FB802A /* PawnStars-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6838C9F7224B0ABF00FB802A /* PawnStars-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6838CA0F224B0ABF00FB802A /* Build configuration list for PBXNativeTarget "PawnStars-iOSTests" */;
+			buildPhases = (
+				6838C9F4224B0ABF00FB802A /* Sources */,
+				6838C9F5224B0ABF00FB802A /* Frameworks */,
+				6838C9F6224B0ABF00FB802A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6838C9FA224B0ABF00FB802A /* PBXTargetDependency */,
+			);
+			name = "PawnStars-iOSTests";
+			productName = "PawnStars-iOSTests";
+			productReference = 6838C9F8224B0ABF00FB802A /* PawnStars-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6838CA02224B0ABF00FB802A /* PawnStars-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6838CA12224B0ABF00FB802A /* Build configuration list for PBXNativeTarget "PawnStars-iOSUITests" */;
+			buildPhases = (
+				6838C9FF224B0ABF00FB802A /* Sources */,
+				6838CA00224B0ABF00FB802A /* Frameworks */,
+				6838CA01224B0ABF00FB802A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6838CA05224B0ABF00FB802A /* PBXTargetDependency */,
+			);
+			name = "PawnStars-iOSUITests";
+			productName = "PawnStars-iOSUITests";
+			productReference = 6838CA03224B0ABF00FB802A /* PawnStars-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6838C9D9224B0ABE00FB802A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = PawnStars;
+				TargetAttributes = {
+					6838C9E0224B0ABE00FB802A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6838C9F7224B0ABF00FB802A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6838C9E0224B0ABE00FB802A;
+					};
+					6838CA02224B0ABF00FB802A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6838C9E0224B0ABE00FB802A;
+					};
+				};
+			};
+			buildConfigurationList = 6838C9DC224B0ABE00FB802A /* Build configuration list for PBXProject "PawnStars-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6838C9D8224B0ABE00FB802A;
+			productRefGroup = 6838C9E2224B0ABE00FB802A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6838C9E0224B0ABE00FB802A /* PawnStars-iOS */,
+				6838C9F7224B0ABF00FB802A /* PawnStars-iOSTests */,
+				6838CA02224B0ABF00FB802A /* PawnStars-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6838C9DF224B0ABE00FB802A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6838C9F2224B0ABF00FB802A /* LaunchScreen.storyboard in Resources */,
+				6838C9EF224B0ABF00FB802A /* Assets.xcassets in Resources */,
+				6838C9EA224B0ABE00FB802A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6838C9F6224B0ABF00FB802A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6838CA01224B0ABF00FB802A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6838C9DD224B0ABE00FB802A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6838C9ED224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld in Sources */,
+				6838C9E7224B0ABE00FB802A /* ViewController.swift in Sources */,
+				6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6838C9F4224B0ABF00FB802A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6838C9FD224B0ABF00FB802A /* PawnStars_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6838C9FF224B0ABF00FB802A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6838CA08224B0ABF00FB802A /* PawnStars_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6838C9FA224B0ABF00FB802A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6838C9E0224B0ABE00FB802A /* PawnStars-iOS */;
+			targetProxy = 6838C9F9224B0ABF00FB802A /* PBXContainerItemProxy */;
+		};
+		6838CA05224B0ABF00FB802A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6838C9E0224B0ABE00FB802A /* PawnStars-iOS */;
+			targetProxy = 6838CA04224B0ABF00FB802A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6838C9E8224B0ABE00FB802A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6838C9E9224B0ABE00FB802A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6838C9F0224B0ABF00FB802A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6838C9F1224B0ABF00FB802A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6838CA0A224B0ABF00FB802A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6838CA0B224B0ABF00FB802A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6838CA0D224B0ABF00FB802A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "PawnStars-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pawnstars.PawnStars-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6838CA0E224B0ABF00FB802A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "PawnStars-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pawnstars.PawnStars-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6838CA10224B0ABF00FB802A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "PawnStars-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pawnstars.PawnStars-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PawnStars-iOS.app/PawnStars-iOS";
+			};
+			name = Debug;
+		};
+		6838CA11224B0ABF00FB802A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "PawnStars-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pawnstars.PawnStars-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PawnStars-iOS.app/PawnStars-iOS";
+			};
+			name = Release;
+		};
+		6838CA13224B0ABF00FB802A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "PawnStars-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pawnstars.PawnStars-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PawnStars-iOS";
+			};
+			name = Debug;
+		};
+		6838CA14224B0ABF00FB802A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "PawnStars-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pawnstars.PawnStars-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PawnStars-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6838C9DC224B0ABE00FB802A /* Build configuration list for PBXProject "PawnStars-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6838CA0A224B0ABF00FB802A /* Debug */,
+				6838CA0B224B0ABF00FB802A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6838CA0C224B0ABF00FB802A /* Build configuration list for PBXNativeTarget "PawnStars-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6838CA0D224B0ABF00FB802A /* Debug */,
+				6838CA0E224B0ABF00FB802A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6838CA0F224B0ABF00FB802A /* Build configuration list for PBXNativeTarget "PawnStars-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6838CA10224B0ABF00FB802A /* Debug */,
+				6838CA11224B0ABF00FB802A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6838CA12224B0ABF00FB802A /* Build configuration list for PBXNativeTarget "PawnStars-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6838CA13224B0ABF00FB802A /* Debug */,
+				6838CA14224B0ABF00FB802A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6838C9EB224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6838C9EC224B0ABE00FB802A /* PawnStars_iOS.xcdatamodel */,
+			);
+			currentVersion = 6838C9EC224B0ABE00FB802A /* PawnStars_iOS.xcdatamodel */;
+			path = PawnStars_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6838C9D9224B0ABE00FB802A /* Project object */;
+}

@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4f-VP-ia4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="779"/>
+            <point key="canvasLocation" x="1633" y="55"/>
         </scene>
         <!--PawnList-->
         <scene sceneID="HAm-gP-d5F">
@@ -179,6 +179,7 @@
                             <constraint firstItem="kRM-0n-loB" firstAttribute="top" secondItem="fG3-r4-Zg1" secondAttribute="bottom" id="QBH-UP-U8m"/>
                             <constraint firstItem="fG3-r4-Zg1" firstAttribute="trailing" secondItem="Kyy-la-a1h" secondAttribute="trailing" id="QGn-HJ-0vT"/>
                             <constraint firstItem="fG3-r4-Zg1" firstAttribute="leading" secondItem="Kyy-la-a1h" secondAttribute="leading" id="YCI-YA-Nig"/>
+                            <constraint firstItem="kRM-0n-loB" firstAttribute="bottom" secondItem="Kyy-la-a1h" secondAttribute="bottom" id="bfz-Op-H7G"/>
                             <constraint firstItem="Kyy-la-a1h" firstAttribute="trailing" secondItem="kRM-0n-loB" secondAttribute="trailing" constant="10" id="cud-rM-Tfv"/>
                             <constraint firstItem="kRM-0n-loB" firstAttribute="leading" secondItem="Kyy-la-a1h" secondAttribute="leading" constant="10" id="rQk-DK-Ags"/>
                         </constraints>
@@ -204,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDS-AX-cSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="401"/>
+            <point key="canvasLocation" x="923" y="461"/>
         </scene>
         <!--Search-->
         <scene sceneID="loI-an-aBO">
@@ -244,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zzU-Dl-mxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021.7391304347827" y="-291.29464285714283"/>
+            <point key="canvasLocation" x="923" y="-285"/>
         </scene>
     </scenes>
     <resources>

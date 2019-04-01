@@ -714,8 +714,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="원하는 정렬 방식을 선택해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SM-rJ-QNy">
-                                <rect key="frame" x="96" y="552" width="224" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원하는 정렬 방식을 선택해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SM-rJ-QNy">
+                                <rect key="frame" x="95" y="552" width="224" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -779,6 +779,7 @@
                             <constraint firstItem="cJp-Ya-v1b" firstAttribute="top" secondItem="vLH-GJ-EoA" secondAttribute="bottom" constant="49" id="XM6-Rz-AOP"/>
                             <constraint firstItem="vLH-GJ-EoA" firstAttribute="centerX" secondItem="mcP-Va-RR4" secondAttribute="centerX" id="aQ3-nU-fA8"/>
                             <constraint firstItem="vLH-GJ-EoA" firstAttribute="centerX" secondItem="1HB-HS-4wd" secondAttribute="centerX" id="auj-pL-O3E"/>
+                            <constraint firstItem="1SM-rJ-QNy" firstAttribute="centerX" secondItem="mcP-Va-RR4" secondAttribute="centerX" id="b5H-Pw-skh"/>
                             <constraint firstItem="1SM-rJ-QNy" firstAttribute="top" secondItem="7ob-I2-H24" secondAttribute="bottom" constant="37" id="bzH-KQ-Skx"/>
                             <constraint firstItem="05J-jH-YvZ" firstAttribute="centerX" secondItem="mcP-Va-RR4" secondAttribute="centerX" id="cL7-Ce-6F9"/>
                             <constraint firstItem="pwz-VV-Laj" firstAttribute="leading" secondItem="89r-3t-c5x" secondAttribute="leading" id="efd-rV-I9r"/>

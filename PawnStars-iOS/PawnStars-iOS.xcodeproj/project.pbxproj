@@ -105,6 +105,7 @@
 		8D1C88F2C9D77CC8C11F4594 /* Pods-PawnStars-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BD24F9D65AEC7A8D909F0E50 /* Pods-PawnStars-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSTests/Pods-PawnStars-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C90D7E2240A283B1606338D3 /* Pods-PawnStars-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+
 		C9A0A3ED224B37290085756E /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		C9A0A3F4224B4E080085756E /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		C9A0A3F6224B55AE0085756E /* appIconImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconImage.png; sourceTree = "<group>"; };
@@ -193,7 +194,6 @@
 			children = (
 				C9A0A3F0224B382C0085756E /* Image */,
 				6838CA15224B0ADD00FB802A /* Util */,
-				6838CA18224B0AF500FB802A /* Network */,
 				6838CA17224B0AEF00FB802A /* UI */,
 				6838CA16224B0AE500FB802A /* VC */,
 				6838C9E4224B0ABE00FB802A /* AppDelegate.swift */,
@@ -261,13 +261,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		6838CA18224B0AF500FB802A /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		6838CA23224B137D00FB802A /* PawnList */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +317,7 @@
 		684448F8224D9E4900B5A002 /* Signin */ = {
 			isa = PBXGroup;
 			children = (
+
 				C9A0A3F8224B56890085756E /* appIconWhiteImage.png */,
 				C9A0A3FA224B64860085756E /* buyerIcon.png */,
 				C9A0A3FC224B648B0085756E /* pawnIcon.png */,
@@ -476,6 +470,8 @@
 				68444900224DA27D00B5A002 /* filterIcon@2x.png in Resources */,
 				6838CA1C224B113700FB802A /* Chatting.storyboard in Resources */,
 				6838C9EA224B0ABE00FB802A /* Main.storyboard in Resources */,
+				6851AB6D225324F000B9CE1C /* Icon-Small@2x.png in Resources */,
+				6851AB6B225324F000B9CE1C /* Icon-Small@3x.png in Resources */,
 				C9A0A3F7224B55AE0085756E /* appIconImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,17 +1,19 @@
- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lKV-YK-iWW">
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lKV-YK-iWW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-@ -17,18 +17,7 @@
+    <scenes>
+        <!--Item-->
+        <scene sceneID="qNW-E1-ba7">
+            <objects>
+                <viewController id="lKV-YK-iWW" customClass="WritingVC" customModule="PawnStars_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zlh-WG-2VE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +32,7 @@
                         <viewLayoutGuide key="safeArea" id="usJ-IT-mGw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="bCd-E6-GbL"/>
-@ -36,245 +25,7 @@
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lIY-dX-ket" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,7 +275,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wKy-Mn-I14" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1686" y="408"/>
-            <point key="canvasLocation" x="143" y="72"/>
         </scene>
     </scenes>
 </document>

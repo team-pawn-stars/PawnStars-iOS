@@ -105,7 +105,6 @@
 		8D1C88F2C9D77CC8C11F4594 /* Pods-PawnStars-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BD24F9D65AEC7A8D909F0E50 /* Pods-PawnStars-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSTests/Pods-PawnStars-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C90D7E2240A283B1606338D3 /* Pods-PawnStars-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-
 		C9A0A3ED224B37290085756E /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		C9A0A3F4224B4E080085756E /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		C9A0A3F6224B55AE0085756E /* appIconImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconImage.png; sourceTree = "<group>"; };
@@ -317,7 +316,6 @@
 		684448F8224D9E4900B5A002 /* Signin */ = {
 			isa = PBXGroup;
 			children = (
-
 				C9A0A3F8224B56890085756E /* appIconWhiteImage.png */,
 				C9A0A3FA224B64860085756E /* buyerIcon.png */,
 				C9A0A3FC224B648B0085756E /* pawnIcon.png */,
@@ -470,8 +468,6 @@
 				68444900224DA27D00B5A002 /* filterIcon@2x.png in Resources */,
 				6838CA1C224B113700FB802A /* Chatting.storyboard in Resources */,
 				6838C9EA224B0ABE00FB802A /* Main.storyboard in Resources */,
-				6851AB6D225324F000B9CE1C /* Icon-Small@2x.png in Resources */,
-				6851AB6B225324F000B9CE1C /* Icon-Small@3x.png in Resources */,
 				C9A0A3F7224B55AE0085756E /* appIconImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,8 +497,9 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -510,11 +507,12 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		0CF1DFF1635D79A3BFBB7D86 /* [CP] Check Pods Manifest.lock */ = {

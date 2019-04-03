@@ -7,449 +7,605 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F75D508DADC6D440441FCECCBC016E0 /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD72305A7B344B4449DE49CB8FB38FF /* ButtonBarPagerTabStripViewController.swift */; };
-		11CD337D8B32CB6B42CF4116EDE97696 /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D403AD32C9DB3D2D2AD3BAE3B1AD8 /* PagerTabStripBehaviour.swift */; };
-		1911AC57DDA1207FDEBFE224EF5A4A37 /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80139180276E8157DA399821C148745A /* SegmentedPagerTabStripViewController.swift */; };
-		2227B5308E2890BE10C3D403A381D7D5 /* Pods-PawnStars-iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22ECC3EF7DE63A71D038AAA70F7E7A06 /* Pods-PawnStars-iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23EE0A25DF9883A4A095A43BB0358F2E /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFAD0483D1C45B956E2D5DE954F1C11 /* FXPageControl.m */; };
-		27C2CC63BC2BD756A74895303B41345E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
-		36745431D9F2388EBF041D5BBF15FFDA /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B138FCD2146B057A058A2B95F47B7AF /* BarView.swift */; };
-		378A53EB4E0AFE59FED7FF48CC84F759 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E404AA6957590324067E330E0EC533 /* UIKit.framework */; };
-		3C0711E00387F47D3EEA2056BEFB7600 /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DA17FF4D26914D285301F1FD0B5E2 /* PagerTabStripError.swift */; };
-		415EA6623596A45C5C259283602CCDC4 /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E43EBFF15AF893BBF98BDA3B499A389 /* XLPagerTabStrip.bundle */; };
-		4E7887F80D61BE00FE2167ABA344B036 /* Pods-PawnStars-iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 160CC088CF226C1276284709C9758AD9 /* Pods-PawnStars-iOSTests-dummy.m */; };
-		6C0898F904A12D41ACBF08337CF5193C /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD433BF7B68F58FA9C01B09494F7B043 /* ButtonBarViewCell.swift */; };
-		6E5C32E60AA9F21B63C81EB7E30778F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
-		6E6FA29FA306F644339387892C9321A6 /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D61DDFD4D705678C31465DFB180D66 /* PagerTabStripViewController.swift */; };
-		74ADD2C70A77476964EF9DFCC118FB0F /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A62FCED0A68E4025749AB5076373CB /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		804D4C1AE342F588EEB01BCC605692F7 /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0EF1E80CCA15DEDDEC32C75304085 /* BarPagerTabStripViewController.swift */; };
-		81EE439C57BED547608F24EF09E948FD /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82E7AFFD47E122CA17B99CB0FA74A9C /* TwitterPagerTabStripViewController.swift */; };
-		879CC1D5857BF3A07C276CDAB6DE48C8 /* Pods-PawnStars-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75BB9FFA68BB85EA9320DC8C5CF5633F /* Pods-PawnStars-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		914B968684FD6F461859129B6D1A4EE1 /* Pods-PawnStars-iOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9F35A853C7AD52BEC022E9C53CF87 /* Pods-PawnStars-iOSUITests-dummy.m */; };
-		973B5430AF5EB670027B153DB571C019 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6E43E29BBB6F97846674BA600C52AA /* ButtonCell.xib */; };
-		A25C111665282790518A38818BA23D56 /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6424187B7384953640C2F83C3903ED82 /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3918D0CD2D796CEEF3943560AB83F35 /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A8142F434850322F64B2466E00C22A /* ButtonBarView.swift */; };
-		AA0C050BB66CF05B12CEA882935BCB0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
-		B4A98BAE85517A321F7765B03BB69270 /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E28E271E7C69D37F1011543935AF7B7 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B90F32DAE9E1A064629965BBA8BC83FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
-		BD0776CFD965606683AD4543C7457790 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2641C0ED10635F7D0379C7DA9869CF0 /* BaseButtonBarPagerTabStripViewController.swift */; };
-		BFC2013271BD9082F42871149F56D93A /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D892D310330E5148C2A2DD13A3FB19D0 /* IndicatorInfo.swift */; };
-		C04910E4636ACAB2C7E62BE924DF4D9B /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19923FA95B2E08B171CA529794861AB4 /* XLPagerTabStrip-dummy.m */; };
-		C6F7537AAAC0FC2110CCCC5024B3A87E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
-		CCF12C33A5E3CF3EA64F1944A503BACD /* Pods-PawnStars-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D254C92C8BB8873393943082CA665F10 /* Pods-PawnStars-iOS-dummy.m */; };
-		DA6A7A5C8DAE5BB7F62FDE3BF9DEB2E1 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2ACD24746D415032EFEC1112A76D07 /* DLRadioButton.m */; };
-		DBAB1C6BC12F3E70B6F0A38E2B64BDC4 /* Pods-PawnStars-iOSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC51AC62C9099A6194421C1D3BA38961 /* Pods-PawnStars-iOSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3438FAEB12045293B7587072C7818A2 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0CE4AFDF1CE69F8A3A4C2AEFE3EE23 /* SwipeDirection.swift */; };
-		F2F89523913176CA1D33F7F2642BD044 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 486E7DB2F3FF39D13C9A63BBC3C7123C /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF49B9241B6680B06EA3C1C7787639D3 /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69D1702172DD4E23BDD8C1A4F799F4 /* DLRadioButton-dummy.m */; };
+		00B1163505A067B0D80938150EE3FFBC /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EE5B2531B8C934848DC7D4FC070C19 /* TwitterPagerTabStripViewController.swift */; };
+		045F8EE7D31B376C4CED3C2D46ABB53D /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 066A66A86FDE0A3C6AA05D3ACC0D7F02 /* XLPagerTabStrip.bundle */; };
+		0A2C2B7BA385D4846A1533BE89071812 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621C2C2ED5C87352731F6548D986F2CB /* MinoruTextField.swift */; };
+		0DDDE4B88D870D6225BAB7EECD72B490 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F150F3662C12F8DDC206CF43252EBC00 /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FA360909ABC6427CA6957F2EFE3F7ED /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D9443D85774A37530EC8555FCA280C /* PagerTabStripBehaviour.swift */; };
+		1249E36918E96989B948F6F181B5A1DE /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = D0BEBD5BC7C5B9DFFAAEDA1794B124AB /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1815F4479433D00A601EBA8FC213290F /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6FA10A0B0A306BBF1880D984B8039B /* MadokaTextField.swift */; };
+		19FA1CE2417CBD2CC7411A4E9CAD415D /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D2DD1A79C84B8BFBEB750FF13E0B86 /* FXPageControl.m */; };
+		25AD0B485352FAF2DD1D90DD33D9E3AB /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE9EF8D436AFD810CD8D369D89E5048 /* XLPagerTabStrip-dummy.m */; };
+		2EA4E998402C211468CF0DBA2FF5D9E9 /* Pods-PawnStars-iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A682A2EA54EB7868A9B2D95DBB1E6860 /* Pods-PawnStars-iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F03E555D65EDA98DBD268B267923EED /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E027A834BA2B518416E9DC526C87595 /* YokoTextField.swift */; };
+		3A20BD2E4C606104258D654FBEA9DD6B /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A2C6BD81364833051ACFFF1719923CC /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BE81380A719F4D52AB7A1CC6B71D069 /* Pods-PawnStars-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D9FFC8069CD4D57AACD4DC87783C5 /* Pods-PawnStars-iOS-dummy.m */; };
+		40D75F572B4F7C8950D5F5CDCA2B58BE /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A5714E7D09C70829BF6D0CF3CA1F45 /* BaseButtonBarPagerTabStripViewController.swift */; };
+		435D0F52FAB2591A1C46091282933B58 /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC59D9CD9053F15DA1E86E731FD337 /* PagerTabStripError.swift */; };
+		4576BCEB7B28D598551B27B195039DD5 /* Pods-PawnStars-iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D52875F8DFF04DA4FA63EDCCCB996FA9 /* Pods-PawnStars-iOSTests-dummy.m */; };
+		4604E78CFBCE589C3C2DEC07F80BDF4F /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9882232D81CEA4F9C2D4856CEE0D72 /* TextFieldEffects-dummy.m */; };
+		4FEDC2B7EAEC660FE9915F91AC24B306 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C3D618A89588916C2D5CF7E1A77999 /* BarView.swift */; };
+		524DAE89EFE1F972156AA3AB1B466CF1 /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07139E57DEDFA71C0B8ABDD34BEC65BB /* SegmentedPagerTabStripViewController.swift */; };
+		55B2CCDC53F0969011D2BA234E56B7E9 /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA89E4078C42C69661E4700308BBA9E2 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A76EE1DE6DC3BEF4AF4C84B772E51DC /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF4D88F6C6BBE8CB98AF1B0ECB17776 /* KaedeTextField.swift */; };
+		622C61C9E0E85EA70DF697672AE2FEE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		66228900A600828EC1C6931A8B4398E1 /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA22836C7E8B6B67A4078EF9F4567C8 /* PagerTabStripViewController.swift */; };
+		678936BC9AE59613D3B25B4225F4E7AF /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CEDD2D3609C63048D34DC3A3532AE /* SwipeDirection.swift */; };
+		6E8A87ABB661F5CB4977A8A1BD9C43DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
+		8362796A29DEAEE4828F3ADFA9111930 /* Pods-PawnStars-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A97085476477680830B3ADAB5B4FD51F /* Pods-PawnStars-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E7B9DE2A6262C048390C0F9B265AD16 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52968ACD1D5CB557E91B7371DF65A67A /* YoshikoTextField.swift */; };
+		8EDB70BEF4BB2C3B8B22A928ADE970C9 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43245A187FE2E3AD3AD24E88C934B9C7 /* HoshiTextField.swift */; };
+		8F7F5156BC3CCE5BB7674D79A4260ED9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		9527A73CAB0E49952EE1A10A0CEDF253 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A6C4A7657CD8CC2EA4169BF7FB43D25 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		973AEDD608E375372A542E6F30F1FAD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		9DB67F6457ED67856FD2062A6A9A92AC /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E890E945A2C355F7F99F2F570B5A086 /* IsaoTextField.swift */; };
+		A3DF0551B3C49264A0C7D7D6C7664589 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411175D9AB874D8B972594899F01389 /* JiroTextField.swift */; };
+		AA02CE45C241A1BBE2F462FE7C1D90B5 /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E7E563771F36F0F02EA2986492576 /* ButtonBarPagerTabStripViewController.swift */; };
+		ADBC4531F091035C05F00262E9173DCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		AF66BDFC27B107C312A22913DD70758A /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02E24B09F039965383CF0F03140E7435 /* ButtonCell.xib */; };
+		BDBCFC743FB9943826F18A175C83DF08 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D091BD79A4A3D79FF3080F026F20496 /* DLRadioButton.m */; };
+		BEDB903B5D2684C7D01607316DCF257C /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14DD06A6AB1265CF3A66C0CBFF990C /* BarPagerTabStripViewController.swift */; };
+		BFB66FF32BF1F7F426ADA07D0F90C58A /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD6E3598471227D12255E44B0113526 /* ButtonBarViewCell.swift */; };
+		C2EA15F24F4976CE75222454B33FE624 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F51C6CFB102E4D5381BFF80A09686C /* AkiraTextField.swift */; };
+		CA3C730B109D28C8D5BA1974024A881F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		D7CD756C90E9D0AA89F937EC1CFDF039 /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B853179F716111CB66AB5951F2C23 /* ButtonBarView.swift */; };
+		E274AD58903EC1747DD90FC12BAF853F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		E8E1EE03432A78C8D27A2A1E751D3715 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F19F10927708598DB62C4BB1B911B2 /* TextFieldEffects.swift */; };
+		F59981EB4976459299EBEA472E8DCDAE /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B498DA60468CC133A88EB17CD083E4 /* IndicatorInfo.swift */; };
+		F702A41246053D427C239ED309636551 /* Pods-PawnStars-iOSUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F92EBA800C9E26718C35BBA7674C0E /* Pods-PawnStars-iOSUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FED928FEC82C7BF9E9EFC1CECE84E897 /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 458B32C28B86BAC1C7C6368B2D7998A1 /* DLRadioButton-dummy.m */; };
+		FF43791F269E51F1160A38C65B10B9B8 /* Pods-PawnStars-iOSUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F934BB54292FF64E1614633F79FF3E /* Pods-PawnStars-iOSUITests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0FA648B0975AC9454DA3CC574080F971 /* PBXContainerItemProxy */ = {
+		645916F25E746A1A73F75141C5EF3670 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DF624A3551E70B9AB97422EBA8A32AF8;
-			remoteInfo = "Pods-PawnStars-iOS";
-		};
-		3668B6C7F18BC2CFED997BF296F058C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5657810CAC076FF897057728A2441C6D;
-			remoteInfo = XLPagerTabStrip;
-		};
-		C65F6E21FD30F708F960E1D408ED2A25 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2167F32FCBD96C6161714849A9105BE9;
+			remoteGlobalIDString = 46BD0675E3AE6FB8C284CB79F1013052;
 			remoteInfo = DLRadioButton;
 		};
-		DABDD86FF5A307D8265B3C3BE8BA3F58 /* PBXContainerItemProxy */ = {
+		7DDE8354DF5FB892134D3DA376278D41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E9A8908996C8047C1F728568B68E5FAA;
+			remoteGlobalIDString = 19B60476D2936ACD1A0AB661490967F4;
+			remoteInfo = "Pods-PawnStars-iOS";
+		};
+		A2125671A920561A73FF879005188FAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1953665862BB086D5BF8CCC5F712FF63;
+			remoteInfo = XLPagerTabStrip;
+		};
+		A2F3D25C57FB1780F5C185F717E75BE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A78543CA02950A5E257A51A3C1C27BA3;
 			remoteInfo = "XLPagerTabStrip-XLPagerTabStrip";
 		};
-		ED8FC633BB5E2CB78399073A145A00CB /* PBXContainerItemProxy */ = {
+		A437DAC2D355E7D8445C374D9ECF92F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DF624A3551E70B9AB97422EBA8A32AF8;
+			remoteGlobalIDString = 19B60476D2936ACD1A0AB661490967F4;
 			remoteInfo = "Pods-PawnStars-iOS";
+		};
+		CE1769E0B9E05118C1BC51BDA5258E67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E172A660A45D74E416F471B91A2139D0;
+			remoteInfo = TextFieldEffects;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01A6B1702029293B0876D9ABBC82C328 /* Pods-PawnStars-iOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PawnStars-iOSUITests.modulemap"; sourceTree = "<group>"; };
-		0436441A9302FE7DB17ED81E2948DC10 /* Pods-PawnStars-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0A8C438C5833F9C361B86CCB2B8120D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1015FBA2400797609C15D7FC8BA98F85 /* Pods-PawnStars-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawnStars-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		131340783F2A594037A6141B4BA0794C /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
-		160CC088CF226C1276284709C9758AD9 /* Pods-PawnStars-iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PawnStars-iOSTests-dummy.m"; sourceTree = "<group>"; };
-		19923FA95B2E08B171CA529794861AB4 /* XLPagerTabStrip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLPagerTabStrip-dummy.m"; sourceTree = "<group>"; };
-		1D442D4CC1D2FEE61218D6D321B26058 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22ECC3EF7DE63A71D038AAA70F7E7A06 /* Pods-PawnStars-iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PawnStars-iOSTests-umbrella.h"; sourceTree = "<group>"; };
-		2B138FCD2146B057A058A2B95F47B7AF /* BarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarView.swift; path = Sources/BarView.swift; sourceTree = "<group>"; };
-		2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		2FBFA63F003358E5932099878F7F68FE /* Pods-PawnStars-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PawnStars-iOS.modulemap"; sourceTree = "<group>"; };
-		312C473532796C6043EC4C2CC21E050B /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
-		31C5C891BE2F0DC0D7EC813BA2ABB566 /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
-		34C9E6463F388013EED8EF2B8EF4040C /* XLPagerTabStrip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.xcconfig; sourceTree = "<group>"; };
-		3922D7615B7126B4246F3E623B403C3A /* XLPagerTabStrip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-prefix.pch"; sourceTree = "<group>"; };
-		3E43EBFF15AF893BBF98BDA3B499A389 /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XLPagerTabStrip.bundle; path = "XLPagerTabStrip-XLPagerTabStrip.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		407064CF423736DCD326C630F27AE7C0 /* Pods-PawnStars-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawnStars-iOS-resources.sh"; sourceTree = "<group>"; };
-		486E7DB2F3FF39D13C9A63BBC3C7123C /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
-		4B3751BAAE079885D02C48B869EBFDD1 /* Pods-PawnStars-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		53BBC29C11E062D14EF0B06304315E51 /* Pods-PawnStars-iOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PawnStars-iOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		55A62FCED0A68E4025749AB5076373CB /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
-		56D8282C0F85B3C189AF35054580179A /* Pods_PawnStars_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PawnStars_iOSTests.framework; path = "Pods-PawnStars-iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6424187B7384953640C2F83C3903ED82 /* XLPagerTabStrip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-umbrella.h"; sourceTree = "<group>"; };
-		6598DBA3F1317D9810A57118CC60295A /* Pods-PawnStars-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		6F2ACD24746D415032EFEC1112A76D07 /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
-		74E404AA6957590324067E330E0EC533 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		75BB9FFA68BB85EA9320DC8C5CF5633F /* Pods-PawnStars-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PawnStars-iOS-umbrella.h"; sourceTree = "<group>"; };
-		7C3DA17FF4D26914D285301F1FD0B5E2 /* PagerTabStripError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripError.swift; path = Sources/PagerTabStripError.swift; sourceTree = "<group>"; };
-		7DD8B229F8D40B8CF10D8122F772E4F2 /* Pods-PawnStars-iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawnStars-iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		7E0CE4AFDF1CE69F8A3A4C2AEFE3EE23 /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwipeDirection.swift; sourceTree = "<group>"; };
-		80139180276E8157DA399821C148745A /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		87CF414A1B114E9EB71E0DDDE579330C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BAD03FB275B812BD28D1A936D4A4A0C /* Pods_PawnStars_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PawnStars_iOSUITests.framework; path = "Pods-PawnStars-iOSUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D811732F36422351E6E7F59538A4D8B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E28E271E7C69D37F1011543935AF7B7 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		957D403AD32C9DB3D2D2AD3BAE3B1AD8 /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripBehaviour.swift; path = Sources/PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
-		9CD72305A7B344B4449DE49CB8FB38FF /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarPagerTabStripViewController.swift; path = Sources/ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		9EFFEB9369CD7066EAD47C5897E8703D /* Pods-PawnStars-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawnStars-iOS-frameworks.sh"; sourceTree = "<group>"; };
-		A2B2E29C47CAC6FBFC156467FE954B0B /* Pods-PawnStars-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		A6E26EC034B7E24372693530C1954698 /* Pods-PawnStars-iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PawnStars-iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B0C80C629A16CDC9773DA32CC63F86FE /* Pods-PawnStars-iOSUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawnStars-iOSUITests-resources.sh"; sourceTree = "<group>"; };
-		B1D61DDFD4D705678C31465DFB180D66 /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
-		B2641C0ED10635F7D0379C7DA9869CF0 /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		BAD9F35A853C7AD52BEC022E9C53CF87 /* Pods-PawnStars-iOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PawnStars-iOSUITests-dummy.m"; sourceTree = "<group>"; };
-		BB6E43E29BBB6F97846674BA600C52AA /* ButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ButtonCell.xib; path = Sources/ButtonCell.xib; sourceTree = "<group>"; };
-		BC51AC62C9099A6194421C1D3BA38961 /* Pods-PawnStars-iOSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PawnStars-iOSUITests-umbrella.h"; sourceTree = "<group>"; };
-		C264D3888D93A4239E2768643368157D /* Pods-PawnStars-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PawnStars-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C4D420857B4B66609E56D69348AA7544 /* Pods-PawnStars-iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PawnStars-iOSTests.modulemap"; sourceTree = "<group>"; };
-		CC25AED1329E7A443EC42ED162B7D78B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE9423239D50FEFD963D539B0AD07DE7 /* Pods-PawnStars-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CF7531292B1A94E1E7FB69115421CB9B /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D254C92C8BB8873393943082CA665F10 /* Pods-PawnStars-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PawnStars-iOS-dummy.m"; sourceTree = "<group>"; };
-		D892D310330E5148C2A2DD13A3FB19D0 /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
-		D8D4AFE75AEA741B48D34325874B764E /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLPagerTabStrip.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBC4379E4483F7BDFFC1D85C69F2026E /* ResourceBundle-XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
-		DD433BF7B68F58FA9C01B09494F7B043 /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarViewCell.swift; path = Sources/ButtonBarViewCell.swift; sourceTree = "<group>"; };
-		DE3DC0F6BDC4C79E0B975B8C15B53ED6 /* Pods-PawnStars-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		DFAA30C77F0735A85990C572296C856F /* Pods-PawnStars-iOSUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawnStars-iOSUITests-frameworks.sh"; sourceTree = "<group>"; };
-		E1E0EF1E80CCA15DEDDEC32C75304085 /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPagerTabStripViewController.swift; path = Sources/BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		E82E7AFFD47E122CA17B99CB0FA74A9C /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwitterPagerTabStripViewController.swift; path = Sources/TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		EA0DA6AFC8D280B57E5C5C7E0A5ED8C8 /* Pods-PawnStars-iOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawnStars-iOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EED8B7D8F520032293BC9C1E6B078723 /* Pods-PawnStars-iOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawnStars-iOSTests-frameworks.sh"; sourceTree = "<group>"; };
-		EFFAD0483D1C45B956E2D5DE954F1C11 /* FXPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXPageControl.m; path = Sources/FXPageControl.m; sourceTree = "<group>"; };
-		F0995DD1C36EA6770E45420D9E8A5F3B /* Pods_PawnStars_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PawnStars_iOS.framework; path = "Pods-PawnStars-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F316D60134434854B81AFC5A82B00B09 /* Pods-PawnStars-iOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawnStars-iOSTests-resources.sh"; sourceTree = "<group>"; };
-		F7A8142F434850322F64B2466E00C22A /* ButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarView.swift; path = Sources/ButtonBarView.swift; sourceTree = "<group>"; };
-		FA69D1702172DD4E23BDD8C1A4F799F4 /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
-		FEB87A16F42C1CFCF12D9ABC3DAE7144 /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
+		02E24B09F039965383CF0F03140E7435 /* ButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ButtonCell.xib; path = Sources/ButtonCell.xib; sourceTree = "<group>"; };
+		0555DA53548E7A7617E246B2B551D3C9 /* Pods-PawnStars-iOSUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawnStars-iOSUITests-Info.plist"; sourceTree = "<group>"; };
+		066A66A86FDE0A3C6AA05D3ACC0D7F02 /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XLPagerTabStrip.bundle; path = "XLPagerTabStrip-XLPagerTabStrip.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07139E57DEDFA71C0B8ABDD34BEC65BB /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		0A6C4A7657CD8CC2EA4169BF7FB43D25 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		0BEAA3DC1A3F06B131CF7574F1C04366 /* ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
+		103CEDD2D3609C63048D34DC3A3532AE /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwipeDirection.swift; sourceTree = "<group>"; };
+		12CBCE1E10B1EF571148A8B2C37B247D /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
+		17C3D618A89588916C2D5CF7E1A77999 /* BarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarView.swift; path = Sources/BarView.swift; sourceTree = "<group>"; };
+		1DB21AFA352A4BF18B471DBC9AADE8BC /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		1E890E945A2C355F7F99F2F570B5A086 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		1EAF7989F203D8994D667C011050E8C0 /* Pods-PawnStars-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawnStars-iOS-Info.plist"; sourceTree = "<group>"; };
+		1F14DD06A6AB1265CF3A66C0CBFF990C /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPagerTabStripViewController.swift; path = Sources/BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		1F9882232D81CEA4F9C2D4856CEE0D72 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		20F19F10927708598DB62C4BB1B911B2 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		246284C340D7FA407B18097C1B4E8D34 /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
+		2A6FA10A0B0A306BBF1880D984B8039B /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		3187A46B6A848CFA37B518D156B9D822 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLPagerTabStrip.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D2DD1A79C84B8BFBEB750FF13E0B86 /* FXPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXPageControl.m; path = Sources/FXPageControl.m; sourceTree = "<group>"; };
+		3A5895446F5FBE96E1EA59FDC72B9759 /* XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
+		3F8B52046123C3D54900E2C6911B0FE1 /* Pods-PawnStars-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41F51C6CFB102E4D5381BFF80A09686C /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		43245A187FE2E3AD3AD24E88C934B9C7 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		4340BEC5906055B2D0021B72BD7B1B6B /* Pods-PawnStars-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PawnStars-iOS-frameworks.sh"; sourceTree = "<group>"; };
+		458B32C28B86BAC1C7C6368B2D7998A1 /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
+		4A80A14CD1B3A36332F0E1B31FCEA8E3 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		52968ACD1D5CB557E91B7371DF65A67A /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		534AAC8A40906EC038983F7AB53764E4 /* Pods-PawnStars-iOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawnStars-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		547CB7D2883B5C18E1AB7A6D0C116B60 /* Pods-PawnStars-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PawnStars-iOS.modulemap"; sourceTree = "<group>"; };
+		58EE5B2531B8C934848DC7D4FC070C19 /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwitterPagerTabStripViewController.swift; path = Sources/TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		5DF24EC285BF26C10FCD74135A7EAF22 /* Pods_PawnStars_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PawnStars_iOSTests.framework; path = "Pods-PawnStars-iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		621C2C2ED5C87352731F6548D986F2CB /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		66379212898F273F1F9FECADEA80A491 /* DLRadioButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DLRadioButton-Info.plist"; sourceTree = "<group>"; };
+		6A2C6BD81364833051ACFFF1719923CC /* XLPagerTabStrip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-umbrella.h"; sourceTree = "<group>"; };
+		6D55BB971E33277AA29D2C2C3AADB4FF /* Pods_PawnStars_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PawnStars_iOSUITests.framework; path = "Pods-PawnStars-iOSUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E027A834BA2B518416E9DC526C87595 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		79F934BB54292FF64E1614633F79FF3E /* Pods-PawnStars-iOSUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PawnStars-iOSUITests-dummy.m"; sourceTree = "<group>"; };
+		7A6B853179F716111CB66AB5951F2C23 /* ButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarView.swift; path = Sources/ButtonBarView.swift; sourceTree = "<group>"; };
+		7D091BD79A4A3D79FF3080F026F20496 /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
+		7F6E583D166502ECC7BF988E95E41517 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8716281CD679985281CD130BC24376BB /* Pods-PawnStars-iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawnStars-iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		892AFF5EEFDDCAA344837C285F956032 /* Pods_PawnStars_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PawnStars_iOS.framework; path = "Pods-PawnStars-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2AB1F012E583C36E738DF746578DA1 /* Pods-PawnStars-iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PawnStars-iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8D30DCF513289616ACB904626195D2FE /* Pods-PawnStars-iOSUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PawnStars-iOSUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		90AF3E613EA0D2C92C894A018D169A90 /* Pods-PawnStars-iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PawnStars-iOSTests.modulemap"; sourceTree = "<group>"; };
+		90B0C612F99D13671BBDE2F2A74A6C50 /* Pods-PawnStars-iOSUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawnStars-iOSUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		956D9FFC8069CD4D57AACD4DC87783C5 /* Pods-PawnStars-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PawnStars-iOS-dummy.m"; sourceTree = "<group>"; };
+		964FC3913FA6C14C628295B38F8A8C94 /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EE9EF8D436AFD810CD8D369D89E5048 /* XLPagerTabStrip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLPagerTabStrip-dummy.m"; sourceTree = "<group>"; };
+		A40E7E563771F36F0F02EA2986492576 /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarPagerTabStripViewController.swift; path = Sources/ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		A682A2EA54EB7868A9B2D95DBB1E6860 /* Pods-PawnStars-iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PawnStars-iOSTests-umbrella.h"; sourceTree = "<group>"; };
+		A97085476477680830B3ADAB5B4FD51F /* Pods-PawnStars-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PawnStars-iOS-umbrella.h"; sourceTree = "<group>"; };
+		A9F92EBA800C9E26718C35BBA7674C0E /* Pods-PawnStars-iOSUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PawnStars-iOSUITests-umbrella.h"; sourceTree = "<group>"; };
+		AA89E4078C42C69661E4700308BBA9E2 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
+		ACCA40D868CFEA8DA6142AAE3B0AC479 /* Pods-PawnStars-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		B3A5714E7D09C70829BF6D0CF3CA1F45 /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		B3A9CEDF9AED40629548117A627C4962 /* Pods-PawnStars-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PawnStars-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B3B498DA60468CC133A88EB17CD083E4 /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
+		B9D9443D85774A37530EC8555FCA280C /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripBehaviour.swift; path = Sources/PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
+		BABC59D9CD9053F15DA1E86E731FD337 /* PagerTabStripError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripError.swift; path = Sources/PagerTabStripError.swift; sourceTree = "<group>"; };
+		BE1EEBDF94AEE2388770B41CEE556234 /* XLPagerTabStrip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.xcconfig; sourceTree = "<group>"; };
+		CD2489B855D6BE8B54CF11B74D7D6BD7 /* XLPagerTabStrip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-prefix.pch"; sourceTree = "<group>"; };
+		CFF4D88F6C6BBE8CB98AF1B0ECB17776 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		D0BEBD5BC7C5B9DFFAAEDA1794B124AB /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
+		D39466523A8ECAE6831BA055B3FF364C /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
+		D411175D9AB874D8B972594899F01389 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		D52875F8DFF04DA4FA63EDCCCB996FA9 /* Pods-PawnStars-iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PawnStars-iOSTests-dummy.m"; sourceTree = "<group>"; };
+		D8CB23330887E9FF51D99A945C01A697 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		DD9D10868298633F21DCBEED65636B61 /* TextFieldEffects-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TextFieldEffects-Info.plist"; sourceTree = "<group>"; };
+		DDA22836C7E8B6B67A4078EF9F4567C8 /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
+		E12B021D87088D1892088A12E16F1482 /* Pods-PawnStars-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E6541ABF4AA0D85E6F6E9DE0BF26E051 /* Pods-PawnStars-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECD6E3598471227D12255E44B0113526 /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarViewCell.swift; path = Sources/ButtonBarViewCell.swift; sourceTree = "<group>"; };
+		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		ED166C76A28E54E4A25A06AF32D93554 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAD8DFC21C521ECF17EF70DE61BAECC /* Pods-PawnStars-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F150F3662C12F8DDC206CF43252EBC00 /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
+		F278E30EA22233A0251B6B1FFF030B0D /* Pods-PawnStars-iOSUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PawnStars-iOSUITests.modulemap"; sourceTree = "<group>"; };
+		FC90E0D39CA1E1B1220654EF45C1E142 /* Pods-PawnStars-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PawnStars-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		FDFF8644A0C2CC5487A7E21202332C77 /* Pods-PawnStars-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PawnStars-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		217A17AC908AB44216D4C453E19DF1B2 /* Frameworks */ = {
+		040D9E70B1FEA21D23C60490DBB4DD18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F7F5156BC3CCE5BB7674D79A4260ED9 /* Foundation.framework in Frameworks */,
+				6E8A87ABB661F5CB4977A8A1BD9C43DE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD2F34A0FDDA1819A4F4245A462D4E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E274AD58903EC1747DD90FC12BAF853F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9706AC5BEE50FDE27C2AD50C98E8D6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34C1EF444A2DFDE5E32E8A6ED14D982F /* Frameworks */ = {
+		D0C44EBD866926A91178133084D449A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F7537AAAC0FC2110CCCC5024B3A87E /* Foundation.framework in Frameworks */,
+				622C61C9E0E85EA70DF697672AE2FEE7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FF8D2A50F343AFB0E493DC4F1B88E41 /* Frameworks */ = {
+		DA1BF6C0B875C1FF21B97435BC3AF5CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27C2CC63BC2BD756A74895303B41345E /* Foundation.framework in Frameworks */,
+				973AEDD608E375372A542E6F30F1FAD2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E91C5A8DF76EF69CECC97D1EFAB7A18 /* Frameworks */ = {
+		DE76CC3B06006BAF86954358D281E8B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B90F32DAE9E1A064629965BBA8BC83FE /* Foundation.framework in Frameworks */,
+				CA3C730B109D28C8D5BA1974024A881F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EE16779377C7ECF661AB3497F1B2BDF /* Frameworks */ = {
+		E81BFC7156A8A63571B6690BD37F91D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E5C32E60AA9F21B63C81EB7E30778F3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5FD582B1C5DACA9014B79468F8B0FCF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA0C050BB66CF05B12CEA882935BCB0E /* Foundation.framework in Frameworks */,
-				378A53EB4E0AFE59FED7FF48CC84F759 /* UIKit.framework in Frameworks */,
+				ADBC4531F091035C05F00262E9173DCF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06CDD10DE71306278CF89108B3036DFD /* iOS */ = {
+		013E91027CE3469B9EEAF560020191D1 /* DLRadioButton */ = {
 			isa = PBXGroup;
 			children = (
-				2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */,
-				74E404AA6957590324067E330E0EC533 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		12AEB6C4278FFE876FAA61326FF084ED /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DE38674B7BFF59594C0AE07DC9C000F8 /* DLRadioButton */,
-				FAE1406DB7EB99F79FC89A8885AC7741 /* XLPagerTabStrip */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		1C87D4298BDD9F68B75AF64B007A0BFA /* Pods-PawnStars-iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				0A8C438C5833F9C361B86CCB2B8120D3 /* Info.plist */,
-				C4D420857B4B66609E56D69348AA7544 /* Pods-PawnStars-iOSTests.modulemap */,
-				A6E26EC034B7E24372693530C1954698 /* Pods-PawnStars-iOSTests-acknowledgements.markdown */,
-				7DD8B229F8D40B8CF10D8122F772E4F2 /* Pods-PawnStars-iOSTests-acknowledgements.plist */,
-				160CC088CF226C1276284709C9758AD9 /* Pods-PawnStars-iOSTests-dummy.m */,
-				EED8B7D8F520032293BC9C1E6B078723 /* Pods-PawnStars-iOSTests-frameworks.sh */,
-				F316D60134434854B81AFC5A82B00B09 /* Pods-PawnStars-iOSTests-resources.sh */,
-				22ECC3EF7DE63A71D038AAA70F7E7A06 /* Pods-PawnStars-iOSTests-umbrella.h */,
-				4B3751BAAE079885D02C48B869EBFDD1 /* Pods-PawnStars-iOSTests.debug.xcconfig */,
-				6598DBA3F1317D9810A57118CC60295A /* Pods-PawnStars-iOSTests.release.xcconfig */,
-			);
-			name = "Pods-PawnStars-iOSTests";
-			path = "Target Support Files/Pods-PawnStars-iOSTests";
-			sourceTree = "<group>";
-		};
-		1F6A6B2DF69D5D5C7FD555FA9417EC39 /* Pods-PawnStars-iOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				87CF414A1B114E9EB71E0DDDE579330C /* Info.plist */,
-				01A6B1702029293B0876D9ABBC82C328 /* Pods-PawnStars-iOSUITests.modulemap */,
-				53BBC29C11E062D14EF0B06304315E51 /* Pods-PawnStars-iOSUITests-acknowledgements.markdown */,
-				EA0DA6AFC8D280B57E5C5C7E0A5ED8C8 /* Pods-PawnStars-iOSUITests-acknowledgements.plist */,
-				BAD9F35A853C7AD52BEC022E9C53CF87 /* Pods-PawnStars-iOSUITests-dummy.m */,
-				DFAA30C77F0735A85990C572296C856F /* Pods-PawnStars-iOSUITests-frameworks.sh */,
-				B0C80C629A16CDC9773DA32CC63F86FE /* Pods-PawnStars-iOSUITests-resources.sh */,
-				BC51AC62C9099A6194421C1D3BA38961 /* Pods-PawnStars-iOSUITests-umbrella.h */,
-				0436441A9302FE7DB17ED81E2948DC10 /* Pods-PawnStars-iOSUITests.debug.xcconfig */,
-				CE9423239D50FEFD963D539B0AD07DE7 /* Pods-PawnStars-iOSUITests.release.xcconfig */,
-			);
-			name = "Pods-PawnStars-iOSUITests";
-			path = "Target Support Files/Pods-PawnStars-iOSUITests";
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				06CDD10DE71306278CF89108B3036DFD /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		60803790637BBE7D0C5B14E125786644 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				312C473532796C6043EC4C2CC21E050B /* DLRadioButton.modulemap */,
-				31C5C891BE2F0DC0D7EC813BA2ABB566 /* DLRadioButton.xcconfig */,
-				FA69D1702172DD4E23BDD8C1A4F799F4 /* DLRadioButton-dummy.m */,
-				131340783F2A594037A6141B4BA0794C /* DLRadioButton-prefix.pch */,
-				8E28E271E7C69D37F1011543935AF7B7 /* DLRadioButton-umbrella.h */,
-				1D442D4CC1D2FEE61218D6D321B26058 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DLRadioButton";
-			sourceTree = "<group>";
-		};
-		6ACEB40CBF0E609C9705276483C9DB82 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BB6E43E29BBB6F97846674BA600C52AA /* ButtonCell.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		6D2BF36B46FFE5838FD5A90C305F0A4E /* Pods-PawnStars-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CC25AED1329E7A443EC42ED162B7D78B /* Info.plist */,
-				2FBFA63F003358E5932099878F7F68FE /* Pods-PawnStars-iOS.modulemap */,
-				C264D3888D93A4239E2768643368157D /* Pods-PawnStars-iOS-acknowledgements.markdown */,
-				1015FBA2400797609C15D7FC8BA98F85 /* Pods-PawnStars-iOS-acknowledgements.plist */,
-				D254C92C8BB8873393943082CA665F10 /* Pods-PawnStars-iOS-dummy.m */,
-				9EFFEB9369CD7066EAD47C5897E8703D /* Pods-PawnStars-iOS-frameworks.sh */,
-				407064CF423736DCD326C630F27AE7C0 /* Pods-PawnStars-iOS-resources.sh */,
-				75BB9FFA68BB85EA9320DC8C5CF5633F /* Pods-PawnStars-iOS-umbrella.h */,
-				A2B2E29C47CAC6FBFC156467FE954B0B /* Pods-PawnStars-iOS.debug.xcconfig */,
-				DE3DC0F6BDC4C79E0B975B8C15B53ED6 /* Pods-PawnStars-iOS.release.xcconfig */,
-			);
-			name = "Pods-PawnStars-iOS";
-			path = "Target Support Files/Pods-PawnStars-iOS";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				12AEB6C4278FFE876FAA61326FF084ED /* Pods */,
-				9629C28D9790C90ADA577D927523BF69 /* Products */,
-				FA05C8D4B9B10798306F957DB7601A76 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		9629C28D9790C90ADA577D927523BF69 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CF7531292B1A94E1E7FB69115421CB9B /* DLRadioButton.framework */,
-				F0995DD1C36EA6770E45420D9E8A5F3B /* Pods_PawnStars_iOS.framework */,
-				56D8282C0F85B3C189AF35054580179A /* Pods_PawnStars_iOSTests.framework */,
-				8BAD03FB275B812BD28D1A936D4A4A0C /* Pods_PawnStars_iOSUITests.framework */,
-				3E43EBFF15AF893BBF98BDA3B499A389 /* XLPagerTabStrip.bundle */,
-				D8D4AFE75AEA741B48D34325874B764E /* XLPagerTabStrip.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B6736C1601AEA195F968861A56C7ED32 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8D811732F36422351E6E7F59538A4D8B /* Info.plist */,
-				DBC4379E4483F7BDFFC1D85C69F2026E /* ResourceBundle-XLPagerTabStrip-Info.plist */,
-				FEB87A16F42C1CFCF12D9ABC3DAE7144 /* XLPagerTabStrip.modulemap */,
-				34C9E6463F388013EED8EF2B8EF4040C /* XLPagerTabStrip.xcconfig */,
-				19923FA95B2E08B171CA529794861AB4 /* XLPagerTabStrip-dummy.m */,
-				3922D7615B7126B4246F3E623B403C3A /* XLPagerTabStrip-prefix.pch */,
-				6424187B7384953640C2F83C3903ED82 /* XLPagerTabStrip-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/XLPagerTabStrip";
-			sourceTree = "<group>";
-		};
-		DE38674B7BFF59594C0AE07DC9C000F8 /* DLRadioButton */ = {
-			isa = PBXGroup;
-			children = (
-				486E7DB2F3FF39D13C9A63BBC3C7123C /* DLRadioButton.h */,
-				6F2ACD24746D415032EFEC1112A76D07 /* DLRadioButton.m */,
-				60803790637BBE7D0C5B14E125786644 /* Support Files */,
+				F150F3662C12F8DDC206CF43252EBC00 /* DLRadioButton.h */,
+				7D091BD79A4A3D79FF3080F026F20496 /* DLRadioButton.m */,
+				AE2D6981843C135A57E340AA79ADA260 /* Support Files */,
 			);
 			name = DLRadioButton;
 			path = DLRadioButton;
 			sourceTree = "<group>";
 		};
-		FA05C8D4B9B10798306F957DB7601A76 /* Targets Support Files */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6D2BF36B46FFE5838FD5A90C305F0A4E /* Pods-PawnStars-iOS */,
-				1C87D4298BDD9F68B75AF64B007A0BFA /* Pods-PawnStars-iOSTests */,
-				1F6A6B2DF69D5D5C7FD555FA9417EC39 /* Pods-PawnStars-iOSUITests */,
+				E169A450ED27AC725DF52953F66D11E0 /* iOS */,
 			);
-			name = "Targets Support Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FAE1406DB7EB99F79FC89A8885AC7741 /* XLPagerTabStrip */ = {
+		1C838C6FC3A32CC2F9FF5A5EFB370E1A /* XLPagerTabStrip */ = {
 			isa = PBXGroup;
 			children = (
-				E1E0EF1E80CCA15DEDDEC32C75304085 /* BarPagerTabStripViewController.swift */,
-				2B138FCD2146B057A058A2B95F47B7AF /* BarView.swift */,
-				B2641C0ED10635F7D0379C7DA9869CF0 /* BaseButtonBarPagerTabStripViewController.swift */,
-				9CD72305A7B344B4449DE49CB8FB38FF /* ButtonBarPagerTabStripViewController.swift */,
-				F7A8142F434850322F64B2466E00C22A /* ButtonBarView.swift */,
-				DD433BF7B68F58FA9C01B09494F7B043 /* ButtonBarViewCell.swift */,
-				55A62FCED0A68E4025749AB5076373CB /* FXPageControl.h */,
-				EFFAD0483D1C45B956E2D5DE954F1C11 /* FXPageControl.m */,
-				D892D310330E5148C2A2DD13A3FB19D0 /* IndicatorInfo.swift */,
-				957D403AD32C9DB3D2D2AD3BAE3B1AD8 /* PagerTabStripBehaviour.swift */,
-				7C3DA17FF4D26914D285301F1FD0B5E2 /* PagerTabStripError.swift */,
-				B1D61DDFD4D705678C31465DFB180D66 /* PagerTabStripViewController.swift */,
-				80139180276E8157DA399821C148745A /* SegmentedPagerTabStripViewController.swift */,
-				7E0CE4AFDF1CE69F8A3A4C2AEFE3EE23 /* SwipeDirection.swift */,
-				E82E7AFFD47E122CA17B99CB0FA74A9C /* TwitterPagerTabStripViewController.swift */,
-				6ACEB40CBF0E609C9705276483C9DB82 /* Resources */,
-				B6736C1601AEA195F968861A56C7ED32 /* Support Files */,
+				1F14DD06A6AB1265CF3A66C0CBFF990C /* BarPagerTabStripViewController.swift */,
+				17C3D618A89588916C2D5CF7E1A77999 /* BarView.swift */,
+				B3A5714E7D09C70829BF6D0CF3CA1F45 /* BaseButtonBarPagerTabStripViewController.swift */,
+				A40E7E563771F36F0F02EA2986492576 /* ButtonBarPagerTabStripViewController.swift */,
+				7A6B853179F716111CB66AB5951F2C23 /* ButtonBarView.swift */,
+				ECD6E3598471227D12255E44B0113526 /* ButtonBarViewCell.swift */,
+				D0BEBD5BC7C5B9DFFAAEDA1794B124AB /* FXPageControl.h */,
+				38D2DD1A79C84B8BFBEB750FF13E0B86 /* FXPageControl.m */,
+				B3B498DA60468CC133A88EB17CD083E4 /* IndicatorInfo.swift */,
+				B9D9443D85774A37530EC8555FCA280C /* PagerTabStripBehaviour.swift */,
+				BABC59D9CD9053F15DA1E86E731FD337 /* PagerTabStripError.swift */,
+				DDA22836C7E8B6B67A4078EF9F4567C8 /* PagerTabStripViewController.swift */,
+				07139E57DEDFA71C0B8ABDD34BEC65BB /* SegmentedPagerTabStripViewController.swift */,
+				103CEDD2D3609C63048D34DC3A3532AE /* SwipeDirection.swift */,
+				58EE5B2531B8C934848DC7D4FC070C19 /* TwitterPagerTabStripViewController.swift */,
+				9540AEC8B2623329E9F41EC1790D07B0 /* Resources */,
+				41A998D04237E4AD5FC265F5F570BC15 /* Support Files */,
 			);
 			name = XLPagerTabStrip;
 			path = XLPagerTabStrip;
 			sourceTree = "<group>";
 		};
+		22341A99DD2715C1612B293CE3A5D95A /* Pods-PawnStars-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				547CB7D2883B5C18E1AB7A6D0C116B60 /* Pods-PawnStars-iOS.modulemap */,
+				B3A9CEDF9AED40629548117A627C4962 /* Pods-PawnStars-iOS-acknowledgements.markdown */,
+				FC90E0D39CA1E1B1220654EF45C1E142 /* Pods-PawnStars-iOS-acknowledgements.plist */,
+				956D9FFC8069CD4D57AACD4DC87783C5 /* Pods-PawnStars-iOS-dummy.m */,
+				4340BEC5906055B2D0021B72BD7B1B6B /* Pods-PawnStars-iOS-frameworks.sh */,
+				1EAF7989F203D8994D667C011050E8C0 /* Pods-PawnStars-iOS-Info.plist */,
+				A97085476477680830B3ADAB5B4FD51F /* Pods-PawnStars-iOS-umbrella.h */,
+				E12B021D87088D1892088A12E16F1482 /* Pods-PawnStars-iOS.debug.xcconfig */,
+				ACCA40D868CFEA8DA6142AAE3B0AC479 /* Pods-PawnStars-iOS.release.xcconfig */,
+			);
+			name = "Pods-PawnStars-iOS";
+			path = "Target Support Files/Pods-PawnStars-iOS";
+			sourceTree = "<group>";
+		};
+		3D8C65522D570F38949931741C7A8896 /* Pods-PawnStars-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F278E30EA22233A0251B6B1FFF030B0D /* Pods-PawnStars-iOSUITests.modulemap */,
+				8D30DCF513289616ACB904626195D2FE /* Pods-PawnStars-iOSUITests-acknowledgements.markdown */,
+				90B0C612F99D13671BBDE2F2A74A6C50 /* Pods-PawnStars-iOSUITests-acknowledgements.plist */,
+				79F934BB54292FF64E1614633F79FF3E /* Pods-PawnStars-iOSUITests-dummy.m */,
+				0555DA53548E7A7617E246B2B551D3C9 /* Pods-PawnStars-iOSUITests-Info.plist */,
+				A9F92EBA800C9E26718C35BBA7674C0E /* Pods-PawnStars-iOSUITests-umbrella.h */,
+				FDFF8644A0C2CC5487A7E21202332C77 /* Pods-PawnStars-iOSUITests.debug.xcconfig */,
+				3F8B52046123C3D54900E2C6911B0FE1 /* Pods-PawnStars-iOSUITests.release.xcconfig */,
+			);
+			name = "Pods-PawnStars-iOSUITests";
+			path = "Target Support Files/Pods-PawnStars-iOSUITests";
+			sourceTree = "<group>";
+		};
+		41A998D04237E4AD5FC265F5F570BC15 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BEAA3DC1A3F06B131CF7574F1C04366 /* ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist */,
+				12CBCE1E10B1EF571148A8B2C37B247D /* XLPagerTabStrip.modulemap */,
+				BE1EEBDF94AEE2388770B41CEE556234 /* XLPagerTabStrip.xcconfig */,
+				9EE9EF8D436AFD810CD8D369D89E5048 /* XLPagerTabStrip-dummy.m */,
+				3A5895446F5FBE96E1EA59FDC72B9759 /* XLPagerTabStrip-Info.plist */,
+				CD2489B855D6BE8B54CF11B74D7D6BD7 /* XLPagerTabStrip-prefix.pch */,
+				6A2C6BD81364833051ACFFF1719923CC /* XLPagerTabStrip-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XLPagerTabStrip";
+			sourceTree = "<group>";
+		};
+		49C9F2C6B9D59F1F0B3061745501E202 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				22341A99DD2715C1612B293CE3A5D95A /* Pods-PawnStars-iOS */,
+				D736A259EFA44419237FFA662E3BD94B /* Pods-PawnStars-iOSTests */,
+				3D8C65522D570F38949931741C7A8896 /* Pods-PawnStars-iOSUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4B8F096C5FD7E6F31854441E3EAB9CBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				013E91027CE3469B9EEAF560020191D1 /* DLRadioButton */,
+				C2A50F0A691E5B83B2EDD333B67FCE3F /* TextFieldEffects */,
+				1C838C6FC3A32CC2F9FF5A5EFB370E1A /* XLPagerTabStrip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A8D5DB14548BBC78174EBFDA5459723 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F6E583D166502ECC7BF988E95E41517 /* DLRadioButton.framework */,
+				892AFF5EEFDDCAA344837C285F956032 /* Pods_PawnStars_iOS.framework */,
+				5DF24EC285BF26C10FCD74135A7EAF22 /* Pods_PawnStars_iOSTests.framework */,
+				6D55BB971E33277AA29D2C2C3AADB4FF /* Pods_PawnStars_iOSUITests.framework */,
+				ED166C76A28E54E4A25A06AF32D93554 /* TextFieldEffects.framework */,
+				066A66A86FDE0A3C6AA05D3ACC0D7F02 /* XLPagerTabStrip.bundle */,
+				3187A46B6A848CFA37B518D156B9D822 /* XLPagerTabStrip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DF26BC1852DD6A395397E2D0D152CE9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8CB23330887E9FF51D99A945C01A697 /* TextFieldEffects.modulemap */,
+				4A80A14CD1B3A36332F0E1B31FCEA8E3 /* TextFieldEffects.xcconfig */,
+				1F9882232D81CEA4F9C2D4856CEE0D72 /* TextFieldEffects-dummy.m */,
+				DD9D10868298633F21DCBEED65636B61 /* TextFieldEffects-Info.plist */,
+				1DB21AFA352A4BF18B471DBC9AADE8BC /* TextFieldEffects-prefix.pch */,
+				0A6C4A7657CD8CC2EA4169BF7FB43D25 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		9540AEC8B2623329E9F41EC1790D07B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02E24B09F039965383CF0F03140E7435 /* ButtonCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AE2D6981843C135A57E340AA79ADA260 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				964FC3913FA6C14C628295B38F8A8C94 /* DLRadioButton.modulemap */,
+				246284C340D7FA407B18097C1B4E8D34 /* DLRadioButton.xcconfig */,
+				458B32C28B86BAC1C7C6368B2D7998A1 /* DLRadioButton-dummy.m */,
+				66379212898F273F1F9FECADEA80A491 /* DLRadioButton-Info.plist */,
+				D39466523A8ECAE6831BA055B3FF364C /* DLRadioButton-prefix.pch */,
+				AA89E4078C42C69661E4700308BBA9E2 /* DLRadioButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DLRadioButton";
+			sourceTree = "<group>";
+		};
+		C2A50F0A691E5B83B2EDD333B67FCE3F /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				41F51C6CFB102E4D5381BFF80A09686C /* AkiraTextField.swift */,
+				43245A187FE2E3AD3AD24E88C934B9C7 /* HoshiTextField.swift */,
+				1E890E945A2C355F7F99F2F570B5A086 /* IsaoTextField.swift */,
+				D411175D9AB874D8B972594899F01389 /* JiroTextField.swift */,
+				CFF4D88F6C6BBE8CB98AF1B0ECB17776 /* KaedeTextField.swift */,
+				2A6FA10A0B0A306BBF1880D984B8039B /* MadokaTextField.swift */,
+				621C2C2ED5C87352731F6548D986F2CB /* MinoruTextField.swift */,
+				20F19F10927708598DB62C4BB1B911B2 /* TextFieldEffects.swift */,
+				6E027A834BA2B518416E9DC526C87595 /* YokoTextField.swift */,
+				52968ACD1D5CB557E91B7371DF65A67A /* YoshikoTextField.swift */,
+				6DF26BC1852DD6A395397E2D0D152CE9 /* Support Files */,
+			);
+			name = TextFieldEffects;
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				4B8F096C5FD7E6F31854441E3EAB9CBA /* Pods */,
+				5A8D5DB14548BBC78174EBFDA5459723 /* Products */,
+				49C9F2C6B9D59F1F0B3061745501E202 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D736A259EFA44419237FFA662E3BD94B /* Pods-PawnStars-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				90AF3E613EA0D2C92C894A018D169A90 /* Pods-PawnStars-iOSTests.modulemap */,
+				8B2AB1F012E583C36E738DF746578DA1 /* Pods-PawnStars-iOSTests-acknowledgements.markdown */,
+				8716281CD679985281CD130BC24376BB /* Pods-PawnStars-iOSTests-acknowledgements.plist */,
+				D52875F8DFF04DA4FA63EDCCCB996FA9 /* Pods-PawnStars-iOSTests-dummy.m */,
+				534AAC8A40906EC038983F7AB53764E4 /* Pods-PawnStars-iOSTests-Info.plist */,
+				A682A2EA54EB7868A9B2D95DBB1E6860 /* Pods-PawnStars-iOSTests-umbrella.h */,
+				E6541ABF4AA0D85E6F6E9DE0BF26E051 /* Pods-PawnStars-iOSTests.debug.xcconfig */,
+				EFAD8DFC21C521ECF17EF70DE61BAECC /* Pods-PawnStars-iOSTests.release.xcconfig */,
+			);
+			name = "Pods-PawnStars-iOSTests";
+			path = "Target Support Files/Pods-PawnStars-iOSTests";
+			sourceTree = "<group>";
+		};
+		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */,
+				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		985A4BED7F94B92545C39356DD9F26E8 /* Headers */ = {
+		0097544D49F62DCDCF1F3FFC22BA2D6F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74ADD2C70A77476964EF9DFCC118FB0F /* FXPageControl.h in Headers */,
-				A25C111665282790518A38818BA23D56 /* XLPagerTabStrip-umbrella.h in Headers */,
+				9527A73CAB0E49952EE1A10A0CEDF253 /* TextFieldEffects-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A94D3C51B432EE08AC85ABF22A2EA23B /* Headers */ = {
+		4C86FBB97EA7CE815E759D1A63D68D68 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBAB1C6BC12F3E70B6F0A38E2B64BDC4 /* Pods-PawnStars-iOSUITests-umbrella.h in Headers */,
+				1249E36918E96989B948F6F181B5A1DE /* FXPageControl.h in Headers */,
+				3A20BD2E4C606104258D654FBEA9DD6B /* XLPagerTabStrip-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD699DB84523597765269A15297F635C /* Headers */ = {
+		7C526375FC55039BEF880006BE12A42B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				879CC1D5857BF3A07C276CDAB6DE48C8 /* Pods-PawnStars-iOS-umbrella.h in Headers */,
+				2EA4E998402C211468CF0DBA2FF5D9E9 /* Pods-PawnStars-iOSTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFC7FF70A1CC1D10CC0AE4EAB087CD60 /* Headers */ = {
+		8B07AA8E9B17041274718AE94C34D83D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4A98BAE85517A321F7765B03BB69270 /* DLRadioButton-umbrella.h in Headers */,
-				F2F89523913176CA1D33F7F2642BD044 /* DLRadioButton.h in Headers */,
+				55B2CCDC53F0969011D2BA234E56B7E9 /* DLRadioButton-umbrella.h in Headers */,
+				0DDDE4B88D870D6225BAB7EECD72B490 /* DLRadioButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC9801CE756338D909B5D45100417A8B /* Headers */ = {
+		9252A7A50C353166787ED0DB10B923CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2227B5308E2890BE10C3D403A381D7D5 /* Pods-PawnStars-iOSTests-umbrella.h in Headers */,
+				F702A41246053D427C239ED309636551 /* Pods-PawnStars-iOSUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F1B90F843064A005584072388DA9F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8362796A29DEAEE4828F3ADFA9111930 /* Pods-PawnStars-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2167F32FCBD96C6161714849A9105BE9 /* DLRadioButton */ = {
+		107B8F55FF11A978C85D01C036C62712 /* Pods-PawnStars-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDA0454FC69BAC3DDE25C4AC613BB062 /* Build configuration list for PBXNativeTarget "DLRadioButton" */;
+			buildConfigurationList = 60A47BC2CFBACE8543CDD7E19AAA386D /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOSTests" */;
 			buildPhases = (
-				EFC7FF70A1CC1D10CC0AE4EAB087CD60 /* Headers */,
-				669F45AF1A156C9B4BD8F913B49EBBD7 /* Sources */,
-				7E91C5A8DF76EF69CECC97D1EFAB7A18 /* Frameworks */,
-				2023240B7E7B4BAACA50B037A659DA21 /* Resources */,
+				7C526375FC55039BEF880006BE12A42B /* Headers */,
+				ED6B64ADA8BAE29219795DF48F7B61EF /* Sources */,
+				DA1BF6C0B875C1FF21B97435BC3AF5CF /* Frameworks */,
+				F1C6078E984A8ECDBCA8C2C6E3975BB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1F122B8EF178E8996D43006D1464015 /* PBXTargetDependency */,
+			);
+			name = "Pods-PawnStars-iOSTests";
+			productName = "Pods-PawnStars-iOSTests";
+			productReference = 5DF24EC285BF26C10FCD74135A7EAF22 /* Pods_PawnStars_iOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1953665862BB086D5BF8CCC5F712FF63 /* XLPagerTabStrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5094377F68016A2A116DA8E7F028FE41 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */;
+			buildPhases = (
+				4C86FBB97EA7CE815E759D1A63D68D68 /* Headers */,
+				4A8EDDCE6B0D9E640AD8944798204889 /* Sources */,
+				040D9E70B1FEA21D23C60490DBB4DD18 /* Frameworks */,
+				43430B4A6BCBEFC40A03A50CDB1A9258 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77F6C958E487C8E767B1936F4F80DA12 /* PBXTargetDependency */,
+			);
+			name = XLPagerTabStrip;
+			productName = XLPagerTabStrip;
+			productReference = 3187A46B6A848CFA37B518D156B9D822 /* XLPagerTabStrip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		19B60476D2936ACD1A0AB661490967F4 /* Pods-PawnStars-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C66F4DF5540D081C2657A5A3BEE50FAE /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOS" */;
+			buildPhases = (
+				B7F1B90F843064A005584072388DA9F0 /* Headers */,
+				A577092C2F39B7E9FD9061BF03C095C1 /* Sources */,
+				E81BFC7156A8A63571B6690BD37F91D2 /* Frameworks */,
+				20BD5A23650A90E5CA3E59E76F7ECAD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E14CEA9519611F194DAC4E9D9B9DDF7D /* PBXTargetDependency */,
+				650304356A586FE2DE71FC2A14994076 /* PBXTargetDependency */,
+				40F965912B4F99D9522099389CD457F5 /* PBXTargetDependency */,
+			);
+			name = "Pods-PawnStars-iOS";
+			productName = "Pods-PawnStars-iOS";
+			productReference = 892AFF5EEFDDCAA344837C285F956032 /* Pods_PawnStars_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1E419495721AF0F9C34AB43850A6EB44 /* Pods-PawnStars-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C09E57CC51FDA25A2324365A7F064CF /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOSUITests" */;
+			buildPhases = (
+				9252A7A50C353166787ED0DB10B923CD /* Headers */,
+				DE7FAD787E187E9A30E43EEC028B531B /* Sources */,
+				DE76CC3B06006BAF86954358D281E8B4 /* Frameworks */,
+				6883929048772BF2E1EED21CF9B91671 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A23AA59FEF96257B0EAB833080597F5 /* PBXTargetDependency */,
+			);
+			name = "Pods-PawnStars-iOSUITests";
+			productName = "Pods-PawnStars-iOSUITests";
+			productReference = 6D55BB971E33277AA29D2C2C3AADB4FF /* Pods_PawnStars_iOSUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46BD0675E3AE6FB8C284CB79F1013052 /* DLRadioButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ECCCD994A7BA390D8D0E83D7A01751D /* Build configuration list for PBXNativeTarget "DLRadioButton" */;
+			buildPhases = (
+				8B07AA8E9B17041274718AE94C34D83D /* Headers */,
+				91AFD37EEF3A1EE2D30A7AF1ACE017ED /* Sources */,
+				ABD2F34A0FDDA1819A4F4245A462D4E6 /* Frameworks */,
+				21DB0C0CA3815E9F41D21BAA21744854 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -457,93 +613,16 @@
 			);
 			name = DLRadioButton;
 			productName = DLRadioButton;
-			productReference = CF7531292B1A94E1E7FB69115421CB9B /* DLRadioButton.framework */;
+			productReference = 7F6E583D166502ECC7BF988E95E41517 /* DLRadioButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5657810CAC076FF897057728A2441C6D /* XLPagerTabStrip */ = {
+		A78543CA02950A5E257A51A3C1C27BA3 /* XLPagerTabStrip-XLPagerTabStrip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F21A1CA0CEE9F18C7AE34005546726A /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */;
+			buildConfigurationList = 6EDDDA27DF400D5D294D672AECDE8E51 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */;
 			buildPhases = (
-				985A4BED7F94B92545C39356DD9F26E8 /* Headers */,
-				AC318C4C61D9E781C895F29880264817 /* Sources */,
-				E5FD582B1C5DACA9014B79468F8B0FCF /* Frameworks */,
-				A19635B220F62A7DEDE520BA19A54D98 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				97D011A7DB8BA8710E7322376206FE88 /* PBXTargetDependency */,
-			);
-			name = XLPagerTabStrip;
-			productName = XLPagerTabStrip;
-			productReference = D8D4AFE75AEA741B48D34325874B764E /* XLPagerTabStrip.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8DBF69394966FD5A749FFD5EE8CB71B4 /* Pods-PawnStars-iOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1E209A83E7787908B653D0A7D4BDB896 /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOSUITests" */;
-			buildPhases = (
-				A94D3C51B432EE08AC85ABF22A2EA23B /* Headers */,
-				30A7D905573B827691B9BE6CDCED495A /* Sources */,
-				5FF8D2A50F343AFB0E493DC4F1B88E41 /* Frameworks */,
-				1AFE1E175040A7F2549EE27B5318B655 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EEDF79CFD3D784AD6AA69CD4C107DBD7 /* PBXTargetDependency */,
-			);
-			name = "Pods-PawnStars-iOSUITests";
-			productName = "Pods-PawnStars-iOSUITests";
-			productReference = 8BAD03FB275B812BD28D1A936D4A4A0C /* Pods_PawnStars_iOSUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D15B6529B0E49DF8F823C4C553F02C86 /* Pods-PawnStars-iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6964DCB033DF902FA50CA50AA8C759B8 /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOSTests" */;
-			buildPhases = (
-				FC9801CE756338D909B5D45100417A8B /* Headers */,
-				83506AC2B2F809826F5563F0F75B58D8 /* Sources */,
-				34C1EF444A2DFDE5E32E8A6ED14D982F /* Frameworks */,
-				70BBB71B3FF522BA6DED97A76870E182 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E13F9339BA22C69E9B3611B18D5C5350 /* PBXTargetDependency */,
-			);
-			name = "Pods-PawnStars-iOSTests";
-			productName = "Pods-PawnStars-iOSTests";
-			productReference = 56D8282C0F85B3C189AF35054580179A /* Pods_PawnStars_iOSTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DF624A3551E70B9AB97422EBA8A32AF8 /* Pods-PawnStars-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 207DA31CE3DB63A924E3653C0062C8A7 /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOS" */;
-			buildPhases = (
-				CD699DB84523597765269A15297F635C /* Headers */,
-				06507A71C1F4BD36BDA59FF6E9C32843 /* Sources */,
-				9EE16779377C7ECF661AB3497F1B2BDF /* Frameworks */,
-				283FD8F68112ADB72E0954DC4A700042 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5CDDCF11395D470D054F8EA7F68F5284 /* PBXTargetDependency */,
-				98C47E12362574C77DC791424C8ADEC8 /* PBXTargetDependency */,
-			);
-			name = "Pods-PawnStars-iOS";
-			productName = "Pods-PawnStars-iOS";
-			productReference = F0995DD1C36EA6770E45420D9E8A5F3B /* Pods_PawnStars_iOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E9A8908996C8047C1F728568B68E5FAA /* XLPagerTabStrip-XLPagerTabStrip */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9B6B5C11AD74C5014AA308A961D624B /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */;
-			buildPhases = (
-				827F18475F877390F3DECD0FDB9AD4CB /* Sources */,
-				217A17AC908AB44216D4C453E19DF1B2 /* Frameworks */,
-				F7C8BD6804323CC88D068936CA5F9735 /* Resources */,
+				654D87C19A7EC2CB4347082AEBF4039B /* Sources */,
+				C9706AC5BEE50FDE27C2AD50C98E8D6B /* Frameworks */,
+				092B8A9DB68C659CC6F9CE328B49FE4B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -551,187 +630,571 @@
 			);
 			name = "XLPagerTabStrip-XLPagerTabStrip";
 			productName = "XLPagerTabStrip-XLPagerTabStrip";
-			productReference = 3E43EBFF15AF893BBF98BDA3B499A389 /* XLPagerTabStrip.bundle */;
+			productReference = 066A66A86FDE0A3C6AA05D3ACC0D7F02 /* XLPagerTabStrip.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		E172A660A45D74E416F471B91A2139D0 /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CC43EB9FA650DD42775A36B9318242B /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				0097544D49F62DCDCF1F3FFC22BA2D6F /* Headers */,
+				88F0724B18C6CC41F7E46DDDD37D0C65 /* Sources */,
+				D0C44EBD866926A91178133084D449A1 /* Frameworks */,
+				3E98859337A78ECEBD9F898D7E9ABED6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = ED166C76A28E54E4A25A06AF32D93554 /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9629C28D9790C90ADA577D927523BF69 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5A8D5DB14548BBC78174EBFDA5459723 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2167F32FCBD96C6161714849A9105BE9 /* DLRadioButton */,
-				DF624A3551E70B9AB97422EBA8A32AF8 /* Pods-PawnStars-iOS */,
-				D15B6529B0E49DF8F823C4C553F02C86 /* Pods-PawnStars-iOSTests */,
-				8DBF69394966FD5A749FFD5EE8CB71B4 /* Pods-PawnStars-iOSUITests */,
-				5657810CAC076FF897057728A2441C6D /* XLPagerTabStrip */,
-				E9A8908996C8047C1F728568B68E5FAA /* XLPagerTabStrip-XLPagerTabStrip */,
+				46BD0675E3AE6FB8C284CB79F1013052 /* DLRadioButton */,
+				19B60476D2936ACD1A0AB661490967F4 /* Pods-PawnStars-iOS */,
+				107B8F55FF11A978C85D01C036C62712 /* Pods-PawnStars-iOSTests */,
+				1E419495721AF0F9C34AB43850A6EB44 /* Pods-PawnStars-iOSUITests */,
+				E172A660A45D74E416F471B91A2139D0 /* TextFieldEffects */,
+				1953665862BB086D5BF8CCC5F712FF63 /* XLPagerTabStrip */,
+				A78543CA02950A5E257A51A3C1C27BA3 /* XLPagerTabStrip-XLPagerTabStrip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1AFE1E175040A7F2549EE27B5318B655 /* Resources */ = {
+		092B8A9DB68C659CC6F9CE328B49FE4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF66BDFC27B107C312A22913DD70758A /* ButtonCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20BD5A23650A90E5CA3E59E76F7ECAD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2023240B7E7B4BAACA50B037A659DA21 /* Resources */ = {
+		21DB0C0CA3815E9F41D21BAA21744854 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		283FD8F68112ADB72E0954DC4A700042 /* Resources */ = {
+		3E98859337A78ECEBD9F898D7E9ABED6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70BBB71B3FF522BA6DED97A76870E182 /* Resources */ = {
+		43430B4A6BCBEFC40A03A50CDB1A9258 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045F8EE7D31B376C4CED3C2D46ABB53D /* XLPagerTabStrip.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6883929048772BF2E1EED21CF9B91671 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A19635B220F62A7DEDE520BA19A54D98 /* Resources */ = {
+		F1C6078E984A8ECDBCA8C2C6E3975BB4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				415EA6623596A45C5C259283602CCDC4 /* XLPagerTabStrip.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7C8BD6804323CC88D068936CA5F9735 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				973B5430AF5EB670027B153DB571C019 /* ButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06507A71C1F4BD36BDA59FF6E9C32843 /* Sources */ = {
+		4A8EDDCE6B0D9E640AD8944798204889 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF12C33A5E3CF3EA64F1944A503BACD /* Pods-PawnStars-iOS-dummy.m in Sources */,
+				BEDB903B5D2684C7D01607316DCF257C /* BarPagerTabStripViewController.swift in Sources */,
+				4FEDC2B7EAEC660FE9915F91AC24B306 /* BarView.swift in Sources */,
+				40D75F572B4F7C8950D5F5CDCA2B58BE /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
+				AA02CE45C241A1BBE2F462FE7C1D90B5 /* ButtonBarPagerTabStripViewController.swift in Sources */,
+				D7CD756C90E9D0AA89F937EC1CFDF039 /* ButtonBarView.swift in Sources */,
+				BFB66FF32BF1F7F426ADA07D0F90C58A /* ButtonBarViewCell.swift in Sources */,
+				19FA1CE2417CBD2CC7411A4E9CAD415D /* FXPageControl.m in Sources */,
+				F59981EB4976459299EBEA472E8DCDAE /* IndicatorInfo.swift in Sources */,
+				0FA360909ABC6427CA6957F2EFE3F7ED /* PagerTabStripBehaviour.swift in Sources */,
+				435D0F52FAB2591A1C46091282933B58 /* PagerTabStripError.swift in Sources */,
+				66228900A600828EC1C6931A8B4398E1 /* PagerTabStripViewController.swift in Sources */,
+				524DAE89EFE1F972156AA3AB1B466CF1 /* SegmentedPagerTabStripViewController.swift in Sources */,
+				678936BC9AE59613D3B25B4225F4E7AF /* SwipeDirection.swift in Sources */,
+				00B1163505A067B0D80938150EE3FFBC /* TwitterPagerTabStripViewController.swift in Sources */,
+				25AD0B485352FAF2DD1D90DD33D9E3AB /* XLPagerTabStrip-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30A7D905573B827691B9BE6CDCED495A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				914B968684FD6F461859129B6D1A4EE1 /* Pods-PawnStars-iOSUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		669F45AF1A156C9B4BD8F913B49EBBD7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF49B9241B6680B06EA3C1C7787639D3 /* DLRadioButton-dummy.m in Sources */,
-				DA6A7A5C8DAE5BB7F62FDE3BF9DEB2E1 /* DLRadioButton.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		827F18475F877390F3DECD0FDB9AD4CB /* Sources */ = {
+		654D87C19A7EC2CB4347082AEBF4039B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83506AC2B2F809826F5563F0F75B58D8 /* Sources */ = {
+		88F0724B18C6CC41F7E46DDDD37D0C65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E7887F80D61BE00FE2167ABA344B036 /* Pods-PawnStars-iOSTests-dummy.m in Sources */,
+				C2EA15F24F4976CE75222454B33FE624 /* AkiraTextField.swift in Sources */,
+				8EDB70BEF4BB2C3B8B22A928ADE970C9 /* HoshiTextField.swift in Sources */,
+				9DB67F6457ED67856FD2062A6A9A92AC /* IsaoTextField.swift in Sources */,
+				A3DF0551B3C49264A0C7D7D6C7664589 /* JiroTextField.swift in Sources */,
+				5A76EE1DE6DC3BEF4AF4C84B772E51DC /* KaedeTextField.swift in Sources */,
+				1815F4479433D00A601EBA8FC213290F /* MadokaTextField.swift in Sources */,
+				0A2C2B7BA385D4846A1533BE89071812 /* MinoruTextField.swift in Sources */,
+				4604E78CFBCE589C3C2DEC07F80BDF4F /* TextFieldEffects-dummy.m in Sources */,
+				E8E1EE03432A78C8D27A2A1E751D3715 /* TextFieldEffects.swift in Sources */,
+				2F03E555D65EDA98DBD268B267923EED /* YokoTextField.swift in Sources */,
+				8E7B9DE2A6262C048390C0F9B265AD16 /* YoshikoTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC318C4C61D9E781C895F29880264817 /* Sources */ = {
+		91AFD37EEF3A1EE2D30A7AF1ACE017ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				804D4C1AE342F588EEB01BCC605692F7 /* BarPagerTabStripViewController.swift in Sources */,
-				36745431D9F2388EBF041D5BBF15FFDA /* BarView.swift in Sources */,
-				BD0776CFD965606683AD4543C7457790 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
-				0F75D508DADC6D440441FCECCBC016E0 /* ButtonBarPagerTabStripViewController.swift in Sources */,
-				A3918D0CD2D796CEEF3943560AB83F35 /* ButtonBarView.swift in Sources */,
-				6C0898F904A12D41ACBF08337CF5193C /* ButtonBarViewCell.swift in Sources */,
-				23EE0A25DF9883A4A095A43BB0358F2E /* FXPageControl.m in Sources */,
-				BFC2013271BD9082F42871149F56D93A /* IndicatorInfo.swift in Sources */,
-				11CD337D8B32CB6B42CF4116EDE97696 /* PagerTabStripBehaviour.swift in Sources */,
-				3C0711E00387F47D3EEA2056BEFB7600 /* PagerTabStripError.swift in Sources */,
-				6E6FA29FA306F644339387892C9321A6 /* PagerTabStripViewController.swift in Sources */,
-				1911AC57DDA1207FDEBFE224EF5A4A37 /* SegmentedPagerTabStripViewController.swift in Sources */,
-				E3438FAEB12045293B7587072C7818A2 /* SwipeDirection.swift in Sources */,
-				81EE439C57BED547608F24EF09E948FD /* TwitterPagerTabStripViewController.swift in Sources */,
-				C04910E4636ACAB2C7E62BE924DF4D9B /* XLPagerTabStrip-dummy.m in Sources */,
+				FED928FEC82C7BF9E9EFC1CECE84E897 /* DLRadioButton-dummy.m in Sources */,
+				BDBCFC743FB9943826F18A175C83DF08 /* DLRadioButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A577092C2F39B7E9FD9061BF03C095C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE81380A719F4D52AB7A1CC6B71D069 /* Pods-PawnStars-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7FAD787E187E9A30E43EEC028B531B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF43791F269E51F1160A38C65B10B9B8 /* Pods-PawnStars-iOSUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6B64ADA8BAE29219795DF48F7B61EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4576BCEB7B28D598551B27B195039DD5 /* Pods-PawnStars-iOSTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5CDDCF11395D470D054F8EA7F68F5284 /* PBXTargetDependency */ = {
+		0A23AA59FEF96257B0EAB833080597F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DLRadioButton;
-			target = 2167F32FCBD96C6161714849A9105BE9 /* DLRadioButton */;
-			targetProxy = C65F6E21FD30F708F960E1D408ED2A25 /* PBXContainerItemProxy */;
+			name = "Pods-PawnStars-iOS";
+			target = 19B60476D2936ACD1A0AB661490967F4 /* Pods-PawnStars-iOS */;
+			targetProxy = A437DAC2D355E7D8445C374D9ECF92F8 /* PBXContainerItemProxy */;
 		};
-		97D011A7DB8BA8710E7322376206FE88 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "XLPagerTabStrip-XLPagerTabStrip";
-			target = E9A8908996C8047C1F728568B68E5FAA /* XLPagerTabStrip-XLPagerTabStrip */;
-			targetProxy = DABDD86FF5A307D8265B3C3BE8BA3F58 /* PBXContainerItemProxy */;
-		};
-		98C47E12362574C77DC791424C8ADEC8 /* PBXTargetDependency */ = {
+		40F965912B4F99D9522099389CD457F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = XLPagerTabStrip;
-			target = 5657810CAC076FF897057728A2441C6D /* XLPagerTabStrip */;
-			targetProxy = 3668B6C7F18BC2CFED997BF296F058C3 /* PBXContainerItemProxy */;
+			target = 1953665862BB086D5BF8CCC5F712FF63 /* XLPagerTabStrip */;
+			targetProxy = A2125671A920561A73FF879005188FAC /* PBXContainerItemProxy */;
 		};
-		E13F9339BA22C69E9B3611B18D5C5350 /* PBXTargetDependency */ = {
+		650304356A586FE2DE71FC2A14994076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = E172A660A45D74E416F471B91A2139D0 /* TextFieldEffects */;
+			targetProxy = CE1769E0B9E05118C1BC51BDA5258E67 /* PBXContainerItemProxy */;
+		};
+		77F6C958E487C8E767B1936F4F80DA12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XLPagerTabStrip-XLPagerTabStrip";
+			target = A78543CA02950A5E257A51A3C1C27BA3 /* XLPagerTabStrip-XLPagerTabStrip */;
+			targetProxy = A2F3D25C57FB1780F5C185F717E75BE5 /* PBXContainerItemProxy */;
+		};
+		D1F122B8EF178E8996D43006D1464015 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PawnStars-iOS";
-			target = DF624A3551E70B9AB97422EBA8A32AF8 /* Pods-PawnStars-iOS */;
-			targetProxy = ED8FC633BB5E2CB78399073A145A00CB /* PBXContainerItemProxy */;
+			target = 19B60476D2936ACD1A0AB661490967F4 /* Pods-PawnStars-iOS */;
+			targetProxy = 7DDE8354DF5FB892134D3DA376278D41 /* PBXContainerItemProxy */;
 		};
-		EEDF79CFD3D784AD6AA69CD4C107DBD7 /* PBXTargetDependency */ = {
+		E14CEA9519611F194DAC4E9D9B9DDF7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-PawnStars-iOS";
-			target = DF624A3551E70B9AB97422EBA8A32AF8 /* Pods-PawnStars-iOS */;
-			targetProxy = 0FA648B0975AC9454DA3CC574080F971 /* PBXContainerItemProxy */;
+			name = DLRadioButton;
+			target = 46BD0675E3AE6FB8C284CB79F1013052 /* DLRadioButton */;
+			targetProxy = 645916F25E746A1A73F75141C5EF3670 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
+		0AA5B7924E785790C23590B2738702FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE1EEBDF94AEE2388770B41CEE556234 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				PRODUCT_MODULE_NAME = XLPagerTabStrip;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		19CC78CD3450C52D3BA546A3629A2233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12B021D87088D1892088A12E16F1482 /* Pods-PawnStars-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		26C39F871FFE43198EC27B9688B8AC65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246284C340D7FA407B18097C1B4E8D34 /* DLRadioButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/DLRadioButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
+				PRODUCT_MODULE_NAME = DLRadioButton;
+				PRODUCT_NAME = DLRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7030EEF78841F89CE8261F07BFA22E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F8B52046123C3D54900E2C6911B0FE1 /* Pods-PawnStars-iOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79E73990204A10682A89305897F4B280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A80A14CD1B3A36332F0E1B31FCEA8E3 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_MODULE_NAME = TextFieldEffects;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A8A3D0E1D559B9D7977295656D85E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE1EEBDF94AEE2388770B41CEE556234 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				PRODUCT_MODULE_NAME = XLPagerTabStrip;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		830E0269A7660159E8F6214F99F6F31F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6541ABF4AA0D85E6F6E9DE0BF26E051 /* Pods-PawnStars-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOSTests/Pods-PawnStars-iOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOSTests/Pods-PawnStars-iOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		898D30AA5F9A1B2DF8AFBD373E16A64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCA40D868CFEA8DA6142AAE3B0AC479 /* Pods-PawnStars-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E48C0E1D7A5142984A9B3F8CD524D54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAD8DFC21C521ECF17EF70DE61BAECC /* Pods-PawnStars-iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOSTests/Pods-PawnStars-iOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOSTests/Pods-PawnStars-iOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -763,8 +1226,140 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AF90D013B5C1734ABC97552B56B998B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A80A14CD1B3A36332F0E1B31FCEA8E3 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				PRODUCT_MODULE_NAME = TextFieldEffects;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B00AB950595F27762162668282E79D54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDFF8644A0C2CC5487A7E21202332C77 /* Pods-PawnStars-iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -797,47 +1392,25 @@
 			};
 			name = Debug;
 		};
-		1AB24E93AEDC71954DAA6579438A169B /* Debug */ = {
+		C30EE24B5EC121ECDE3DA0043372C430 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B3751BAAE079885D02C48B869EBFDD1 /* Pods-PawnStars-iOSTests.debug.xcconfig */;
+			baseConfigurationReference = BE1EEBDF94AEE2388770B41CEE556234 /* XLPagerTabStrip.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOSTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOSTests/Pods-PawnStars-iOSTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_NAME = XLPagerTabStrip;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		39F7B3E9CA67B7DC9D4A88A8AAB3ECF7 /* Debug */ = {
+		D1EA458E1A3BF5FC91F4F7A1FB08F996 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31C5C891BE2F0DC0D7EC813BA2ABB566 /* DLRadioButton.xcconfig */;
+			baseConfigurationReference = 246284C340D7FA407B18097C1B4E8D34 /* DLRadioButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -849,362 +1422,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DLRadioButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
-				PRODUCT_MODULE_NAME = DLRadioButton;
-				PRODUCT_NAME = DLRadioButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		42B6F4B6EB0920797CE17DDE2B92A544 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6598DBA3F1317D9810A57118CC60295A /* Pods-PawnStars-iOSTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOSTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOSTests/Pods-PawnStars-iOSTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		489EB201B88E36456FED1B75C20A3B7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34C9E6463F388013EED8EF2B8EF4040C /* XLPagerTabStrip.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
-				PRODUCT_MODULE_NAME = XLPagerTabStrip;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5D9D790CBFDC6B013214EC15F6EE855B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34C9E6463F388013EED8EF2B8EF4040C /* XLPagerTabStrip.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
-				PRODUCT_MODULE_NAME = XLPagerTabStrip;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		753E9B33D63747A05CAFA20E72B9225B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34C9E6463F388013EED8EF2B8EF4040C /* XLPagerTabStrip.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		75F818CDD40C504E141F824FEADC94A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE3DC0F6BDC4C79E0B975B8C15B53ED6 /* Pods-PawnStars-iOS.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8000995DA02063BF3777393CD52061DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		953450B33346EF6AFD22550350B35A02 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE9423239D50FEFD963D539B0AD07DE7 /* Pods-PawnStars-iOSUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOSUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B0DFE0DE20B0256F04DF6499EB6F0EFA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2B2E29C47CAC6FBFC156467FE954B0B /* Pods-PawnStars-iOS.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C3B4D6A8D5539F717160DE0A3FCE7887 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34C9E6463F388013EED8EF2B8EF4040C /* XLPagerTabStrip.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		D06A5D320B65C1CFCA2CDD17BF5338D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31C5C891BE2F0DC0D7EC813BA2ABB566 /* DLRadioButton.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DLRadioButton/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/DLRadioButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1226,111 +1444,98 @@
 			};
 			name = Release;
 		};
-		FA8A3CCF1D9F0C1520EC732F2B560B89 /* Debug */ = {
+		DE66BAACC975BC743AB8DDBEB70BCE2F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0436441A9302FE7DB17ED81E2948DC10 /* Pods-PawnStars-iOSUITests.debug.xcconfig */;
+			baseConfigurationReference = BE1EEBDF94AEE2388770B41CEE556234 /* XLPagerTabStrip.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PawnStars-iOSUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PRODUCT_NAME = XLPagerTabStrip;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E209A83E7787908B653D0A7D4BDB896 /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOSUITests" */ = {
+		1ECCCD994A7BA390D8D0E83D7A01751D /* Build configuration list for PBXNativeTarget "DLRadioButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA8A3CCF1D9F0C1520EC732F2B560B89 /* Debug */,
-				953450B33346EF6AFD22550350B35A02 /* Release */,
+				26C39F871FFE43198EC27B9688B8AC65 /* Debug */,
+				D1EA458E1A3BF5FC91F4F7A1FB08F996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F21A1CA0CEE9F18C7AE34005546726A /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				489EB201B88E36456FED1B75C20A3B7A /* Debug */,
-				5D9D790CBFDC6B013214EC15F6EE855B /* Release */,
+				C1391485F05B41BD35738A433056B7FA /* Debug */,
+				A105C1752A0A49B30ED621B71E226CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		207DA31CE3DB63A924E3653C0062C8A7 /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOS" */ = {
+		5094377F68016A2A116DA8E7F028FE41 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0DFE0DE20B0256F04DF6499EB6F0EFA /* Debug */,
-				75F818CDD40C504E141F824FEADC94A6 /* Release */,
+				7A8A3D0E1D559B9D7977295656D85E0B /* Debug */,
+				0AA5B7924E785790C23590B2738702FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		5CC43EB9FA650DD42775A36B9318242B /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AA3B91655AF95B1F49159CD8085CD89 /* Debug */,
-				8000995DA02063BF3777393CD52061DD /* Release */,
+				79E73990204A10682A89305897F4B280 /* Debug */,
+				AF90D013B5C1734ABC97552B56B998B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6964DCB033DF902FA50CA50AA8C759B8 /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOSTests" */ = {
+		60A47BC2CFBACE8543CDD7E19AAA386D /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AB24E93AEDC71954DAA6579438A169B /* Debug */,
-				42B6F4B6EB0920797CE17DDE2B92A544 /* Release */,
+				830E0269A7660159E8F6214F99F6F31F /* Debug */,
+				9E48C0E1D7A5142984A9B3F8CD524D54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9B6B5C11AD74C5014AA308A961D624B /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
+		6EDDDA27DF400D5D294D672AECDE8E51 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				753E9B33D63747A05CAFA20E72B9225B /* Debug */,
-				C3B4D6A8D5539F717160DE0A3FCE7887 /* Release */,
+				C30EE24B5EC121ECDE3DA0043372C430 /* Debug */,
+				DE66BAACC975BC743AB8DDBEB70BCE2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDA0454FC69BAC3DDE25C4AC613BB062 /* Build configuration list for PBXNativeTarget "DLRadioButton" */ = {
+		7C09E57CC51FDA25A2324365A7F064CF /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39F7B3E9CA67B7DC9D4A88A8AAB3ECF7 /* Debug */,
-				D06A5D320B65C1CFCA2CDD17BF5338D6 /* Release */,
+				B00AB950595F27762162668282E79D54 /* Debug */,
+				7030EEF78841F89CE8261F07BFA22E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C66F4DF5540D081C2657A5A3BEE50FAE /* Build configuration list for PBXNativeTarget "Pods-PawnStars-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19CC78CD3450C52D3BA546A3629A2233 /* Debug */,
+				898D30AA5F9A1B2DF8AFBD373E16A64B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

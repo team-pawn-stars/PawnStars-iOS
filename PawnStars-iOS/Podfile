@@ -6,7 +6,7 @@ target 'PawnStars-iOS' do
   use_frameworks!
 	pod 'XLPagerTabStrip', '~> 8.1'
 	pod 'DLRadioButton', '~> 1.4'
-
+	pod 'TextFieldEffects'
   # Pods for PawnStars-iOS
 
   target 'PawnStars-iOSTests' do

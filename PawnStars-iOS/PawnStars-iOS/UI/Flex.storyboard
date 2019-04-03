@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="thK-ex-0Gd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="thK-ex-0Gd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -137,7 +137,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="980"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="980" translatesAutoresizingMaskIntoConstraints="NO" id="9PY-XT-QmG">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="980"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="986"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dnk-le-Wvs">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
@@ -193,7 +193,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yg-UK-Ajm">
-                                                <rect key="frame" x="252" y="654" width="103" height="18"/>
+                                                <rect key="frame" x="246" y="654" width="109" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <inset key="titleEdgeInsets" minX="-34" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <inset key="imageEdgeInsets" minX="82" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -202,7 +202,7 @@
                                                 </state>
                                             </button>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fpe-dY-KVU">
-                                                <rect key="frame" x="0.0" y="739" width="375" height="241"/>
+                                                <rect key="frame" x="0.0" y="745" width="375" height="241"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="241" id="xcL-7f-oHG"/>
@@ -239,13 +239,13 @@
                                                 </prototypes>
                                             </tableView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댓글" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldb-pm-Nqo">
-                                                <rect key="frame" x="20" y="708" width="29.5" height="21"/>
+                                                <rect key="frame" x="20" y="714" width="29.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOQ-SS-jMF">
-                                                <rect key="frame" x="20" y="692" width="335" height="1"/>
+                                                <rect key="frame" x="20" y="698" width="335" height="1"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="yqi-9w-5cy"/>
@@ -347,7 +347,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="flexIcon.png" width="48" height="48"/>
-        <image name="goIcon.png" width="18" height="18"/>
+        <image name="flexIcon.png" width="64" height="64"/>
+        <image name="goIcon.png" width="24" height="24"/>
     </resources>
 </document>

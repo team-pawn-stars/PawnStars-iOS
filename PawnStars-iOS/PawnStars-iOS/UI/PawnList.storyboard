@@ -354,7 +354,6 @@
                 <viewController title="PawnList" id="PEu-uP-9ve" customClass="PawnListVC" customModule="PawnStars_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nqb-Fu-zGZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fG3-r4-Zg1">
@@ -436,7 +435,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e0I-O8-0MD">
-                                                    <rect key="frame" x="335" y="101.5" width="46" height="15"/>
+                                                    <rect key="frame" x="296" y="101.5" width="46" height="15"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kB-w3-17a">
                                                             <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -455,7 +454,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ShV-4d-VGR">
-                                                    <rect key="frame" x="239.5" y="101" width="87.5" height="15"/>
+                                                    <rect key="frame" x="200.5" y="101" width="87.5" height="15"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpS-Au-xha">
                                                             <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>

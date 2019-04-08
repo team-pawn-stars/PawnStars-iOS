@@ -151,6 +151,11 @@
                         <viewLayoutGuide key="safeArea" id="lC7-ag-DCx"/>
                     </view>
                     <navigationItem key="navigationItem" id="HcU-4f-Dqh"/>
+                    <connections>
+                        <outlet property="idTextField" destination="Cyk-HI-1MB" id="1qA-Qo-K0m"/>
+                        <outlet property="loginButton" destination="yOO-aP-qp7" id="Y9B-iB-m8d"/>
+                        <outlet property="pwTextField" destination="YEH-ep-89Q" id="dyl-6I-sNk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztM-b4-W7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

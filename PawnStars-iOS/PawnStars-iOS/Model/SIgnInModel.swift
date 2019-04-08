@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import RxSwift
+
+class SignInModel {
+    let id = Variable<String>("")
+    let pw = Variable<String>("")
+}

@@ -1,24 +1,37 @@
 PODS:
   - DLRadioButton (1.4.12)
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
   - TextFieldEffects (1.5.1)
   - XLPagerTabStrip (8.1.1)
 
 DEPENDENCIES:
   - DLRadioButton (~> 1.4)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
   - TextFieldEffects
   - XLPagerTabStrip (~> 8.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - DLRadioButton
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
     - TextFieldEffects
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
   XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
 
-PODFILE CHECKSUM: 909908ded3f5bd9fc9c08b9bc3bf68a949461a9d
+PODFILE CHECKSUM: 90ec3f9682849193be6b7e865bb3faae255dc467
 
 COCOAPODS: 1.6.1

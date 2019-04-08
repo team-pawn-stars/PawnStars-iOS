@@ -1,5 +1,11 @@
 PODS:
+  - Alamofire (4.8.1)
   - DLRadioButton (1.4.12)
+  - RxAlamofire (4.3.0):
+    - RxAlamofire/Core (= 4.3.0)
+  - RxAlamofire/Core (4.3.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
@@ -10,6 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - DLRadioButton (~> 1.4)
+  - RxAlamofire
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - TextFieldEffects
@@ -17,7 +24,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - DLRadioButton
+    - RxAlamofire
     - RxAtomic
     - RxCocoa
     - RxSwift
@@ -25,13 +34,15 @@ SPEC REPOS:
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
   XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
 
-PODFILE CHECKSUM: 90ec3f9682849193be6b7e865bb3faae255dc467
+PODFILE CHECKSUM: afe018f3a864ab66f5ce27265f83d68fa404c1b6
 
 COCOAPODS: 1.6.1

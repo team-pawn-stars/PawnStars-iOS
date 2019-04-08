@@ -9,6 +9,7 @@ target 'PawnStars-iOS' do
 	pod 'TextFieldEffects'
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
+  pod 'RxAlamofire'
   # Pods for PawnStars-iOS
 
   target 'PawnStars-iOSTests' do

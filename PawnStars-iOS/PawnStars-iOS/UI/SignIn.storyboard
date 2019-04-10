@@ -202,13 +202,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B U Y E R" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6g-kS-5HH">
                                 <rect key="frame" x="131.5" y="253" width="57" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P A W N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59p-Fg-h5X">
                                 <rect key="frame" x="229" y="253" width="50" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your role!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCq-Y0-Mhj">
@@ -248,6 +248,10 @@
                         <viewLayoutGuide key="safeArea" id="Y62-VS-awf"/>
                     </view>
                     <connections>
+                        <outlet property="buyerButton" destination="Vlo-eM-5bg" id="iYI-TX-rZ8"/>
+                        <outlet property="buyerLabel" destination="u6g-kS-5HH" id="bnI-KL-cKt"/>
+                        <outlet property="pawnButton" destination="B6R-tZ-xVY" id="mVc-Rf-Z7d"/>
+                        <outlet property="pawnLabel" destination="59p-Fg-h5X" id="qac-Ns-C6o"/>
                         <segue destination="d5E-3a-KwO" kind="show" id="ic3-Fy-hbE"/>
                     </connections>
                 </viewController>
@@ -357,10 +361,10 @@
             </objects>
             <point key="canvasLocation" x="1738" y="864"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up Content FirstVC-->
         <scene sceneID="Gdq-gV-xMR">
             <objects>
-                <viewController id="91h-mO-flE" sceneMemberID="viewController">
+                <viewController id="91h-mO-flE" customClass="SignUpContentFirstVC" customModule="PawnStars_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xNV-Ld-8Ui">
                         <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -484,10 +488,10 @@
             </objects>
             <point key="canvasLocation" x="2339" y="865"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up Content SecondVC-->
         <scene sceneID="Llh-Z8-cyg">
             <objects>
-                <viewController id="8Ag-X2-9Ok" sceneMemberID="viewController">
+                <viewController id="8Ag-X2-9Ok" customClass="SignUpContentSecondVC" customModule="PawnStars_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t7G-lW-NWR">
                         <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

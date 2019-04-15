@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+
+class PawnListViewModel : ViewModelType{
+    struct Input {
+        let cellSelected : Driver<IndexPath>
+    }
+    struct Output{
+        let selectedDone : Driver<String>
+    }
+    
+    func transform(input: PawnListViewModel.Input) -> PawnListViewModel.Output {
+        let selectedDone = input.cellSelected
+    }
+}
+
+

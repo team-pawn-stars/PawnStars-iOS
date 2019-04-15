@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class SignInVC: UIViewController {
-
+    
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
@@ -24,19 +24,23 @@ class SignInVC: UIViewController {
         
         signInViewModel = SignInViewModel()
         
-        idTextField.rx.text
-            .orEmpty
-            .bind(to: self.signInViewModel.id)
+        let input = SignInViewModel.Input(username: idTextField.rx.text.orEmpty.asDriver(), password: pwTextField.rx.text.orEmpty.asDriver(), clickLogin: loginButton.rx.tap.asSignal())
+
+        
+        let output = signInViewModel.transform(input: input)
+        
+        output.result
+            .drive(onNext: { [weak self] in
+                guard let strongSelf = self else { return }
+                
+                if $0 == SignInResult.success {
+                    
+                } else if $0 == SignInResult.failure {
+                    
+                }
+            })
             .disposed(by: disposeBag)
         
-        idTextField.rx.text
-            .orEmpty
-            .bind(to: self.signInViewModel.pw)
-            .disposed(by: disposeBag)
-        
-        loginButton.rx.tap
-            .bind(to: signInViewModel.login)
-            .disposed(by: disposeBag)
     }
     
     override func viewWillAppear(_ animated: Bool) {

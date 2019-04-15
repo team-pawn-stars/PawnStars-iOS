@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class PawnListVC : UIViewController {
+    
     override func viewDidLoad() {
-
     }
 }

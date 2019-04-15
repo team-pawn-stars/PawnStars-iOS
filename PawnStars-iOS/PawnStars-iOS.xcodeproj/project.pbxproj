@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		353E026C46F2466871DDD974 /* Pods_PawnStars_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8727BD731E11CF4EB441680F /* Pods_PawnStars_iOS.framework */; };
-		682C0BC6225B0CDD00954D25 /* SIgnInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0BC5225B0CDD00954D25 /* SIgnInModel.swift */; };
-		682C0BC8225B0CEB00954D25 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0BC7225B0CEB00954D25 /* SignInViewModel.swift */; };
+		682C0BCA225B0E7600954D25 /* PawnListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0BC9225B0E7600954D25 /* PawnListModel.swift */; };
+		682C0BCC225B0E8300954D25 /* PawnListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */; };
 		6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9E4224B0ABE00FB802A /* AppDelegate.swift */; };
 		6838C9E7224B0ABE00FB802A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9E6224B0ABE00FB802A /* ViewController.swift */; };
 		6838C9EA224B0ABE00FB802A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6838C9E8224B0ABE00FB802A /* Main.storyboard */; };
@@ -68,8 +68,8 @@
 /* Begin PBXFileReference section */
 		1FA07F8B0DAEE704F188AAE8 /* Pods-PawnStars-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D4B20795106F1E6B77A1298 /* Pods_PawnStars_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawnStars_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		682C0BC5225B0CDD00954D25 /* SIgnInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnInModel.swift; sourceTree = "<group>"; };
-		682C0BC7225B0CEB00954D25 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		682C0BC9225B0E7600954D25 /* PawnListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnListModel.swift; sourceTree = "<group>"; };
+		682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnListViewModel.swift; sourceTree = "<group>"; };
 		6838C9E1224B0ABE00FB802A /* PawnStars-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PawnStars-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6838C9E4224B0ABE00FB802A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6838C9E6224B0ABE00FB802A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		682C0BC3225B0C9A00954D25 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				682C0BC5225B0CDD00954D25 /* SIgnInModel.swift */,
+				6850D407226446AB00536F9A /* PawnList */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,7 +181,7 @@
 		682C0BC4225B0CA400954D25 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				682C0BC7225B0CEB00954D25 /* SignInViewModel.swift */,
+				6850D4062264469D00536F9A /* PawnList */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -344,6 +344,22 @@
 				C9A0A3F6224B55AE0085756E /* appIconImage.png */,
 			);
 			path = Signin;
+			sourceTree = "<group>";
+		};
+		6850D4062264469D00536F9A /* PawnList */ = {
+			isa = PBXGroup;
+			children = (
+				682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */,
+			);
+			path = PawnList;
+			sourceTree = "<group>";
+		};
+		6850D407226446AB00536F9A /* PawnList */ = {
+			isa = PBXGroup;
+			children = (
+				682C0BC9225B0E7600954D25 /* PawnListModel.swift */,
+			);
+			path = PawnList;
 			sourceTree = "<group>";
 		};
 		C9A0A3F0224B382C0085756E /* Image */ = {
@@ -611,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6838CA2F224B14AC00FB802A /* WritingVC.swift in Sources */,
+				682C0BCA225B0E7600954D25 /* PawnListModel.swift in Sources */,
 				6838C9ED224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld in Sources */,
 				C9A0A3F5224B4E080085756E /* SignInVC.swift in Sources */,
 				6838CA37224B17A700FB802A /* Colors.swift in Sources */,
@@ -621,10 +638,9 @@
 				6838CA29224B143900FB802A /* PawnListVC.swift in Sources */,
 				6838CA31224B14DC00FB802A /* MyPageVC.swift in Sources */,
 				C9A0A3FF224B66140085756E /* SignUpVC.swift in Sources */,
-				682C0BC6225B0CDD00954D25 /* SIgnInModel.swift in Sources */,
+				682C0BCC225B0E8300954D25 /* PawnListViewModel.swift in Sources */,
 				6838CA2D224B149900FB802A /* ChattingVC.swift in Sources */,
 				6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */,
-				682C0BC8225B0CEB00954D25 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

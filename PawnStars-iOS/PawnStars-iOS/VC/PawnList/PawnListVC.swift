@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class PawnListVC : UIViewController {
+    @IBOutlet weak var pawnlistTableView: dynamicTableView!
     
     override func viewDidLoad() {
     }

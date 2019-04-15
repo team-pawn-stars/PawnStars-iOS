@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4f-VP-ia4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650" y="52"/>
+            <point key="canvasLocation" x="1689" y="55"/>
         </scene>
         <!--PawnDetail-->
         <scene sceneID="eqC-Fd-QFV">
@@ -254,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWr-8O-0d0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2880" y="-273"/>
+            <point key="canvasLocation" x="146" y="1120"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CLv-VQ-bvM">
@@ -346,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccg-T7-OVf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2880" y="540"/>
+            <point key="canvasLocation" x="146" y="1874"/>
         </scene>
         <!--PawnList-->
         <scene sceneID="HAm-gP-d5F">
@@ -381,7 +381,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kRM-0n-loB">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kRM-0n-loB" customClass="dynamicTableView" customModule="PawnStars_iOS" customModuleProvider="target">
                                 <rect key="frame" x="10" y="88" width="355" height="641"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -491,6 +491,9 @@
                                                 <constraint firstItem="XGd-Nc-K5u" firstAttribute="top" secondItem="fmU-id-Tfj" secondAttribute="top" constant="10" id="rrH-Dv-PMU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Xr5-CB-Xe4" kind="show" id="Wm3-1U-qMO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -510,6 +513,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Rhv-Kx-skN"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pawnlistTableView" destination="kRM-0n-loB" id="1cT-Qo-eeh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btr-IQ-NxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -851,7 +857,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="y5V-bf-qhh" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c60-PB-tL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3617" y="-273"/>
+            <point key="canvasLocation" x="1174" y="1119"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3oT-cO-Z7z">
@@ -878,7 +884,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9u-Jt-44n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4328" y="-273"/>
+            <point key="canvasLocation" x="1886" y="1119"/>
         </scene>
     </scenes>
     <resources>

@@ -46,9 +46,4 @@ class SignInViewModel: ViewModelType {
         
         return Output(result: result)
     }
-    
-    
-    func networking() -> Observable<Data?> {
-        RxAlamofire.requestData(<#T##method: HTTPMethod##HTTPMethod#>, <#T##url: URLConvertible##URLConvertible#>, parameters: <#T##[String : Any]?#>, encoding: <#T##ParameterEncoding#>, headers: <#T##[String : String]?#>)
-    }
 }

@@ -9,7 +9,6 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import Alamo
 
 class SignUpVC: UIViewController {
     @IBOutlet weak var buyerButton: UIButton!

@@ -1,13 +1,12 @@
 //
-//  SIgnInModel.swift
+//  asd.swift
 //  PawnStars-iOS
 //
-//  Created by 조우진 on 08/04/2019.
+//  Created by daeun on 17/04/2019.
 //  Copyright © 2019 PawnStars. All rights reserved.
 //
 
 import Foundation
-import RxSwift
 
 struct SignInModel {
     let accessToken: String

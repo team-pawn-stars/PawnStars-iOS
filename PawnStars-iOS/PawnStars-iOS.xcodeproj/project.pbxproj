@@ -42,7 +42,6 @@
 		68444906224DA8FE00B5A002 /* locationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68444903224DA8FE00B5A002 /* locationIcon.png */; };
 		6850D40D2264632B00536F9A /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6850D40C2264632B00536F9A /* APIProtocol.swift */; };
 		B2DB809BF5DBE17A1EB73D04 /* Pods_PawnStars_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D519196F4F62E43012E16369 /* Pods_PawnStars_iOSTests.framework */; };
-		C911C521226421D100B99772 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C911C520226421D100B99772 /* ViewModelType.swift */; };
 		C9A0A3EE224B37290085756E /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3ED224B37290085756E /* SignIn.storyboard */; };
 		C9A0A3F5224B4E080085756E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0A3F4224B4E080085756E /* SignInVC.swift */; };
 		C9A0A3F7224B55AE0085756E /* appIconImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3F6224B55AE0085756E /* appIconImage.png */; };
@@ -50,10 +49,6 @@
 		C9A0A3FB224B64860085756E /* buyerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3FA224B64860085756E /* buyerIcon.png */; };
 		C9A0A3FD224B648B0085756E /* pawnIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3FC224B648B0085756E /* pawnIcon.png */; };
 		C9A0A3FF224B66140085756E /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0A3FE224B66140085756E /* SignUpVC.swift */; };
-		C9BD6966225D7B4700341571 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BD6965225D7B4700341571 /* SignUpModel.swift */; };
-		C9BD6968225D7B5400341571 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BD6967225D7B5400341571 /* SignUpViewModel.swift */; };
-		C9BD696A225D89AF00341571 /* SignUpContentFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BD6969225D89AF00341571 /* SignUpContentFirstVC.swift */; };
-		C9BD696C225DAAF700341571 /* SignUpContentSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BD696B225DAAF700341571 /* SignUpContentSecondVC.swift */; };
 		E651E6CB4C6E2C74CFAF7D47 /* Pods_PawnStars_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4B20795106F1E6B77A1298 /* Pods_PawnStars_iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,7 +117,6 @@
 		8D1C88F2C9D77CC8C11F4594 /* Pods-PawnStars-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BD24F9D65AEC7A8D909F0E50 /* Pods-PawnStars-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSTests/Pods-PawnStars-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C90D7E2240A283B1606338D3 /* Pods-PawnStars-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C911C520226421D100B99772 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		C9A0A3ED224B37290085756E /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		C9A0A3F4224B4E080085756E /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		C9A0A3F6224B55AE0085756E /* appIconImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconImage.png; sourceTree = "<group>"; };
@@ -130,10 +124,6 @@
 		C9A0A3FA224B64860085756E /* buyerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buyerIcon.png; sourceTree = "<group>"; };
 		C9A0A3FC224B648B0085756E /* pawnIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pawnIcon.png; sourceTree = "<group>"; };
 		C9A0A3FE224B66140085756E /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		C9BD6965225D7B4700341571 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
-		C9BD6967225D7B5400341571 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		C9BD6969225D89AF00341571 /* SignUpContentFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContentFirstVC.swift; sourceTree = "<group>"; };
-		C9BD696B225DAAF700341571 /* SignUpContentSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContentSecondVC.swift; sourceTree = "<group>"; };
 		D519196F4F62E43012E16369 /* Pods_PawnStars_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawnStars_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -191,7 +181,7 @@
 		682C0BC3225B0C9A00954D25 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C911C51F226421BB00B99772 /* SignIn */,
+				682C0BC5225B0CDD00954D25 /* SIgnInModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,7 +189,7 @@
 		682C0BC4225B0CA400954D25 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C911C51E226421AB00B99772 /* SignIn */,
+				682C0BC7225B0CEB00954D25 /* SignInViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -231,10 +221,10 @@
 			children = (
 				6850D40A226461EF00536F9A /* Network */,
 				682C0BC4225B0CA400954D25 /* ViewModel */,
-				6838CA17224B0AEF00FB802A /* UI */,
 				682C0BC3225B0C9A00954D25 /* Model */,
 				C9A0A3F0224B382C0085756E /* Image */,
 				6838CA15224B0ADD00FB802A /* Util */,
+				6838CA17224B0AEF00FB802A /* UI */,
 				6838CA16224B0AE500FB802A /* VC */,
 				6838C9E4224B0ABE00FB802A /* AppDelegate.swift */,
 				6838C9EE224B0ABF00FB802A /* Assets.xcassets */,
@@ -269,7 +259,6 @@
 				6838CA32224B178E00FB802A /* Shape.swift */,
 				6838CA34224B179700FB802A /* Base.swift */,
 				6838CA36224B17A700FB802A /* Colors.swift */,
-				C911C520226421D100B99772 /* ViewModelType.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -366,22 +355,6 @@
 			path = Signin;
 			sourceTree = "<group>";
 		};
-		C911C51E226421AB00B99772 /* SignIn */ = {
-			isa = PBXGroup;
-			children = (
-				682C0BC7225B0CEB00954D25 /* SignInViewModel.swift */,
-				C9BD6967225D7B5400341571 /* SignUpViewModel.swift */,
-			);
-			path = SignIn;
-			sourceTree = "<group>";
-		};
-		C911C51F226421BB00B99772 /* SignIn */ = {
-			isa = PBXGroup;
-			children = (
-				682C0BC5225B0CDD00954D25 /* SIgnInModel.swift */,
-				C9BD6965225D7B4700341571 /* SignUpModel.swift */,
-			);
-			path = SignIn;
 		6850D40A226461EF00536F9A /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,8 +388,6 @@
 			children = (
 				C9A0A3F4224B4E080085756E /* SignInVC.swift */,
 				C9A0A3FE224B66140085756E /* SignUpVC.swift */,
-				C9BD6969225D89AF00341571 /* SignUpContentFirstVC.swift */,
-				C9BD696B225DAAF700341571 /* SignUpContentSecondVC.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -683,14 +654,10 @@
 			files = (
 				683A20DF2266AEBF00CBF74A /* Api.swift in Sources */,
 				6838CA2F224B14AC00FB802A /* WritingVC.swift in Sources */,
-				C9BD6968225D7B5400341571 /* SignUpViewModel.swift in Sources */,
-				C9BD696C225DAAF700341571 /* SignUpContentSecondVC.swift in Sources */,
 				6838C9ED224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld in Sources */,
 				C9A0A3F5224B4E080085756E /* SignInVC.swift in Sources */,
-				C9BD6966225D7B4700341571 /* SignUpModel.swift in Sources */,
 				6838CA37224B17A700FB802A /* Colors.swift in Sources */,
 				6838CA35224B179700FB802A /* Base.swift in Sources */,
-				C911C521226421D100B99772 /* ViewModelType.swift in Sources */,
 				6838CA2B224B146700FB802A /* FlexVC.swift in Sources */,
 				6838C9E7224B0ABE00FB802A /* ViewController.swift in Sources */,
 				6838CA33224B178E00FB802A /* Shape.swift in Sources */,
@@ -702,7 +669,6 @@
 				682C0BC6225B0CDD00954D25 /* SIgnInModel.swift in Sources */,
 				683A20DD2266A25000CBF74A /* Connector.swift in Sources */,
 				6838CA2D224B149900FB802A /* ChattingVC.swift in Sources */,
-				C9BD696A225D89AF00341571 /* SignUpContentFirstVC.swift in Sources */,
 				6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */,
 				682C0BC8225B0CEB00954D25 /* SignInViewModel.swift in Sources */,
 			);

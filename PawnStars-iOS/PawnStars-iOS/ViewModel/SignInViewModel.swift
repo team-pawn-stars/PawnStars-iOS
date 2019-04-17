@@ -1,5 +1,5 @@
 //
-//  SIgnInModel.swift
+//  SignInViewModel.swift
 //  PawnStars-iOS
 //
 //  Created by 조우진 on 08/04/2019.
@@ -7,9 +7,3 @@
 //
 
 import Foundation
-import RxSwift
-
-struct SignInModel {
-    let accessToken: String
-    let refreshToken: String
-}

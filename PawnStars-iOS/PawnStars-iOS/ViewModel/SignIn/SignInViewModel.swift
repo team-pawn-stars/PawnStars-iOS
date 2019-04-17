@@ -9,6 +9,8 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import RxAlamofire
+import Alamofire
 
 enum SignInResult {
     case success
@@ -38,9 +40,15 @@ class SignInViewModel: ViewModelType {
         let result = input.clickLogin
             .asObservable()
             .withLatestFrom(usernameAndPassword)
+            .map{_ in return SignInResult.success}.asDriver(onErrorJustReturn: .failure)
         
         
         
         return Output(result: result)
+    }
+    
+    
+    func networking() -> Observable<Data?> {
+        RxAlamofire.requestData(<#T##method: HTTPMethod##HTTPMethod#>, <#T##url: URLConvertible##URLConvertible#>, parameters: <#T##[String : Any]?#>, encoding: <#T##ParameterEncoding#>, headers: <#T##[String : String]?#>)
     }
 }

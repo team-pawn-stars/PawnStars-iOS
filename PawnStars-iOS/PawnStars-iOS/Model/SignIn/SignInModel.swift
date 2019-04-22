@@ -8,7 +8,10 @@
 
 import Foundation
 
-struct SignInModel {
-    let accessToken: String
-    let refreshToken: String
+struct SignInModel: Codable {
+    let token: String
+    
+    enum CodingKeys: String, CodingKey {
+        case token
+    }
 }

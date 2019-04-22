@@ -12,14 +12,14 @@ import RxSwift
 import RxCocoa
 
 protocol ConnectorType {
-    func get(path: String, params: Parameters, header : Header) -> Observable<(HTTPURLResponse,Data)>
+    func get(path: String, params: Parameters?, header : Header) -> Observable<(HTTPURLResponse,Data)>
     func post(path: String, params: Parameters, header : Header) -> Observable<(HTTPURLResponse,Data)>
 }
 
 class Connector : ConnectorType {
     let baseUrl = "http://whale.istruly.sexy:3214/"
 
-    func get(path: String, params: Parameters, header: Header) -> Observable<(HTTPURLResponse, Data)> {
+    func get(path: String, params: Parameters?, header: Header) -> Observable<(HTTPURLResponse, Data)> {
         return requestData(.get,
                            baseUrl + path,
                            parameters: params,
@@ -28,6 +28,7 @@ class Connector : ConnectorType {
     }
     
     func post(path: String, params: Parameters, header: Header) -> Observable<(HTTPURLResponse, Data)> {
+        print("asdfadfㅁㅇㄹㅁㅇㄹㅁ\(params)")
         return requestData(.post,
                            baseUrl + path,
                            parameters: params,

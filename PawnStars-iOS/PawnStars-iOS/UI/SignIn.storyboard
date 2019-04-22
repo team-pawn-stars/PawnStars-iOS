@@ -96,9 +96,6 @@
                                         <state key="normal" title="L O G I N">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="nny-CJ-3fg" kind="show" id="rd5-y6-1GX"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,6 +152,7 @@
                         <outlet property="idTextField" destination="Cyk-HI-1MB" id="1qA-Qo-K0m"/>
                         <outlet property="loginButton" destination="yOO-aP-qp7" id="Y9B-iB-m8d"/>
                         <outlet property="pwTextField" destination="YEH-ep-89Q" id="dyl-6I-sNk"/>
+                        <segue destination="nny-CJ-3fg" kind="show" identifier="goMain" id="jBE-1v-BTy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztM-b4-W7T" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -19,8 +19,9 @@ enum SignInResult {
 }
 
 class SignInViewModel: ViewModelType {
-
+    
     let disposeBag = DisposeBag()
+    let api = Api()
     
     struct Input {
         let username: Driver<String>
@@ -30,20 +31,37 @@ class SignInViewModel: ViewModelType {
     
     struct Output {
         let result: Driver<SignInResult>
+        let token: Driver<String?>
     }
     
     func transform(input: Input) -> Output {
         
-        let usernameAndPassword = Driver.combineLatest(input.username, input.password) { ($0, $1 )}
+        let usernameAndPassword = Driver.combineLatest(input.username, input.password) { ($0, $1) }
             .asObservable()
         
-        let result = input.clickLogin
+        let request = input.clickLogin
             .asObservable()
             .withLatestFrom(usernameAndPassword)
-            .map{_ in return SignInResult.success}.asDriver(onErrorJustReturn: .failure)
+            .flatMapLatest{ [weak self] pair -> Observable<(SignInResult,String?)> in
+                
+                let (username, password) = pair
+                return (self?.api.signIn(username: username, password: password))!
+        }
         
+        let result = request.map { request -> SignInResult in
+            
+            let (result, _) = request
+            
+            return result
+        }.asDriver(onErrorJustReturn: .empty)
         
-        
-        return Output(result: result)
+        let token = request.map { request -> String? in
+            
+            let (_, token) = request
+            
+            return token
+            }.asDriver(onErrorJustReturn: nil)
+    
+        return Output(result: result, token: token)
     }
 }

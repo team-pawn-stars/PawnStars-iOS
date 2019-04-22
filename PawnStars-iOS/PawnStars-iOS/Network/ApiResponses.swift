@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct PawnListResponse : Codable {
+    let result : [PawnListModel]
+}

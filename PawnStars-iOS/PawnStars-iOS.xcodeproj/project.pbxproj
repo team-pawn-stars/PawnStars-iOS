@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		353E026C46F2466871DDD974 /* Pods_PawnStars_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8727BD731E11CF4EB441680F /* Pods_PawnStars_iOS.framework */; };
+		68236B4A2266B89D007BB672 /* PawnBuyerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68236B492266B89D007BB672 /* PawnBuyerAPI.swift */; };
 		682C0BCA225B0E7600954D25 /* PawnListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0BC9225B0E7600954D25 /* PawnListModel.swift */; };
 		682C0BCC225B0E8300954D25 /* PawnListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */; };
 		6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9E4224B0ABE00FB802A /* AppDelegate.swift */; };
@@ -73,6 +74,7 @@
 /* Begin PBXFileReference section */
 		1FA07F8B0DAEE704F188AAE8 /* Pods-PawnStars-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D4B20795106F1E6B77A1298 /* Pods_PawnStars_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawnStars_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68236B492266B89D007BB672 /* PawnBuyerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnBuyerAPI.swift; sourceTree = "<group>"; };
 		682C0BC9225B0E7600954D25 /* PawnListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnListModel.swift; sourceTree = "<group>"; };
 		682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnListViewModel.swift; sourceTree = "<group>"; };
 		6838C9E1224B0ABE00FB802A /* PawnStars-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PawnStars-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -349,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				683A20FB2266B36100CBF74A /* APIProtocol.swift */,
+				68236B492266B89D007BB672 /* PawnBuyerAPI.swift */,
 			);
 			name = API;
 			path = ../Network/API;
@@ -683,6 +686,7 @@
 				683A20FC2266B36100CBF74A /* APIProtocol.swift in Sources */,
 				6838CA2B224B146700FB802A /* FlexVC.swift in Sources */,
 				6838C9E7224B0ABE00FB802A /* ViewController.swift in Sources */,
+				68236B4A2266B89D007BB672 /* PawnBuyerAPI.swift in Sources */,
 				683A20F82266B34A00CBF74A /* Connector.swift in Sources */,
 				6838CA33224B178E00FB802A /* Shape.swift in Sources */,
 				6838CA29224B143900FB802A /* PawnListVC.swift in Sources */,

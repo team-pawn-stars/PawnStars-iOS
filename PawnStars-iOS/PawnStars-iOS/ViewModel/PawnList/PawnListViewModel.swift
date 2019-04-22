@@ -19,8 +19,9 @@ class PawnListViewModel : ViewModelType{
     }
     
     func transform(input: PawnListViewModel.Input) -> PawnListViewModel.Output {
-        let selectedDone = input.cellSelected
+        <#code#>
     }
+    
 }
 
 

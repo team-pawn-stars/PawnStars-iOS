@@ -10,19 +10,29 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol SignInProvider {
+protocol Account {
     
 }
 
-protocol SignUpBuyer {
-    
+protocol PawnBuyer {
+    func getPawnList() -> Observable<(HTTPURLResponse?,[PawnListModel]?)>
 }
 
-protocol SignUpSeller {
-    
-}
+protocol ApiProvider : Account, PawnBuyer { }
 
-class Api {
+class Api : ApiProvider {
     private let connector = Connector()
+    
+    func getPawnList() -> Observable<(HTTPURLResponse?, [PawnListModel]?)> {
+        return connector.get(path: PawnBuyerAPI.pawn.getPath(),
+                             params: nil,
+                             header: Header.Empty)
+            .map { res,data in
+                guard let response = try? JSONDecoder().decode(PawnListResponse.self, from: data) else {
+                    return (nil,nil)
+                }
+            return (res, response.result)
+        }
+    }
     
 }

@@ -10,19 +10,21 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol SignInProvider {
-    
+protocol AccountProvider {
+    func statusCode(code : Int) -> StatusCode
 }
 
-protocol SignUpBuyer {
-    
-}
+protocol ApiProvider : AccountProvider { }
 
-protocol SignUpSeller {
-    
-}
-
-class Api {
+class Api : ApiProvider{
     private let connector = Connector()
+    
+    func statusCode(code: Int) -> StatusCode {
+        switch code {
+        case 200,201: return StatusCode.success
+        default: return StatusCode.failure
+        }
+    }
+    
     
 }

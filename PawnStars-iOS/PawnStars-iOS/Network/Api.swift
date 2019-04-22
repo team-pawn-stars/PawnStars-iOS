@@ -11,11 +11,11 @@ import RxSwift
 import RxCocoa
 
 protocol Account {
-    
+    func statusCode(code : Int) -> StatusCode
 }
 
 protocol PawnBuyer {
-    func getPawnList() -> Observable<(HTTPURLResponse?,[PawnListModel]?)>
+    func getPawnList() -> Observable<(StatusCode, [PawnListModel]?)>
 }
 
 protocol ApiProvider : Account, PawnBuyer { }
@@ -23,16 +23,23 @@ protocol ApiProvider : Account, PawnBuyer { }
 class Api : ApiProvider {
     private let connector = Connector()
     
-    func getPawnList() -> Observable<(HTTPURLResponse?, [PawnListModel]?)> {
+    func statusCode(code: Int) -> StatusCode {
+        switch code {
+        case 200,201: return StatusCode.success
+        default: return StatusCode.failure
+        }
+    }
+
+    
+    func getPawnList() -> Observable<(StatusCode, [PawnListModel]?)> {
         return connector.get(path: PawnBuyerAPI.pawn.getPath(),
                              params: nil,
                              header: Header.Empty)
-            .map { res,data in
+            .map { res,data -> (StatusCode, [PawnListModel]?) in
                 guard let response = try? JSONDecoder().decode(PawnListResponse.self, from: data) else {
-                    return (nil,nil)
+                    return (StatusCode.failure, nil)
                 }
-            return (res, response.result)
+                return (self.statusCode(code: res.statusCode), response.result)
         }
     }
-    
 }

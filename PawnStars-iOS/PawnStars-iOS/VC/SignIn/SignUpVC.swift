@@ -37,22 +37,45 @@ class SignUpVC: UIViewController {
         
         signUpViewModel = SignUpViewModel()
         
-        let input = SignUpViewModel.Input(clickBuyer: buyerButton.rx.tap.asSignal(), clickPawn: pawnButton.rx.tap.asSignal(), clickNext: firstContentVC.nextButton.rx.tap.asSignal())
+        let input = SignUpViewModel.Input(clickBuyer: buyerButton.rx.tap.asSignal(), clickPawn: pawnButton.rx.tap.asSignal(), clickNext: firstContentVC.nextButton.rx.tap.asSignal(), id: firstContentVC.idTextField.rx.text.orEmpty.asDriver(), pw: firstContentVC.pwTextField.rx.text.orEmpty.asDriver(), pwCheck: firstContentVC.pwCheckTextField.rx.text.orEmpty.asDriver())
         
         let output = signUpViewModel.transform(input: input)
         
-        output.buyerColor.drive(buyerLabel.rx.valid)
+        output.buyerColor.drive(buyerLabel.rx.textColor)
             .disposed(by: disposeBag)
         
-        output.pawnColor.drive(pawnLabel.rx.valid)
+        output.pawnColor.drive(pawnLabel.rx.textColor)
+            .disposed(by: disposeBag)
+        
+        output.isNextEnabled.drive(firstContentVC.nextButton.rx.isEnabled)
             .disposed(by: disposeBag)
         
         output.moveNextPage.asObservable().subscribe{ [weak self] isNext in
             guard let strongSelf = self else { return }
             if isNext.element == true {
                 strongSelf.pageViewController.setViewControllers([strongSelf.viewControllers[1]], direction: .forward, animated: false, completion: nil)
+                
+                
+                let secondInput = SignUpViewModel.SecondInput(phoneNum: strongSelf.secondContentVC.phoneNumTextField.rx.text.orEmpty.asDriver(), nickName: strongSelf.secondContentVC.nickNameTextField.rx.text.orEmpty.asDriver(), clickCreate: strongSelf.secondContentVC.createButton.rx.tap.asSignal())
+                
+                let secondOutput = strongSelf.signUpViewModel.secondTransform(input: secondInput)
+                
+                secondOutput.isCreateEnabled.drive(strongSelf.secondContentVC.createButton.rx.isEnabled)
+                .disposed(by: strongSelf.disposeBag)
+                
+                secondOutput.createAccount.asObservable().subscribe{ result in
+                    switch result.element! {
+                    case SignUpResult.success : print("성공")
+                    case SignUpResult.existId : print("이미 있는 아이디")
+                    case SignUpResult.fail : print("ㅁㅇㅇㅁ")
+                    default: print("ㅁㅇㄹ")
+                    }
+                }.disposed(by: strongSelf.disposeBag)
+                
             }
         }.disposed(by: disposeBag)
+        
+        
         
     }
     

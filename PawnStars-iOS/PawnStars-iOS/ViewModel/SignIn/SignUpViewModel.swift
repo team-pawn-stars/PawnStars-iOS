@@ -10,20 +10,43 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+enum SignUpResult {
+    case success, fail, existId, empty
+}
+
 class SignUpViewModel: ViewModelType {
     
     let disposeBag = DisposeBag()
+    let api = Api()
+    let buyerOrPawn = Variable<String>("")
+    let username = Variable<String>("")
+    let password = Variable<String>("")
     
     struct Input {
         let clickBuyer: Signal<Void>
         let clickPawn: Signal<Void>
         let clickNext: Signal<Void>
+        let id: Driver<String>
+        let pw: Driver<String>
+        let pwCheck: Driver<String>
     }
     
     struct Output {
         let buyerColor: Driver<Bool>
         let pawnColor: Driver<Bool>
+        let isNextEnabled: Driver<Bool>
         let moveNextPage: Driver<Bool>
+    }
+    
+    struct SecondInput {
+        let phoneNum: Driver<String>
+        let nickName: Driver<String>
+        let clickCreate: Signal<Void>
+    }
+    
+    struct SecondOutput {
+        let isCreateEnabled: Driver<Bool>
+        let createAccount: Driver<SignUpResult>
     }
     
     func transform(input: Input) -> Output {
@@ -32,6 +55,15 @@ class SignUpViewModel: ViewModelType {
         let clickPawn = input.clickPawn.asObservable().map{"PAWN"}
         
         let buyerAndPawn = Observable.of(clickBuyer,clickPawn).merge()
+        
+        buyerAndPawn.subscribe(onNext: {[weak self] in self?.buyerOrPawn.value = $0})
+            .disposed(by: disposeBag)
+        
+        input.id.asObservable().subscribe(onNext: { [weak self] in self?.username.value = $0 })
+            .disposed(by: disposeBag)
+        
+        input.pw.asObservable().subscribe(onNext: { [weak self] in self?.password.value = $0})
+            .disposed(by: disposeBag)
         
         
         let buyerColor = buyerAndPawn.map{ role in
@@ -44,11 +76,40 @@ class SignUpViewModel: ViewModelType {
             else { return false }
             }.asDriver(onErrorJustReturn: false)
         
+        let pwValid = Driver.combineLatest(input.pw, input.pwCheck) {$0 == $1 && !$0.isEmpty && !$1.isEmpty}
+        let idPwEmptyCheck = Driver.combineLatest(input.id, input.pw) {!$0.isEmpty && !$1.isEmpty }
+        let isNextEnabled = Driver.combineLatest(pwValid, idPwEmptyCheck) {$0 && $1}
+        
         let moveNextPage = input.clickNext
             .map{ return true }
             .asDriver(onErrorJustReturn: false)
         
-        
-        return Output(buyerColor: buyerColor, pawnColor: pawnColor, moveNextPage: moveNextPage)
+        return Output(buyerColor: buyerColor, pawnColor: pawnColor, isNextEnabled: isNextEnabled, moveNextPage: moveNextPage)
     }
+    
+    func secondTransform(input: SecondInput) -> SecondOutput {
+        
+        
+        let phoneNumNickNameCheck = Driver.combineLatest(input.phoneNum, input.nickName) { (!$0.isEmpty && !$1.isEmpty) }
+        let isCreateEnabled = Driver.combineLatest(phoneNumNickNameCheck, buyerOrPawn.asDriver()) {$0 && (!$1.isEmpty)}
+        
+        let phoneNumAndNickName = Driver.combineLatest(input.phoneNum, input.nickName) { ($0,$1) }
+        let createAccount = input.clickCreate
+            .asObservable()
+            .withLatestFrom(phoneNumAndNickName)
+            .flatMapLatest{ [weak self] pair  -> Driver<SignUpResult> in
+                let (phoneNum, nickName) = pair
+                
+                if self?.buyerOrPawn.value == "BUYER" {
+                    return self?.api.signUpBuyer(username: self?.username.value ?? "", password: self?.password.value ?? "", phoneNum: phoneNum, nickName: nickName).asDriver(onErrorJustReturn: SignUpResult.empty) ?? Driver.just(SignUpResult.empty)
+                } else if self?.buyerOrPawn.value == "SELLER" {
+                    return Driver.just(SignUpResult.empty)
+                } else {return Driver.just(SignUpResult.empty)}
+        }
+        
+        
+        
+        return SecondOutput(isCreateEnabled: isCreateEnabled, createAccount: createAccount.asDriver(onErrorJustReturn: SignUpResult.empty))
+    }
+    
 }

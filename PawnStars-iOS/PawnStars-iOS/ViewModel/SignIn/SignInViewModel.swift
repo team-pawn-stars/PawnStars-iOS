@@ -21,7 +21,7 @@ enum SignInResult {
 class SignInViewModel: ViewModelType {
     
     let disposeBag = DisposeBag()
-    let api = Api()
+    let api = SignUpApi()
     
     struct Input {
         let username: Driver<String>

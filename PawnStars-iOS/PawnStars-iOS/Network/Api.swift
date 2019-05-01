@@ -13,12 +13,30 @@ import RxAlamofire
 import Alamofire
 
 protocol AccountProvider {
+    func statusCode(code : Int) -> StatusCode
+}
+
+protocol ApiProvider : AccountProvider { }
+
+class Api : ApiProvider{
+    private let connector = Connector()
+    
+    func statusCode(code: Int) -> StatusCode {
+        switch code {
+        case 200,201: return StatusCode.success
+        default: return StatusCode.failure
+        }
+    }
+}
+
+protocol SignInProvider {
     func signIn(username: String, password: String) -> Observable<(SignInResult,String?)>
     func signUpBuyer(username: String, password: String,phoneNum: String, nickName: String) -> Observable<SignUpResult>
     func signUpSeller(username: String, password: String, phoneNum: String, nickName: String, lng: Float, lat: Float) -> Observable<SignUpResult>
 }
 
-class Api: AccountProvider {
+
+class SignUpApi: SignInProvider {
     
     private let connector = Connector()
     

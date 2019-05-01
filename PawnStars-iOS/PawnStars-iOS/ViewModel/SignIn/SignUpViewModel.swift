@@ -18,7 +18,7 @@ enum SignUpResult {
 class SignUpViewModel: ViewModelType {
     
     let disposeBag = DisposeBag()
-    let api = Api()
+    let api = SignUpApi()
     let buyerOrPawn = Variable<String>("")
     let username = Variable<String>("")
     let password = Variable<String>("")

@@ -51,5 +51,7 @@ enum Header {
     }
 }
 
-
+enum StatusCode {
+    case success, failure
+}
 

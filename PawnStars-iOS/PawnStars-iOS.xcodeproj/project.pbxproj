@@ -46,6 +46,7 @@
 		C94D22AA2266F60100395826 /* SignUpContentFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22A82266F60100395826 /* SignUpContentFirstVC.swift */; };
 		C94D22AC2266FB3600395826 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22AB2266FB3600395826 /* ViewModelType.swift */; };
 		C94D22AE226701AF00395826 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22AD226701AF00395826 /* AccountAPI.swift */; };
+		C994208322792CFC004CF8F5 /* SignUpLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994208222792CFC004CF8F5 /* SignUpLocationVC.swift */; };
 		C9A0A3EE224B37290085756E /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3ED224B37290085756E /* SignIn.storyboard */; };
 		C9A0A3F5224B4E080085756E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0A3F4224B4E080085756E /* SignInVC.swift */; };
 		C9A0A3F7224B55AE0085756E /* appIconImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3F6224B55AE0085756E /* appIconImage.png */; };
@@ -125,6 +126,7 @@
 		C94D22A82266F60100395826 /* SignUpContentFirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpContentFirstVC.swift; sourceTree = "<group>"; };
 		C94D22AB2266FB3600395826 /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		C94D22AD226701AF00395826 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
+		C994208222792CFC004CF8F5 /* SignUpLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLocationVC.swift; sourceTree = "<group>"; };
 		C9A0A3ED224B37290085756E /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		C9A0A3F4224B4E080085756E /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		C9A0A3F6224B55AE0085756E /* appIconImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconImage.png; sourceTree = "<group>"; };
@@ -408,6 +410,7 @@
 				C9A0A3FE224B66140085756E /* SignUpVC.swift */,
 				C94D22A82266F60100395826 /* SignUpContentFirstVC.swift */,
 				C94D22A72266F60100395826 /* SignUpContentSecondVC.swift */,
+				C994208222792CFC004CF8F5 /* SignUpLocationVC.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -689,6 +692,7 @@
 				6838CA33224B178E00FB802A /* Shape.swift in Sources */,
 				6850D40D2264632B00536F9A /* APIProtocol.swift in Sources */,
 				6838CA29224B143900FB802A /* PawnListVC.swift in Sources */,
+				C994208322792CFC004CF8F5 /* SignUpLocationVC.swift in Sources */,
 				C94D22AE226701AF00395826 /* AccountAPI.swift in Sources */,
 				6838CA31224B14DC00FB802A /* MyPageVC.swift in Sources */,
 				C9A0A3FF224B66140085756E /* SignUpVC.swift in Sources */,

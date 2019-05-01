@@ -15,7 +15,7 @@ import Alamofire
 protocol AccountProvider {
     func signIn(username: String, password: String) -> Observable<(SignInResult,String?)>
     func signUpBuyer(username: String, password: String,phoneNum: String, nickName: String) -> Observable<SignUpResult>
-    func signUpSeller() -> Observable<Bool>
+    func signUpSeller(username: String, password: String, phoneNum: String, nickName: String, lng: Float, lat: Float) -> Observable<SignUpResult>
 }
 
 class Api: AccountProvider {
@@ -44,7 +44,6 @@ class Api: AccountProvider {
     func signUpBuyer(username: String, password: String,phoneNum: String, nickName: String) -> Observable<SignUpResult> {
         return connector.post(path: AccountAPI.signUpBuyer.getPath(), params: ["username":username,"password":password,"phone":phoneNum,"name":nickName], header: Header.Empty)
             .map{ (response, _) -> SignUpResult in
-                dump(response)
                 switch response.statusCode {
                 case 201: return SignUpResult.success
                 case 409: return SignUpResult.existId
@@ -54,7 +53,14 @@ class Api: AccountProvider {
         }
     }
     
-    func signUpSeller() -> Observable<Bool> {
-        return Observable.just(false)
+    func signUpSeller(username: String, password: String, phoneNum: String, nickName: String, lng: Float, lat: Float) -> Observable<SignUpResult> {
+        return connector.post(path: AccountAPI.signUpSeller.getPath(), params: ["username":username,"password":password,"phone":phoneNum,"name":nickName,"longitude":lng,"latitude":lat], header: Header.Empty).map{ (response,_) -> SignUpResult in
+            switch response.statusCode {
+            case 201: return SignUpResult.success
+            case 409: return SignUpResult.existId
+            case 400: return SignUpResult.fail
+            default: return SignUpResult.empty
+            }
+        }
     }
 }

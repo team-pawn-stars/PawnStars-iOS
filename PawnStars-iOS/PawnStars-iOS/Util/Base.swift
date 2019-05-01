@@ -10,6 +10,15 @@ import Foundation
 import UIKit
 
 extension UIViewController{
-    // static method or property
+    
+    func showAlert(self vc: UIViewController, title: String, message: String, handler: ((UIAlertAction) -> Void)? = nil, actionTitle: String? = nil) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        if let actionTitle = actionTitle {
+            alert.addAction(UIAlertAction(title: actionTitle, style: UIAlertAction.Style.default, handler: handler))
+        }
+        vc.present(alert, animated: true, completion: nil)
+    }
 }
 

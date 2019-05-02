@@ -7,17 +7,8 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 
 class SignInVC: UIViewController {
-    
-    @IBOutlet weak var idTextField: UITextField!
-    @IBOutlet weak var pwTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
-    
-    var signInViewModel: SignInViewModel!
-    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()

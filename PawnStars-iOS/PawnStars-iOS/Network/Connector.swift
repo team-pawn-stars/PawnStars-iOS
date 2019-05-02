@@ -13,7 +13,7 @@ import RxCocoa
 
 protocol ConnectorType {
     func get(path: String, params: Parameters?, header : Header) -> Observable<(HTTPURLResponse,Data)>
-    func post(path: String, params: Parameters, header : Header) -> Observable<(HTTPURLResponse,Data)>
+    func post(path: String, params: Parameters?, header : Header) -> Observable<(HTTPURLResponse,Data)>
 }
 
 class Connector : ConnectorType {
@@ -27,8 +27,7 @@ class Connector : ConnectorType {
                            headers: header.getHeader())
     }
     
-    func post(path: String, params: Parameters, header: Header) -> Observable<(HTTPURLResponse, Data)> {
-        print("asdfadfㅁㅇㄹㅁㅇㄹㅁ\(params)")
+    func post(path: String, params: Parameters?, header: Header) -> Observable<(HTTPURLResponse, Data)> {
         return requestData(.post,
                            baseUrl + path,
                            parameters: params,

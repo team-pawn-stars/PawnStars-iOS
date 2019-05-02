@@ -74,14 +74,10 @@ class SignUpVC: UIViewController {
                 
             }
             }.disposed(by: disposeBag)
-        
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? UIPageViewController {

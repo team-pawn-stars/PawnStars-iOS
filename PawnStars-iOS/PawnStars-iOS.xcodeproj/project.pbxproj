@@ -31,6 +31,7 @@
 		6838CA37224B17A700FB802A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA36224B17A700FB802A /* Colors.swift */; };
 		683A20DD2266A25000CBF74A /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20DC2266A25000CBF74A /* Connector.swift */; };
 		683A20DF2266AEBF00CBF74A /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20DE2266AEBF00CBF74A /* Api.swift */; };
+		683A20E12266AF3100CBF74A /* ApiResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20E02266AF3100CBF74A /* ApiResponses.swift */; };
 		684448FD224D9EFB00B5A002 /* filterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 684448FA224D9EFB00B5A002 /* filterIcon.png */; };
 		684448FE224D9EFB00B5A002 /* filterIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 684448FB224D9EFB00B5A002 /* filterIcon@3x.png */; };
 		68444900224DA27D00B5A002 /* filterIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 684448FC224D9EFB00B5A002 /* filterIcon@2x.png */; };
@@ -106,6 +107,7 @@
 		6838CA36224B17A700FB802A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		683A20DC2266A25000CBF74A /* Connector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
 		683A20DE2266AEBF00CBF74A /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		683A20E02266AF3100CBF74A /* ApiResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponses.swift; sourceTree = "<group>"; };
 		684448FA224D9EFB00B5A002 /* filterIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filterIcon.png; sourceTree = "<group>"; };
 		684448FB224D9EFB00B5A002 /* filterIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filterIcon@3x.png"; sourceTree = "<group>"; };
 		684448FC224D9EFB00B5A002 /* filterIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filterIcon@2x.png"; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				C94D22A62266BAA800395826 /* SignIn */,
+				682C0BC5225B0CDD00954D25 /* SIgnInModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -391,7 +394,7 @@
 			children = (
 				C94D22A42266BA8900395826 /* SignInModel.swift */,
 			);
-			path = SignIn;
+			path = API;
 			sourceTree = "<group>";
 		};
 		C9A0A3F0224B382C0085756E /* Image */ = {
@@ -691,11 +694,13 @@
 				6838C9E7224B0ABE00FB802A /* ViewController.swift in Sources */,
 				6838CA33224B178E00FB802A /* Shape.swift in Sources */,
 				6850D40D2264632B00536F9A /* APIProtocol.swift in Sources */,
+				683A20E12266AF3100CBF74A /* ApiResponses.swift in Sources */,
 				6838CA29224B143900FB802A /* PawnListVC.swift in Sources */,
 				C994208322792CFC004CF8F5 /* SignUpLocationVC.swift in Sources */,
 				C94D22AE226701AF00395826 /* AccountAPI.swift in Sources */,
 				6838CA31224B14DC00FB802A /* MyPageVC.swift in Sources */,
 				C9A0A3FF224B66140085756E /* SignUpVC.swift in Sources */,
+				682C0BC6225B0CDD00954D25 /* SIgnInModel.swift in Sources */,
 				683A20DD2266A25000CBF74A /* Connector.swift in Sources */,
 				6838CA2D224B149900FB802A /* ChattingVC.swift in Sources */,
 				6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */,

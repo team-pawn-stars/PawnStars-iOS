@@ -42,10 +42,8 @@
 		B2DB809BF5DBE17A1EB73D04 /* Pods_PawnStars_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D519196F4F62E43012E16369 /* Pods_PawnStars_iOSTests.framework */; };
 		C94D229A2266BA0000395826 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22992266BA0000395826 /* SignInViewModel.swift */; };
 		C94D229C2266BA1100395826 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D229B2266BA1100395826 /* SignUpViewModel.swift */; };
-		C94D22A52266BA8900395826 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22A42266BA8900395826 /* SignInModel.swift */; };
 		C94D22A92266F60100395826 /* SignUpContentSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22A72266F60100395826 /* SignUpContentSecondVC.swift */; };
 		C94D22AA2266F60100395826 /* SignUpContentFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22A82266F60100395826 /* SignUpContentFirstVC.swift */; };
-		C94D22AC2266FB3600395826 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22AB2266FB3600395826 /* ViewModelType.swift */; };
 		C94D22AE226701AF00395826 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22AD226701AF00395826 /* AccountAPI.swift */; };
 		C994208322792CFC004CF8F5 /* SignUpLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994208222792CFC004CF8F5 /* SignUpLocationVC.swift */; };
 		C9A0A3EE224B37290085756E /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3ED224B37290085756E /* SignIn.storyboard */; };
@@ -55,6 +53,8 @@
 		C9A0A3FB224B64860085756E /* buyerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3FA224B64860085756E /* buyerIcon.png */; };
 		C9A0A3FD224B648B0085756E /* pawnIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3FC224B648B0085756E /* pawnIcon.png */; };
 		C9A0A3FF224B66140085756E /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0A3FE224B66140085756E /* SignUpVC.swift */; };
+		C9F8B4AB227A704900B5F4D9 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */; };
+		C9F8B4AD227A709100B5F4D9 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F8B4AC227A709100B5F4D9 /* ViewModelType.swift */; };
 		E651E6CB4C6E2C74CFAF7D47 /* Pods_PawnStars_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4B20795106F1E6B77A1298 /* Pods_PawnStars_iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,10 +123,8 @@
 		C90D7E2240A283B1606338D3 /* Pods-PawnStars-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C94D22992266BA0000395826 /* SignInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewModel.swift; path = SignIn/SignInViewModel.swift; sourceTree = "<group>"; };
 		C94D229B2266BA1100395826 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = SignIn/SignUpViewModel.swift; sourceTree = "<group>"; };
-		C94D22A42266BA8900395826 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		C94D22A72266F60100395826 /* SignUpContentSecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpContentSecondVC.swift; sourceTree = "<group>"; };
 		C94D22A82266F60100395826 /* SignUpContentFirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpContentFirstVC.swift; sourceTree = "<group>"; };
-		C94D22AB2266FB3600395826 /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		C94D22AD226701AF00395826 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
 		C994208222792CFC004CF8F5 /* SignUpLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLocationVC.swift; sourceTree = "<group>"; };
 		C9A0A3ED224B37290085756E /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
@@ -136,6 +134,8 @@
 		C9A0A3FA224B64860085756E /* buyerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buyerIcon.png; sourceTree = "<group>"; };
 		C9A0A3FC224B648B0085756E /* pawnIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pawnIcon.png; sourceTree = "<group>"; };
 		C9A0A3FE224B66140085756E /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInModel.swift; path = "PawnStars-iOS/Network/SignInModel.swift"; sourceTree = SOURCE_ROOT; };
+		C9F8B4AC227A709100B5F4D9 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		D519196F4F62E43012E16369 /* Pods_PawnStars_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawnStars_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,8 +193,7 @@
 		682C0BC3225B0C9A00954D25 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C94D22A62266BAA800395826 /* SignIn */,
-				682C0BC5225B0CDD00954D25 /* SIgnInModel.swift */,
+				C94D22A62266BAA800395826 /* API */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +216,7 @@
 				6838C9E2224B0ABE00FB802A /* Products */,
 				23C219C9BD184531BA0D942B /* Pods */,
 				5CD4CA97D80B6E6D6D35D052 /* Frameworks */,
+				C9F8B4A5227A6ED700B5F4D9 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -273,7 +273,7 @@
 				6838CA32224B178E00FB802A /* Shape.swift */,
 				6838CA34224B179700FB802A /* Base.swift */,
 				6838CA36224B17A700FB802A /* Colors.swift */,
-				C94D22AB2266FB3600395826 /* ViewModelType.swift */,
+				C9F8B4AC227A709100B5F4D9 /* ViewModelType.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -389,10 +389,10 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		C94D22A62266BAA800395826 /* SignIn */ = {
+		C94D22A62266BAA800395826 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				C94D22A42266BA8900395826 /* SignInModel.swift */,
+				C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -416,6 +416,14 @@
 				C994208222792CFC004CF8F5 /* SignUpLocationVC.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		C9F8B4A5227A6ED700B5F4D9 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				683A20E02266AF3100CBF74A /* ApiResponses.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -684,12 +692,12 @@
 				C94D22A92266F60100395826 /* SignUpContentSecondVC.swift in Sources */,
 				6838C9ED224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld in Sources */,
 				C94D22AA2266F60100395826 /* SignUpContentFirstVC.swift in Sources */,
+				C9F8B4AB227A704900B5F4D9 /* SignInModel.swift in Sources */,
 				C9A0A3F5224B4E080085756E /* SignInVC.swift in Sources */,
-				C94D22A52266BA8900395826 /* SignInModel.swift in Sources */,
 				C94D229A2266BA0000395826 /* SignInViewModel.swift in Sources */,
 				6838CA37224B17A700FB802A /* Colors.swift in Sources */,
 				6838CA35224B179700FB802A /* Base.swift in Sources */,
-				C94D22AC2266FB3600395826 /* ViewModelType.swift in Sources */,
+				C9F8B4AD227A709100B5F4D9 /* ViewModelType.swift in Sources */,
 				6838CA2B224B146700FB802A /* FlexVC.swift in Sources */,
 				6838C9E7224B0ABE00FB802A /* ViewController.swift in Sources */,
 				6838CA33224B178E00FB802A /* Shape.swift in Sources */,
@@ -700,7 +708,6 @@
 				C94D22AE226701AF00395826 /* AccountAPI.swift in Sources */,
 				6838CA31224B14DC00FB802A /* MyPageVC.swift in Sources */,
 				C9A0A3FF224B66140085756E /* SignUpVC.swift in Sources */,
-				682C0BC6225B0CDD00954D25 /* SIgnInModel.swift in Sources */,
 				683A20DD2266A25000CBF74A /* Connector.swift in Sources */,
 				6838CA2D224B149900FB802A /* ChattingVC.swift in Sources */,
 				6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */,

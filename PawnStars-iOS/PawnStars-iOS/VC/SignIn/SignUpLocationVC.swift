@@ -55,12 +55,13 @@ class SignUpLocationVC: UIViewController {
             }.disposed(by: disposeBag)
         
         output.result.asObservable().subscribe { [weak self] result in
+            guard let strongSelf = self else {return}
             if let result = result.element {
                 switch result {
-                case SignUpResult.success : self?.navigationController?.popToRootViewController(animated: true)
-                case SignUpResult.existId : self?.showAlert(self: self!, title: "실패", message: "이미 있는 아이디", actionTitle: "확인")
-                case SignUpResult.fail : self?.showAlert(self: self!, title: "실패", message: "", actionTitle: "확인")
-                default: self?.showAlert(self: self!, title: "오류", message: "", actionTitle: "확인")
+                case SignUpResult.success : strongSelf.navigationController?.popToRootViewController(animated: true)
+                case SignUpResult.existId : strongSelf.showAlert(self: strongSelf, title: "실패", message: "이미 있는 아이디", actionTitle: "확인")
+                case SignUpResult.fail : strongSelf.showAlert(self: strongSelf, title: "실패", message: "", actionTitle: "확인")
+                default: strongSelf.showAlert(self: strongSelf, title: "오류", message: "", actionTitle: "확인")
                 }
             }
         }.disposed(by: disposeBag)

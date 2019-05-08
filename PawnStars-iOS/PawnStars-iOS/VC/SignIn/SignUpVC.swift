@@ -55,12 +55,13 @@ class SignUpVC: UIViewController {
                     .disposed(by: strongSelf.disposeBag)
                 
                 secondOutput.createAccount.asObservable().subscribe{ [weak self] result in
+                    guard let strongSelf = self else {return}
                     switch result.element! {
-                    case SignUpResult.success : self?.navigationController?.popToRootViewController(animated: true)
-                    case SignUpResult.existId : self?.showAlert(self: self!, title: "실패", message: "이미 있는 아이디", actionTitle: "확인")
-                    case SignUpResult.fail : self?.showAlert(self: self!, title: "실패", message: "", actionTitle: "확인")
-                    case SignUpResult.seller : self?.performSegue(withIdentifier: "selectLocation", sender: nil)
-                    default: self?.showAlert(self: self!, title: "오류", message: "", actionTitle: "확인")
+                    case SignUpResult.success : strongSelf.navigationController?.popToRootViewController(animated: true)
+                    case SignUpResult.existId : strongSelf.showAlert(self: self!, title: "실패", message: "이미 있는 아이디", actionTitle: "확인")
+                    case SignUpResult.fail : strongSelf.showAlert(self: self!, title: "실패", message: "", actionTitle: "확인")
+                    case SignUpResult.seller : strongSelf.performSegue(withIdentifier: "selectLocation", sender: nil)
+                    default: strongSelf.showAlert(self: strongSelf, title: "오류", message: "", actionTitle: "확인")
                     }
                     }.disposed(by: strongSelf.disposeBag)
                 

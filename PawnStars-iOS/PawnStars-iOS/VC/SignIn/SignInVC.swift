@@ -30,20 +30,14 @@ class SignInVC: UIViewController {
         let output = signInViewModel.transform(input: input)
         
         output.result.drive(onNext: { [weak self] result in
-
+            guard let strongSelf = self else {return}
             switch result {
             case .success:
-                self?.performSegue(withIdentifier: "goMain", sender: nil)
-                
+                strongSelf.performSegue(withIdentifier: "goMain", sender: nil)
             case .failure:
-                let alert = UIAlertController(title: "로그인 실패", message: "", preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: {(UIAlertAction) -> Void in _ = self?.navigationController?.popToRootViewController(animated: true)}))
-                self?.present(alert, animated: true, completion: nil)
-                
+                strongSelf.showAlert(self: strongSelf, title: "로그인 실패", message: "", actionTitle: "확인")
             default :
-                let alert = UIAlertController(title: "에러", message: "", preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: {(UIAlertAction) -> Void in _ = self?.navigationController?.popToRootViewController(animated: true)}))
-                self?.present(alert, animated: true, completion: nil)
+                strongSelf.showAlert(self: strongSelf, title: "오류", message: "", actionTitle: "확인")
             }
         }).disposed(by: disposeBag)
         

@@ -16,9 +16,9 @@ public enum AccountAPI: API{
     
     func getPath() -> String {
         switch self {
-        case .signIn: return "signin/"
-        case .signUpBuyer: return "signup/buyer/"
-        case .signUpSeller: return "signup/seller/"
+        case .signIn: return "account/signin/"
+        case .signUpBuyer: return "account/signup/buyer/"
+        case .signUpSeller: return "account/signup/seller/"
         }
     }
 }

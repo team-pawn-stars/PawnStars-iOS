@@ -11,6 +11,7 @@ target 'PawnStars-iOS' do
   pod 'RxCocoa',    '~> 4.0'
   pod 'RxDataSources', '~> 3.0'
   pod 'RxAlamofire'
+  pod 'Kingfisher'
   # Pods for PawnStars-iOS
 
   target 'PawnStars-iOSTests' do

@@ -14,7 +14,7 @@ public enum FlexAPI: API{
     
     func getPath() -> String {
         switch self {
-        case .flexList: return "flex"
+        case .flexList: return "flex/"
         }
     }
 }

@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "RxAtomic.h"
+#import "Kingfisher.h"
 
-FOUNDATION_EXPORT double RxAtomicVersionNumber;
-FOUNDATION_EXPORT const unsigned char RxAtomicVersionString[];
+FOUNDATION_EXPORT double KingfisherVersionNumber;
+FOUNDATION_EXPORT const unsigned char KingfisherVersionString[];
 

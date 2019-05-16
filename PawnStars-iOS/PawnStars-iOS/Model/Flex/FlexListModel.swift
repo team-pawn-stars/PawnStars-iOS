@@ -13,8 +13,9 @@ struct FlexListModel: Codable {
     let author: String
     let date: String
     let pawnPost: Int
-    let like: Int
+    let like: String
     let photo: String?
+    let price: String
     let title: String
     
     enum CodingKeys: String, CodingKey {
@@ -24,6 +25,7 @@ struct FlexListModel: Codable {
         case pawnPost = "pawn_post"
         case like
         case photo
+        case price
         case title
     }
 }

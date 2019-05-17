@@ -56,6 +56,8 @@
 		C9A0A3FB224B64860085756E /* buyerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3FA224B64860085756E /* buyerIcon.png */; };
 		C9A0A3FD224B648B0085756E /* pawnIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3FC224B648B0085756E /* pawnIcon.png */; };
 		C9A0A3FF224B66140085756E /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0A3FE224B66140085756E /* SignUpVC.swift */; };
+		C9CF5C2A22893B300026D5FD /* flexIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CF5C2922893B300026D5FD /* flexIcon.png */; };
+		C9CF5C2C22893B370026D5FD /* goIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CF5C2B22893B370026D5FD /* goIcon.png */; };
 		C9F8B4AB227A704900B5F4D9 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */; };
 		C9F8B4AD227A709100B5F4D9 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F8B4AC227A709100B5F4D9 /* ViewModelType.swift */; };
 		E651E6CB4C6E2C74CFAF7D47 /* Pods_PawnStars_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4B20795106F1E6B77A1298 /* Pods_PawnStars_iOSUITests.framework */; };
@@ -140,6 +142,8 @@
 		C9A0A3FA224B64860085756E /* buyerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buyerIcon.png; sourceTree = "<group>"; };
 		C9A0A3FC224B648B0085756E /* pawnIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pawnIcon.png; sourceTree = "<group>"; };
 		C9A0A3FE224B66140085756E /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		C9CF5C2922893B300026D5FD /* flexIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flexIcon.png; sourceTree = "<group>"; };
+		C9CF5C2B22893B370026D5FD /* goIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goIcon.png; sourceTree = "<group>"; };
 		C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInModel.swift; path = "PawnStars-iOS/Network/SignInModel.swift"; sourceTree = SOURCE_ROOT; };
 		C9F8B4AC227A709100B5F4D9 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		D519196F4F62E43012E16369 /* Pods_PawnStars_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawnStars_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -425,6 +429,7 @@
 		C9A0A3F0224B382C0085756E /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				C9CF5C2422893B010026D5FD /* Flex */,
 				684448F8224D9E4900B5A002 /* Signin */,
 				684448F7224D9E3F00B5A002 /* PawnList */,
 			);
@@ -441,6 +446,15 @@
 				C994208222792CFC004CF8F5 /* SignUpLocationVC.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		C9CF5C2422893B010026D5FD /* Flex */ = {
+			isa = PBXGroup;
+			children = (
+				C9CF5C2922893B300026D5FD /* flexIcon.png */,
+				C9CF5C2B22893B370026D5FD /* goIcon.png */,
+			);
+			path = Flex;
 			sourceTree = "<group>";
 		};
 		C9F8B4A5227A6ED700B5F4D9 /* Recovered References */ = {
@@ -575,9 +589,11 @@
 				6838CA22224B12B300FB802A /* Flex.storyboard in Resources */,
 				C9A0A3FB224B64860085756E /* buyerIcon.png in Resources */,
 				68444900224DA27D00B5A002 /* filterIcon@2x.png in Resources */,
+				C9CF5C2C22893B370026D5FD /* goIcon.png in Resources */,
 				6838CA1C224B113700FB802A /* Chatting.storyboard in Resources */,
 				6838C9EA224B0ABE00FB802A /* Main.storyboard in Resources */,
 				C9A0A3F7224B55AE0085756E /* appIconImage.png in Resources */,
+				C9CF5C2A22893B300026D5FD /* flexIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import RxCocoa
 import RxSwift
+import Kingfisher
 
 class FlexVC : UIViewController {
     @IBOutlet weak var sortSegmentControl: UISegmentedControl!
@@ -27,11 +28,12 @@ class FlexVC : UIViewController {
         let output = flexViewModel.transform(input: input)
         
         output.flexList.drive(listTableView.rx.items(cellIdentifier: "flexCell", cellType: FlexCell.self)) { _ , data, cell in
-            cell.flexNumLabel.text = "\(data.like)"
-            cell.titleLabel.text = data.title
-            cell.authorLabel.text = data.author
+            cell.configure(model: data)
         }.disposed(by: disposeBag)
         
+        listTableView.rx.itemSelected.subscribe {_ in
+            self.performSegue(withIdentifier: "showFlexDetail", sender: nil)
+        }.disposed(by: disposeBag)
     }
 }
 
@@ -40,5 +42,20 @@ class FlexCell: UITableViewCell {
     @IBOutlet weak var flexNumLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     
+    override func awakeFromNib() {
+        selectionStyle = .none
+    }
+    
+    func configure(model: FlexListModel) {
+        
+        if let imageUrl = model.photo {
+            listImageView.kf.setImage(with: URL(string: imageUrl))
+        }
+        flexNumLabel.text = "\(model.like)"
+        titleLabel.text = model.title
+        authorLabel.text = model.author
+        priceLabel.text = model.price
+    }
 }

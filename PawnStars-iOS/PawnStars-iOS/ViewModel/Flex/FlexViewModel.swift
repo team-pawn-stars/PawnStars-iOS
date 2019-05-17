@@ -23,26 +23,29 @@ class FlexViewModel: ViewModelType {
         let flexList: Driver<[FlexListModel]>
     }
     func transform(input: Input) -> Output {
-        let sortKey = BehaviorRelay<FlexSortKey>(value: .new)
-            
-        input.selectIndex.asObservable().subscribe { index in
-            if let index = index.element {
-                switch index {
-                case 0: sortKey.accept(.new)
-                case 1: sortKey.accept(.like)
-                default: sortKey.accept(.new)
-                }
+        
+        let sortKey = input.selectIndex.asObservable().flatMapLatest { index -> Observable<FlexSortKey> in
+            switch index {
+            case 0: return Observable.of(.new)
+            case 1: return Observable.of(.like)
+            default: return Observable.of(.new)
             }
-        }.disposed(by: disposeBag)
+        }
         
         let page = BehaviorRelay<Int>(value: 1)
         
-        input.nextPage.asObservable().subscribe { _ in
+        input.nextPage.asObservable().subscribe {
             page.accept(page.value + 1)
         }.disposed(by: disposeBag)
         
-        let flexList = self.api.flexList(page: page.value, sortKey: sortKey.value).asDriver(onErrorJustReturn: [])
+        let pageAndSortKey = Observable.combineLatest(page.asObservable(), sortKey) {($0,$1)}
         
-        return Output(flexList: flexList)
+        let flexList = pageAndSortKey.flatMapLatest { [weak self] pair -> Observable<[FlexListModel]> in
+            guard let strongSelf = self else {return Observable.of([])}
+            let (page,sortKey) = pair
+            return strongSelf.api.flexList(page: page, sortKey: sortKey)
+        }
+        
+        return Output(flexList: flexList.asDriver(onErrorJustReturn: []))
     }
 }

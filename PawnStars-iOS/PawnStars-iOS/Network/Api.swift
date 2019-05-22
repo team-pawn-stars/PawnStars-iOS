@@ -18,11 +18,13 @@ protocol AccountProvider {
 
 protocol FlexProvider {
     func flexList(page: Int, sortKey: FlexSortKey) -> Observable<[FlexListModel]>
+    func flexDetail(postId: Int) -> Observable<FlexDetailModel?>
 }
 
 protocol ApiProvider : AccountProvider,FlexProvider { }
 
 class Api : ApiProvider{
+    
     private let connector = Connector()
     
     func statusCode(code: Int) -> StatusCode {
@@ -33,7 +35,7 @@ class Api : ApiProvider{
     }
     
     func flexList(page: Int, sortKey: FlexSortKey) -> Observable<[FlexListModel]> {
-        return connector.get(path: FlexAPI.flexList.getPath(), params: ["page":page,"sort_key":sortKey.getKey()], header: .Empty).map{ [weak self] (response,data) -> ([FlexListModel]) in
+        return connector.get(path: FlexAPI.flexList.getPath(), params: ["page":page,"sort_key":sortKey.getKey()], header: .Authorization).map{ [weak self] (response,data) -> ([FlexListModel]) in
             let response = self?.statusCode(code: response.statusCode) ?? StatusCode.failure
             
             switch response {
@@ -45,6 +47,26 @@ class Api : ApiProvider{
                 return model
             case .failure:
                 return []
+            }
+        }
+    }
+    
+    func flexDetail(postId: Int) -> Observable<FlexDetailModel?> {
+        return connector.get(path: FlexAPI.flexDetail(postId: postId).getPath(), params: nil, header: .Authorization).map { [weak self] (response, data) -> (FlexDetailModel?) in
+            guard let strongSelf = self else {return nil}
+            dump(response)
+            let response = strongSelf.statusCode(code: response.statusCode)
+            
+            switch response {
+            case .success:
+                guard let model = try? JSONDecoder().decode(FlexDetailModel.self, from: data) else {
+                    print("ERROR")
+                    return nil
+                }
+                dump(model)
+                return model
+            case .failure:
+                return nil
             }
         }
     }

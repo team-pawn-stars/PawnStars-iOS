@@ -19,21 +19,36 @@ class FlexVC : UIViewController {
     
     var flexViewModel: FlexViewModel!
     let disposeBag = DisposeBag()
+    var postId = 0
     
     override func viewDidLoad() {
         flexViewModel = FlexViewModel()
         
-        let input = FlexViewModel.Input(selectIndex: sortSegmentControl.rx.selectedSegmentIndex.asDriver(), nextPage: nextButton.rx.tap.asSignal())
+        let input = FlexViewModel.Input(selectIndex: sortSegmentControl.rx.selectedSegmentIndex.asDriver(), nextPage: nextButton.rx.tap.asSignal(), selectPostId: listTableView.rx.itemSelected.asDriver())
         
         let output = flexViewModel.transform(input: input)
         
         output.flexList.drive(listTableView.rx.items(cellIdentifier: "flexCell", cellType: FlexCell.self)) { _ , data, cell in
             cell.configure(model: data)
+            }.disposed(by: disposeBag)
+        
+        output.postId.subscribe {[weak self] postId in
+            guard let strongSelf = self else {return}
+            if let postId = postId.element {
+                strongSelf.postId = postId
+            }
         }.disposed(by: disposeBag)
         
         listTableView.rx.itemSelected.subscribe {_ in
-            self.performSegue(withIdentifier: "showFlexDetail", sender: nil)
-        }.disposed(by: disposeBag)
+            self.performSegue(withIdentifier: "goFlexDetail", sender: nil)
+            }.disposed(by: disposeBag)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goFlexDetail" {
+            let vc = segue.destination as? FlexDetailVC
+            vc?.postId.accept(postId)
+        }
     }
 }
 

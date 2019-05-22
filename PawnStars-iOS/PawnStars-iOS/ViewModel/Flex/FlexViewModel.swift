@@ -18,9 +18,11 @@ class FlexViewModel: ViewModelType {
     struct Input {
         let selectIndex: Driver<Int>
         let nextPage: Signal<Void>
+        let selectPostId: Driver<IndexPath>
     }
     struct Output {
         let flexList: Driver<[FlexListModel]>
+        let postId: Observable<Int>
     }
     func transform(input: Input) -> Output {
         
@@ -46,6 +48,10 @@ class FlexViewModel: ViewModelType {
             return strongSelf.api.flexList(page: page, sortKey: sortKey)
         }
         
-        return Output(flexList: flexList.asDriver(onErrorJustReturn: []))
+        let postId = Observable.combineLatest(input.selectPostId.asObservable(), flexList,resultSelector: { (index,data) in
+            return data[index.row].postId
+        })
+        
+        return Output(flexList: flexList.asDriver(onErrorJustReturn: []), postId: postId)
     }
 }

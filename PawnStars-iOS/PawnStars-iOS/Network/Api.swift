@@ -19,6 +19,7 @@ protocol AccountProvider {
 protocol FlexProvider {
     func flexList(page: Int, sortKey: FlexSortKey) -> Observable<[FlexListModel]>
     func flexDetail(postId: Int) -> Observable<FlexDetailModel?>
+    func writeComment(flexPost: Int, content: String) -> Observable<Bool>
 }
 
 protocol ApiProvider : AccountProvider,FlexProvider { }
@@ -54,7 +55,6 @@ class Api : ApiProvider{
     func flexDetail(postId: Int) -> Observable<FlexDetailModel?> {
         return connector.get(path: FlexAPI.flexDetail(postId: postId).getPath(), params: nil, header: .Authorization).map { [weak self] (response, data) -> (FlexDetailModel?) in
             guard let strongSelf = self else {return nil}
-            dump(response)
             let response = strongSelf.statusCode(code: response.statusCode)
             
             switch response {
@@ -63,10 +63,20 @@ class Api : ApiProvider{
                     print("ERROR")
                     return nil
                 }
-                dump(model)
                 return model
             case .failure:
                 return nil
+            }
+        }
+    }
+    
+    func writeComment(flexPost: Int, content: String) -> Observable<Bool> {
+        return connector.post(path: FlexAPI.flexComment.getPath(), params: ["flex_post": flexPost, "content": content], header: .Authorization).map { [weak self] (response, data) -> Bool in
+            guard let strongSelf = self else {return false}
+            let response = strongSelf.statusCode(code: response.statusCode)
+            switch response {
+            case .success: return true
+            case .failure: return false
             }
         }
     }

@@ -18,6 +18,8 @@ class FlexDetailViewModel: ViewModelType {
     struct Input {
         let postId: BehaviorRelay<Int>
         let clickLike: Signal<Void>
+        let writeComment: Signal<Void>
+        let comment: Driver<String>
     }
     
     struct Output {
@@ -30,6 +32,8 @@ class FlexDetailViewModel: ViewModelType {
         let imageUrls: Driver<[String]>
         let comment: Driver<[Comment]>
         let price: Driver<String>
+        let commentResult: Driver<Bool>
+        let initComment: Driver<String>
     }
     
     func transform(input: Input) -> Output {
@@ -42,6 +46,7 @@ class FlexDetailViewModel: ViewModelType {
         let imageUrls = BehaviorRelay<[String]>(value: [])
         let comment = BehaviorRelay<[Comment]>(value: [])
         let price = BehaviorRelay<String>(value: "")
+        let initComment = BehaviorRelay<String>(value: "")
         
         input.postId.asObservable().subscribe { [weak self] postId in
             guard let strongSelf = self else {return}
@@ -71,12 +76,55 @@ class FlexDetailViewModel: ViewModelType {
                             comment.accept(comments)
                         }
                     }
-                }.disposed(by: strongSelf.disposeBag)
+                    }.disposed(by: strongSelf.disposeBag)
             }
             
-        }.disposed(by: disposeBag)
+            }.disposed(by: disposeBag)
         
-        return Output(title: title.asDriver(), author: author.asDriver(), date: date.asDriver(), isLike: isLike.asDriver(), likeNum: likeNum.asDriver(), content: content.asDriver(), imageUrls: imageUrls.asDriver(), comment: comment.asDriver(), price: price.asDriver())
+        let commentResult = PublishRelay<Bool>()
+        
+        Observable.combineLatest(input.writeComment.asObservable(), input.comment.asObservable()).subscribe { [weak self] commentString in
+            guard let strongSelf = self else {return}
+            if let (_, commentString) = commentString.element {
+                strongSelf.api.writeComment(flexPost: input.postId.value, content: commentString).subscribe { result in
+                    if let result = result.element {
+                        commentResult.accept(result)
+                        if result {
+                            initComment.accept("")
+                            strongSelf.api.flexDetail(postId: input.postId.value).subscribe { model in
+                                if let model = model.element {
+                                    if let model = model {
+                                        var comments: [Comment] = []
+                                        for i in model.comments.indices {
+                                            let comment = model.comments[i].content
+                                            let arr = comment.components(separatedBy: ["@","[","]","(",")"])
+                                            if arr.count >= 2 {
+                                                comments.append(Comment(mention: arr[2], comment: arr[4]))
+                                            } else {
+                                                comments.append(Comment(comment: arr[0]))
+                                            }
+                                        }
+                                        comment.accept(comments)
+                                    }
+                                }
+                                }.disposed(by: strongSelf.disposeBag)
+                        }
+                    }
+                    }.disposed(by: strongSelf.disposeBag)
+            }
+            }.disposed(by: disposeBag)
+        
+        return Output(title: title.asDriver(),
+                      author: author.asDriver(),
+                      date: date.asDriver(),
+                      isLike: isLike.asDriver(),
+                      likeNum: likeNum.asDriver(),
+                      content: content.asDriver(),
+                      imageUrls: imageUrls.asDriver(),
+                      comment: comment.asDriver(),
+                      price: price.asDriver(),
+                      commentResult: commentResult.asDriver(onErrorJustReturn: false),
+                      initComment: initComment.asDriver())
     }
 }
 

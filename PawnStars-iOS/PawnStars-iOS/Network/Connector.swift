@@ -14,6 +14,8 @@ import RxCocoa
 protocol ConnectorType {
     func get(path: String, params: Parameters?, header : Header) -> Observable<(HTTPURLResponse,Data)>
     func post(path: String, params: Parameters?, header : Header) -> Observable<(HTTPURLResponse,Data)>
+    func patch(path: String, params: Parameters?, header : Header) -> Observable<(HTTPURLResponse,Data)>
+    func delete(path: String, params: Parameters?, header : Header) -> Observable<(HTTPURLResponse,Data)>
 }
 
 class Connector : ConnectorType {

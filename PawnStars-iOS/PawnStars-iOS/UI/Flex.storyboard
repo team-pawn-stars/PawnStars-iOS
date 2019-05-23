@@ -384,12 +384,14 @@
                     <connections>
                         <outlet property="authorLabel" destination="FZZ-x8-5vF" id="Xf1-fk-CAb"/>
                         <outlet property="commentTableView" destination="fpe-dY-KVU" id="ySj-0z-w2N"/>
+                        <outlet property="commentTextField" destination="h4q-M1-Cgx" id="GzB-mH-L50"/>
                         <outlet property="contentTextView" destination="6Ep-Hz-HmZ" id="Uwo-4L-paB"/>
                         <outlet property="dateLabel" destination="BYo-A1-gwc" id="9oQ-xS-0tg"/>
                         <outlet property="likeButton" destination="ZNw-mP-3CJ" id="Dq4-Ma-Rvd"/>
                         <outlet property="likeLabel" destination="FWr-ol-gj4" id="DxI-S4-0Z8"/>
                         <outlet property="priceLabel" destination="YFg-AO-Xh6" id="Eca-Gc-qJR"/>
                         <outlet property="titleLabel" destination="wQE-cR-olr" id="bHJ-T1-Rjz"/>
+                        <outlet property="writeCommentButton" destination="cfR-rc-7cE" id="hvc-w4-rzi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLS-lQ-DMX" userLabel="First Responder" sceneMemberID="firstResponder"/>

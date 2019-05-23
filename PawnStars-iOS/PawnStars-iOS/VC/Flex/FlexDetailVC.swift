@@ -19,6 +19,8 @@ class FlexDetailVC: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var contentTextView: UITextView!
     @IBOutlet weak var commentTableView: UITableView!
+    @IBOutlet weak var commentTextField: UITextField!
+    @IBOutlet weak var writeCommentButton: UIButton!
     
     var flexDetailViewModel: FlexDetailViewModel!
     let disposeBag = DisposeBag()
@@ -31,7 +33,7 @@ class FlexDetailVC: UIViewController {
         
         flexDetailViewModel = FlexDetailViewModel()
         
-        let input = FlexDetailViewModel.Input(postId: postId, clickLike: likeButton.rx.tap.asSignal())
+        let input = FlexDetailViewModel.Input(postId: postId, clickLike: likeButton.rx.tap.asSignal(), writeComment: writeCommentButton.rx.tap.asSignal(), comment: commentTextField.rx.text.orEmpty.asDriver())
         
         let output = flexDetailViewModel.transform(input: input)
         
@@ -68,6 +70,19 @@ class FlexDetailVC: UIViewController {
                 }
             }
         }.disposed(by: disposeBag)
+        
+        output.commentResult.asObservable().subscribe { [weak self] result in
+            guard let strongSelf = self else {return}
+            if let result = result.element {
+                if !result {
+                    strongSelf.showAlert(self: strongSelf, title: "오류", message: "", handler: nil, actionTitle: "확인")
+                }
+            }
+        }.disposed(by: disposeBag)
+        
+        output.initComment
+            .drive(commentTextField.rx.text)
+            .disposed(by: disposeBag)
     }
     
     private func vcInstance() -> UIViewController {

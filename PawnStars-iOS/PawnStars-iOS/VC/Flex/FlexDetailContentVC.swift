@@ -15,23 +15,17 @@ class FlexDetailContentVC: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     var imageUrl = BehaviorRelay<String>(value: "")
     var disposeBag = DisposeBag()
+    var flexDetailContentViewModel: FlexDetailContentViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let image = imageUrl.asObservable().flatMapLatest { url -> Observable<UIImage> in
-            
-            let url = URL(string: "http://whale.istruly.sexy:3214\(url)")
-            do {
-                let data = try Data(contentsOf: url!)
-                let image = UIImage(data: data)
-                return Observable<UIImage>.of(image!)
-                
-            }catch let err {
-                print("Error : \(err.localizedDescription)")
-            }
-            return Observable<UIImage>.of(UIImage())
-        }
-        image.bind(to: imageView.rx.image).disposed(by: disposeBag)
+        flexDetailContentViewModel = FlexDetailContentViewModel()
+        
+        let input = FlexDetailContentViewModel.Input(imageUrl: imageUrl)
+        let output = flexDetailContentViewModel.transform(input: input)
+        output.imageData
+            .drive(imageView.rx.data)
+            .disposed(by: disposeBag)
     }
 }

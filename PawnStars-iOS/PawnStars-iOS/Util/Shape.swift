@@ -26,3 +26,11 @@ extension Reactive where Base: UIButton {
         }).asObserver()
     }
 }
+
+extension Reactive where Base: UIImageView {
+    var data: AnyObserver<Data> {
+        return Binder(base, binding: { (imageView: UIImageView, data: Data) in
+            imageView.image = UIImage(data: data)
+        }).asObserver()
+    }
+}

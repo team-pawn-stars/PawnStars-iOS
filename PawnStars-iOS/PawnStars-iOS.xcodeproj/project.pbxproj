@@ -50,6 +50,7 @@
 		C94D22AE226701AF00395826 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22AD226701AF00395826 /* AccountAPI.swift */; };
 		C990617622961E6700FBAB64 /* grayFlexIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C990617522961E6600FBAB64 /* grayFlexIcon.png */; };
 		C990617822962E3000FBAB64 /* FlexDetailContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990617722962E3000FBAB64 /* FlexDetailContentViewModel.swift */; };
+		C990617A2296A85A00FBAB64 /* RxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99061792296A85A00FBAB64 /* RxExtensions.swift */; };
 		C991B994228506A20040CC8B /* FlexListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B993228506A20040CC8B /* FlexListModel.swift */; };
 		C991B99622855E730040CC8B /* FlexAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B99522855E730040CC8B /* FlexAPI.swift */; };
 		C991B99922856C670040CC8B /* FlexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B99822856C670040CC8B /* FlexViewModel.swift */; };
@@ -142,6 +143,7 @@
 		C94D22AD226701AF00395826 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
 		C990617522961E6600FBAB64 /* grayFlexIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayFlexIcon.png; sourceTree = "<group>"; };
 		C990617722962E3000FBAB64 /* FlexDetailContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexDetailContentViewModel.swift; sourceTree = "<group>"; };
+		C99061792296A85A00FBAB64 /* RxExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExtensions.swift; sourceTree = "<group>"; };
 		C991B993228506A20040CC8B /* FlexListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexListModel.swift; sourceTree = "<group>"; };
 		C991B99522855E730040CC8B /* FlexAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexAPI.swift; sourceTree = "<group>"; };
 		C991B99822856C670040CC8B /* FlexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexViewModel.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				6838CA34224B179700FB802A /* Base.swift */,
 				6838CA36224B17A700FB802A /* Colors.swift */,
 				C9F8B4AC227A709100B5F4D9 /* ViewModelType.swift */,
+				C99061792296A85A00FBAB64 /* RxExtensions.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -749,6 +752,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				683A20DF2266AEBF00CBF74A /* Api.swift in Sources */,
+				C990617A2296A85A00FBAB64 /* RxExtensions.swift in Sources */,
 				6838CA2F224B14AC00FB802A /* WritingVC.swift in Sources */,
 				C94D229C2266BA1100395826 /* SignUpViewModel.swift in Sources */,
 				C94D22A92266F60100395826 /* SignUpContentSecondVC.swift in Sources */,

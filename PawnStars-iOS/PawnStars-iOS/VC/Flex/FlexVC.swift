@@ -39,8 +39,9 @@ class FlexVC : UIViewController {
             }
         }.disposed(by: disposeBag)
         
-        listTableView.rx.itemSelected.subscribe {_ in
-            self.performSegue(withIdentifier: "goFlexDetail", sender: nil)
+        listTableView.rx.itemSelected.subscribe { [weak self] _ in
+            guard let strongSelf = self else {return}
+            strongSelf.performSegue(withIdentifier: "goFlexDetail", sender: nil)
             }.disposed(by: disposeBag)
     }
     

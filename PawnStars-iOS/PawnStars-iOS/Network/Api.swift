@@ -16,15 +16,79 @@ protocol AccountProvider {
     func statusCode(code : Int) -> StatusCode
 }
 
-protocol ApiProvider : AccountProvider { }
+protocol FlexProvider {
+    func flexList(page: Int, sortKey: FlexSortKey) -> Observable<[FlexListModel]>
+    func flexDetail(postId: Int) -> Observable<FlexDetailModel?>
+    func writeComment(flexPost: Int, content: String) -> Observable<Bool>
+}
+
+protocol ApiProvider : AccountProvider,FlexProvider { }
 
 class Api : ApiProvider{
+    
     private let connector = Connector()
     
     func statusCode(code: Int) -> StatusCode {
         switch code {
         case 200,201: return StatusCode.success
         default: return StatusCode.failure
+        }
+    }
+    
+    func flexList(page: Int, sortKey: FlexSortKey) -> Observable<[FlexListModel]> {
+        return connector.get(path: FlexAPI.flexList.getPath(), params: ["page":page,"sort_key":sortKey.getKey()], header: .Authorization).map{ [weak self] (response,data) -> ([FlexListModel]) in
+            let response = self?.statusCode(code: response.statusCode) ?? StatusCode.failure
+            
+            switch response {
+            case .success:
+                guard let model = try? JSONDecoder().decode([FlexListModel].self, from: data) else {
+                    print("ERROR")
+                    return []
+                }
+                return model
+            case .failure:
+                return []
+            }
+        }
+    }
+    
+    func flexDetail(postId: Int) -> Observable<FlexDetailModel?> {
+        return connector.get(path: FlexAPI.flexDetail(postId: postId).getPath(), params: nil, header: .Authorization).map { [weak self] (response, data) -> (FlexDetailModel?) in
+            guard let strongSelf = self else {return nil}
+            let response = strongSelf.statusCode(code: response.statusCode)
+            
+            switch response {
+            case .success:
+                guard let model = try? JSONDecoder().decode(FlexDetailModel.self, from: data) else {
+                    print("ERROR")
+                    return nil
+                }
+                return model
+            case .failure:
+                return nil
+            }
+        }
+    }
+    
+    func writeComment(flexPost: Int, content: String) -> Observable<Bool> {
+        return connector.post(path: FlexAPI.flexComment.getPath(), params: ["flex_post": flexPost, "content": content], header: .Authorization).map { [weak self] (response, data) -> Bool in
+            guard let strongSelf = self else {return false}
+            let response = strongSelf.statusCode(code: response.statusCode)
+            switch response {
+            case .success: return true
+            case .failure: return false
+            }
+        }
+    }
+    
+    func flexLike(postId: Int) -> Observable<Bool> {
+        return connector.patch(path: FlexAPI.flexLike(postId: postId).getPath(), params: nil, header: .Authorization).map { [weak self] (response, data) -> Bool in
+            guard let strongSelf = self else {return false}
+            let response = strongSelf.statusCode(code: response.statusCode)
+            switch response {
+            case .success: return true
+            case .failure: return false
+            }
         }
     }
 }

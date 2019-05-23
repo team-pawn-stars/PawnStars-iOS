@@ -22,3 +22,13 @@ extension UIViewController{
     }
 }
 
+enum FlexSortKey {
+    case new,like
+    
+    func getKey() -> String {
+        switch self {
+        case .new: return "new"
+        case .like: return "like"
+        }
+    }
+}

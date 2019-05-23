@@ -80,6 +80,17 @@ class Api : ApiProvider{
             }
         }
     }
+    
+    func flexLike(postId: Int) -> Observable<Bool> {
+        return connector.patch(path: FlexAPI.flexLike(postId: postId).getPath(), params: nil, header: .Authorization).map { [weak self] (response, data) -> Bool in
+            guard let strongSelf = self else {return false}
+            let response = strongSelf.statusCode(code: response.statusCode)
+            switch response {
+            case .success: return true
+            case .failure: return false
+            }
+        }
+    }
 }
 
 protocol SignInProvider {

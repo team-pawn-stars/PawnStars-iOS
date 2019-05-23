@@ -34,6 +34,7 @@ class FlexDetailViewModel: ViewModelType {
         let price: Driver<String>
         let commentResult: Driver<Bool>
         let initComment: Driver<String>
+        let likeResult: Driver<Bool>
     }
     
     func transform(input: Input) -> Output {
@@ -47,6 +48,8 @@ class FlexDetailViewModel: ViewModelType {
         let comment = BehaviorRelay<[Comment]>(value: [])
         let price = BehaviorRelay<String>(value: "")
         let initComment = BehaviorRelay<String>(value: "")
+        let commentResult = PublishRelay<Bool>()
+        let likeResult = PublishRelay<Bool>()
         
         input.postId.asObservable().subscribe { [weak self] postId in
             guard let strongSelf = self else {return}
@@ -81,8 +84,6 @@ class FlexDetailViewModel: ViewModelType {
             
             }.disposed(by: disposeBag)
         
-        let commentResult = PublishRelay<Bool>()
-        
         Observable.combineLatest(input.writeComment.asObservable(), input.comment.asObservable()).subscribe { [weak self] commentString in
             guard let strongSelf = self else {return}
             if let (_, commentString) = commentString.element {
@@ -114,6 +115,25 @@ class FlexDetailViewModel: ViewModelType {
             }
             }.disposed(by: disposeBag)
         
+        input.clickLike.asObservable().subscribe { [weak self] _ in
+            guard let strongSelf = self else {return}
+            strongSelf.api.flexLike(postId: input.postId.value).subscribe { result in
+                if let result = result.element {
+                    likeResult.accept(result)
+                    if result {
+                        strongSelf.api.flexDetail(postId: input.postId.value).subscribe { model in
+                            if let model = model.element {
+                                if let model = model {
+                                    likeNum.accept(model.like)
+                                    isLike.accept(model.liked)
+                                }
+                            }
+                        }.disposed(by: strongSelf.disposeBag)
+                    }
+                }
+            }.disposed(by: strongSelf.disposeBag)
+        }.disposed(by: disposeBag)
+        
         return Output(title: title.asDriver(),
                       author: author.asDriver(),
                       date: date.asDriver(),
@@ -124,7 +144,8 @@ class FlexDetailViewModel: ViewModelType {
                       comment: comment.asDriver(),
                       price: price.asDriver(),
                       commentResult: commentResult.asDriver(onErrorJustReturn: false),
-                      initComment: initComment.asDriver())
+                      initComment: initComment.asDriver(),
+                      likeResult: likeResult.asDriver(onErrorJustReturn: false))
     }
 }
 

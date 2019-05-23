@@ -18,3 +18,11 @@ extension Reactive where Base: UILabel {
         }).asObserver()
     }
 }
+
+extension Reactive where Base: UIButton {
+    var image: AnyObserver<Bool> {
+        return Binder(base, binding: { (button: UIButton, valid: Bool) in
+            button.setImage(valid ? UIImage(named: "flexIcon.png") : UIImage(named: "grayFlexIcon.png"), for: .normal)
+        }).asObserver()
+    }
+}

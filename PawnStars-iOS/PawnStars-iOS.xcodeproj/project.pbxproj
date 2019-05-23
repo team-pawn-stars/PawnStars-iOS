@@ -48,6 +48,7 @@
 		C94D22A92266F60100395826 /* SignUpContentSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22A72266F60100395826 /* SignUpContentSecondVC.swift */; };
 		C94D22AA2266F60100395826 /* SignUpContentFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22A82266F60100395826 /* SignUpContentFirstVC.swift */; };
 		C94D22AE226701AF00395826 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22AD226701AF00395826 /* AccountAPI.swift */; };
+		C990617622961E6700FBAB64 /* grayFlexIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C990617522961E6600FBAB64 /* grayFlexIcon.png */; };
 		C991B994228506A20040CC8B /* FlexListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B993228506A20040CC8B /* FlexListModel.swift */; };
 		C991B99622855E730040CC8B /* FlexAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B99522855E730040CC8B /* FlexAPI.swift */; };
 		C991B99922856C670040CC8B /* FlexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B99822856C670040CC8B /* FlexViewModel.swift */; };
@@ -138,6 +139,7 @@
 		C94D22A72266F60100395826 /* SignUpContentSecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpContentSecondVC.swift; sourceTree = "<group>"; };
 		C94D22A82266F60100395826 /* SignUpContentFirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpContentFirstVC.swift; sourceTree = "<group>"; };
 		C94D22AD226701AF00395826 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
+		C990617522961E6600FBAB64 /* grayFlexIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayFlexIcon.png; sourceTree = "<group>"; };
 		C991B993228506A20040CC8B /* FlexListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexListModel.swift; sourceTree = "<group>"; };
 		C991B99522855E730040CC8B /* FlexAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexAPI.swift; sourceTree = "<group>"; };
 		C991B99822856C670040CC8B /* FlexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexViewModel.swift; sourceTree = "<group>"; };
@@ -463,6 +465,7 @@
 		C9CF5C2422893B010026D5FD /* Flex */ = {
 			isa = PBXGroup;
 			children = (
+				C990617522961E6600FBAB64 /* grayFlexIcon.png */,
 				C9CF5C2922893B300026D5FD /* flexIcon.png */,
 				C9CF5C2B22893B370026D5FD /* goIcon.png */,
 			);
@@ -598,6 +601,7 @@
 				6838CA20224B11E700FB802A /* MyPage.storyboard in Resources */,
 				C9A0A3FD224B648B0085756E /* pawnIcon.png in Resources */,
 				684448FE224D9EFB00B5A002 /* filterIcon@3x.png in Resources */,
+				C990617622961E6700FBAB64 /* grayFlexIcon.png in Resources */,
 				6838CA22224B12B300FB802A /* Flex.storyboard in Resources */,
 				C9A0A3FB224B64860085756E /* buyerIcon.png in Resources */,
 				68444900224DA27D00B5A002 /* filterIcon@2x.png in Resources */,

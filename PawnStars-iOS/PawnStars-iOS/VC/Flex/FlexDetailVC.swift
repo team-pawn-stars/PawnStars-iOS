@@ -83,6 +83,19 @@ class FlexDetailVC: UIViewController {
         output.initComment
             .drive(commentTextField.rx.text)
             .disposed(by: disposeBag)
+        
+        output.likeResult.asObservable().subscribe { [weak self] result in
+            guard let strongSelf = self else {return}
+            if let result = result.element {
+                if !result {
+                    strongSelf.showAlert(self: strongSelf, title: "오류", message: "", handler: nil, actionTitle: "확인")
+                }
+            }
+        }.disposed(by: disposeBag)
+        
+        output.isLike
+            .drive(likeButton.rx.image)
+            .disposed(by: disposeBag)
     }
     
     private func vcInstance() -> UIViewController {

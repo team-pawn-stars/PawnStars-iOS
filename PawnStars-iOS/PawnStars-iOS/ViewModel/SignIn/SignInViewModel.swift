@@ -43,14 +43,27 @@ class SignInViewModel: ViewModelType {
             .asObservable()
             .withLatestFrom(usernameAndPassword)
             .flatMapLatest{ [weak self] pair -> Observable<(SignInResult,String?)> in
+                guard let strongSelf = self else {return Observable.of((SignInResult.failure,nil))}
                 
                 let (username, password) = pair
-                return (self?.api.signIn(username: username, password: password))!
+                return (strongSelf.api.signIn(username: username, password: password))
         }
         
-        let result = request.map { request -> SignInResult in
-            
+        let result = request.map { [weak self] request -> SignInResult in
+            guard let strongSelf = self else {return SignInResult.failure}
             let (result, _) = request
+            
+            if result == SignInResult.success {
+                strongSelf.api.isSeller().subscribe { isSeller in
+                    if let isSeller = isSeller.element {
+                        if isSeller {
+                            UserDefaults.standard.set("SELLER", forKey: "ROLE")
+                        } else {
+                            UserDefaults.standard.set("BUYER", forKey: "ROLE")
+                        }
+                    }
+                }.disposed(by: strongSelf.disposeBag)
+            }
             
             return result
         }.asDriver(onErrorJustReturn: .empty)

@@ -13,12 +13,14 @@ public enum AccountAPI: API{
     case signIn
     case signUpBuyer
     case signUpSeller
+    case isSeller
     
     func getPath() -> String {
         switch self {
         case .signIn: return "account/signin/"
         case .signUpBuyer: return "account/signup/buyer/"
         case .signUpSeller: return "account/signup/seller/"
+        case .isSeller: return "account/is_seller/"
         }
     }
 }

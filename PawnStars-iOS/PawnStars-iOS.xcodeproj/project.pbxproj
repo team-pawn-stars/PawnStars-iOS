@@ -67,6 +67,7 @@
 		C9CF5C2C22893B370026D5FD /* goIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CF5C2B22893B370026D5FD /* goIcon.png */; };
 		C9F8B4AB227A704900B5F4D9 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */; };
 		C9F8B4AD227A709100B5F4D9 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F8B4AC227A709100B5F4D9 /* ViewModelType.swift */; };
+		C9FAC4272296E5EB000FCE88 /* IsSellerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FAC4262296E5EB000FCE88 /* IsSellerModel.swift */; };
 		E651E6CB4C6E2C74CFAF7D47 /* Pods_PawnStars_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4B20795106F1E6B77A1298 /* Pods_PawnStars_iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -158,8 +159,9 @@
 		C9C2154D2294E34A008F64E4 /* FlexDetailContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexDetailContentVC.swift; sourceTree = "<group>"; };
 		C9CF5C2922893B300026D5FD /* flexIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flexIcon.png; sourceTree = "<group>"; };
 		C9CF5C2B22893B370026D5FD /* goIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goIcon.png; sourceTree = "<group>"; };
-		C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInModel.swift; path = "PawnStars-iOS/Network/SignInModel.swift"; sourceTree = SOURCE_ROOT; };
+		C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInModel.swift; path = "PawnStars-iOS/Model/Account/SignInModel.swift"; sourceTree = SOURCE_ROOT; };
 		C9F8B4AC227A709100B5F4D9 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		C9FAC4262296E5EB000FCE88 /* IsSellerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsSellerModel.swift; sourceTree = "<group>"; };
 		D519196F4F62E43012E16369 /* Pods_PawnStars_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawnStars_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -217,8 +219,8 @@
 		682C0BC3225B0C9A00954D25 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C9FAC4252296E5C7000FCE88 /* Account */,
 				C991B9922285068E0040CC8B /* Flex */,
-				C94D22A62266BAA800395826 /* API */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -419,14 +421,6 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		C94D22A62266BAA800395826 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		C991B9922285068E0040CC8B /* Flex */ = {
 			isa = PBXGroup;
 			children = (
@@ -484,6 +478,15 @@
 				683A20E02266AF3100CBF74A /* ApiResponses.swift */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		C9FAC4252296E5C7000FCE88 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */,
+				C9FAC4262296E5EB000FCE88 /* IsSellerModel.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -749,6 +752,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9FAC4272296E5EB000FCE88 /* IsSellerModel.swift in Sources */,
 				683A20DF2266AEBF00CBF74A /* Api.swift in Sources */,
 				C990617A2296A85A00FBAB64 /* RxExtensions.swift in Sources */,
 				6838CA2F224B14AC00FB802A /* WritingVC.swift in Sources */,

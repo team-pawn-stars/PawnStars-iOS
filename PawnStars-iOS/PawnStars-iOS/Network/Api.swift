@@ -11,14 +11,16 @@ import RxSwift
 import RxCocoa
 
 protocol Account {
-    func statusCode(code : Int) -> StatusCode
+
 }
 
 protocol PawnBuyer {
-    func getPawnList() -> Observable<(StatusCode, [PawnListModel]?)>
+    func PawnList(category: String, sort_key: String, region: String) -> Observable<(StatusCode, [PawnListModel])>
 }
 
-protocol ApiProvider : Account, PawnBuyer { }
+protocol ApiProvider : Account, PawnBuyer {
+    func statusCode(code : Int) -> StatusCode
+ }
 
 class Api : ApiProvider {
     private let connector = Connector()
@@ -30,16 +32,18 @@ class Api : ApiProvider {
         }
     }
 
-    
-    func getPawnList() -> Observable<(StatusCode, [PawnListModel]?)> {
+    func PawnList(category: String, sort_key: String, region: String) -> Observable<(StatusCode, [PawnListModel])> {
         return connector.get(path: PawnBuyerAPI.pawn.getPath(),
-                             params: nil,
+                             params: ["region" : region,
+                                      "category": category,
+                                      "sort_key": sort_key],
                              header: Header.Empty)
-            .map { res,data -> (StatusCode, [PawnListModel]?) in
-                guard let response = try? JSONDecoder().decode(PawnListResponse.self, from: data) else {
-                    return (StatusCode.failure, nil)
+            .map { res,data -> (StatusCode, [PawnListModel]) in
+                guard let response = try? JSONDecoder().decode([PawnListModel].self, from: data) else {
+                    print("decode failure")
+                    return (StatusCode.failure, [])
                 }
-                return (self.statusCode(code: res.statusCode), response.result)
+                return (self.statusCode(code: res.statusCode), response)
         }
     }
 }

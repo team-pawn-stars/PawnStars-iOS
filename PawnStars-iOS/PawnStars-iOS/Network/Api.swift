@@ -16,6 +16,7 @@ protocol Account {
 
 protocol PawnBuyer {
     func PawnList(category: String, sort_key: String, region: String) -> Observable<(StatusCode, [PawnListModel])>
+    func PawnSearch(region: String, searchString: String) -> Observable<[PawnListModel]>
 }
 
 protocol ApiProvider : Account, PawnBuyer {
@@ -23,7 +24,7 @@ protocol ApiProvider : Account, PawnBuyer {
  }
 
 class Api : ApiProvider {
-    private let connector = Connector()
+   private let connector = Connector()
     
     func statusCode(code: Int) -> StatusCode {
         switch code {
@@ -45,5 +46,18 @@ class Api : ApiProvider {
                 }
                 return (self.statusCode(code: res.statusCode), response)
         }
+    }
+    
+    func PawnSearch(region: String, searchString: String) -> Observable<[PawnListModel]> {
+        return connector.get(path: PawnBuyerAPI.pawn.getPath(),
+                             params: ["region" : region,
+                                      "query" : searchString], header: Header.Empty)
+            .map { res,data -> [PawnListModel] in
+                guard let response = try? JSONDecoder().decode([PawnListModel].self, from: data) else {
+                    print("decode failure")
+                    return []
+                }
+                return response
+            }
     }
 }

@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		353E026C46F2466871DDD974 /* Pods_PawnStars_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8727BD731E11CF4EB441680F /* Pods_PawnStars_iOS.framework */; };
+		681A6F71229AC5E900C9A6D7 /* SelectCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681A6F70229AC5E900C9A6D7 /* SelectCategoryVC.swift */; };
+		681A6F73229ACB7B00C9A6D7 /* PawnListConnectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681A6F72229ACB7B00C9A6D7 /* PawnListConnectModel.swift */; };
 		68236B4A2266B89D007BB672 /* PawnBuyerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68236B492266B89D007BB672 /* PawnBuyerAPI.swift */; };
 		682C0BCA225B0E7600954D25 /* PawnListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0BC9225B0E7600954D25 /* PawnListModel.swift */; };
 		682C0BCC225B0E8300954D25 /* PawnListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */; };
 		6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9E4224B0ABE00FB802A /* AppDelegate.swift */; };
-		6838C9E7224B0ABE00FB802A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9E6224B0ABE00FB802A /* ViewController.swift */; };
 		6838C9EA224B0ABE00FB802A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6838C9E8224B0ABE00FB802A /* Main.storyboard */; };
 		6838C9ED224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9EB224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld */; };
 		6838C9EF224B0ABF00FB802A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6838C9EE224B0ABF00FB802A /* Assets.xcassets */; };
@@ -36,6 +37,8 @@
 		683A20F82266B34A00CBF74A /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20F42266B34A00CBF74A /* Connector.swift */; };
 		683A20F92266B34A00CBF74A /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20F52266B34A00CBF74A /* Api.swift */; };
 		683A20FC2266B36100CBF74A /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20FB2266B36100CBF74A /* APIProtocol.swift */; };
+		68405CF9228A892A00C833E5 /* PawnDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68405CF8228A892900C833E5 /* PawnDetailVC.swift */; };
+		68405CFB228A903100C833E5 /* SelectRegionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68405CFA228A903100C833E5 /* SelectRegionVC.swift */; };
 		684448FD224D9EFB00B5A002 /* filterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 684448FA224D9EFB00B5A002 /* filterIcon.png */; };
 		684448FE224D9EFB00B5A002 /* filterIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 684448FB224D9EFB00B5A002 /* filterIcon@3x.png */; };
 		68444900224DA27D00B5A002 /* filterIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 684448FC224D9EFB00B5A002 /* filterIcon@2x.png */; };
@@ -43,6 +46,8 @@
 		68444905224DA8FE00B5A002 /* locationIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68444902224DA8FE00B5A002 /* locationIcon@3x.png */; };
 		68444906224DA8FE00B5A002 /* locationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68444903224DA8FE00B5A002 /* locationIcon.png */; };
 		6850D4092264505C00536F9A /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6850D4082264505C00536F9A /* ViewModelType.swift */; };
+		68579CCA229B80DC00ADB435 /* SearchPawnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68579CC9229B80DC00ADB435 /* SearchPawnVC.swift */; };
+		68579CCC229BA4E500ADB435 /* PawnSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68579CCB229BA4E500ADB435 /* PawnSearchViewModel.swift */; };
 		B2DB809BF5DBE17A1EB73D04 /* Pods_PawnStars_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D519196F4F62E43012E16369 /* Pods_PawnStars_iOSTests.framework */; };
 		C9A0A3EE224B37290085756E /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3ED224B37290085756E /* SignIn.storyboard */; };
 		C9A0A3F5224B4E080085756E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0A3F4224B4E080085756E /* SignInVC.swift */; };
@@ -74,12 +79,13 @@
 /* Begin PBXFileReference section */
 		1FA07F8B0DAEE704F188AAE8 /* Pods-PawnStars-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D4B20795106F1E6B77A1298 /* Pods_PawnStars_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawnStars_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		681A6F70229AC5E900C9A6D7 /* SelectCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryVC.swift; sourceTree = "<group>"; };
+		681A6F72229ACB7B00C9A6D7 /* PawnListConnectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnListConnectModel.swift; sourceTree = "<group>"; };
 		68236B492266B89D007BB672 /* PawnBuyerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnBuyerAPI.swift; sourceTree = "<group>"; };
 		682C0BC9225B0E7600954D25 /* PawnListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnListModel.swift; sourceTree = "<group>"; };
 		682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnListViewModel.swift; sourceTree = "<group>"; };
 		6838C9E1224B0ABE00FB802A /* PawnStars-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PawnStars-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6838C9E4224B0ABE00FB802A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6838C9E6224B0ABE00FB802A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6838C9E9224B0ABE00FB802A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6838C9EC224B0ABE00FB802A /* PawnStars_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PawnStars_iOS.xcdatamodel; sourceTree = "<group>"; };
 		6838C9EE224B0ABF00FB802A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +114,8 @@
 		683A20F42266B34A00CBF74A /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Connector.swift; path = "PawnStars-iOS/Network/Connector.swift"; sourceTree = SOURCE_ROOT; };
 		683A20F52266B34A00CBF74A /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Api.swift; path = "PawnStars-iOS/Network/Api.swift"; sourceTree = SOURCE_ROOT; };
 		683A20FB2266B36100CBF74A /* APIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIProtocol.swift; path = "PawnStars-iOS/Network/API/APIProtocol.swift"; sourceTree = SOURCE_ROOT; };
+		68405CF8228A892900C833E5 /* PawnDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnDetailVC.swift; sourceTree = "<group>"; };
+		68405CFA228A903100C833E5 /* SelectRegionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionVC.swift; sourceTree = "<group>"; };
 		684448FA224D9EFB00B5A002 /* filterIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filterIcon.png; sourceTree = "<group>"; };
 		684448FB224D9EFB00B5A002 /* filterIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filterIcon@3x.png"; sourceTree = "<group>"; };
 		684448FC224D9EFB00B5A002 /* filterIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filterIcon@2x.png"; sourceTree = "<group>"; };
@@ -115,6 +123,8 @@
 		68444902224DA8FE00B5A002 /* locationIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationIcon@3x.png"; sourceTree = "<group>"; };
 		68444903224DA8FE00B5A002 /* locationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationIcon.png; sourceTree = "<group>"; };
 		6850D4082264505C00536F9A /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		68579CC9229B80DC00ADB435 /* SearchPawnVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPawnVC.swift; sourceTree = "<group>"; };
+		68579CCB229BA4E500ADB435 /* PawnSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnSearchViewModel.swift; sourceTree = "<group>"; };
 		83A749B205217C40CF08841C /* Pods-PawnStars-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSTests/Pods-PawnStars-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		85AB777F8624D39841C109E8 /* Pods-PawnStars-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		8727BD731E11CF4EB441680F /* Pods_PawnStars_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawnStars_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,7 +287,6 @@
 				6838CA25224B139A00FB802A /* Chatting */,
 				6838CA26224B13A200FB802A /* Writing */,
 				6838CA27224B13BC00FB802A /* MyPage */,
-				6838C9E6224B0ABE00FB802A /* ViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -287,8 +296,8 @@
 			children = (
 				6838C9E8224B0ABE00FB802A /* Main.storyboard */,
 				6838CA19224B112500FB802A /* PawnList.storyboard */,
-				6838CA21224B12B300FB802A /* Flex.storyboard */,
 				6838CA1B224B113700FB802A /* Chatting.storyboard */,
+				6838CA21224B12B300FB802A /* Flex.storyboard */,
 				6838CA1D224B117F00FB802A /* Writing.storyboard */,
 				6838CA1F224B11E700FB802A /* MyPage.storyboard */,
 				C9A0A3ED224B37290085756E /* SignIn.storyboard */,
@@ -300,6 +309,10 @@
 			isa = PBXGroup;
 			children = (
 				6838CA28224B143900FB802A /* PawnListVC.swift */,
+				68405CF8228A892900C833E5 /* PawnDetailVC.swift */,
+				68405CFA228A903100C833E5 /* SelectRegionVC.swift */,
+				681A6F70229AC5E900C9A6D7 /* SelectCategoryVC.swift */,
+				68579CC9229B80DC00ADB435 /* SearchPawnVC.swift */,
 			);
 			path = PawnList;
 			sourceTree = "<group>";
@@ -385,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */,
+				68579CCB229BA4E500ADB435 /* PawnSearchViewModel.swift */,
 			);
 			path = PawnList;
 			sourceTree = "<group>";
@@ -393,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				682C0BC9225B0E7600954D25 /* PawnListModel.swift */,
+				681A6F72229ACB7B00C9A6D7 /* PawnListConnectModel.swift */,
 			);
 			path = PawnList;
 			sourceTree = "<group>";
@@ -574,8 +589,8 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -589,8 +604,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -677,24 +692,29 @@
 			files = (
 				683A20F62266B34A00CBF74A /* ApiResponses.swift in Sources */,
 				6838CA2F224B14AC00FB802A /* WritingVC.swift in Sources */,
+				68579CCA229B80DC00ADB435 /* SearchPawnVC.swift in Sources */,
 				682C0BCA225B0E7600954D25 /* PawnListModel.swift in Sources */,
 				683A20F92266B34A00CBF74A /* Api.swift in Sources */,
 				6838C9ED224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld in Sources */,
+				68405CF9228A892A00C833E5 /* PawnDetailVC.swift in Sources */,
 				C9A0A3F5224B4E080085756E /* SignInVC.swift in Sources */,
+				68579CCC229BA4E500ADB435 /* PawnSearchViewModel.swift in Sources */,
 				6838CA37224B17A700FB802A /* Colors.swift in Sources */,
 				6838CA35224B179700FB802A /* Base.swift in Sources */,
 				683A20FC2266B36100CBF74A /* APIProtocol.swift in Sources */,
 				6838CA2B224B146700FB802A /* FlexVC.swift in Sources */,
-				6838C9E7224B0ABE00FB802A /* ViewController.swift in Sources */,
 				68236B4A2266B89D007BB672 /* PawnBuyerAPI.swift in Sources */,
 				683A20F82266B34A00CBF74A /* Connector.swift in Sources */,
 				6838CA33224B178E00FB802A /* Shape.swift in Sources */,
 				6838CA29224B143900FB802A /* PawnListVC.swift in Sources */,
 				6838CA31224B14DC00FB802A /* MyPageVC.swift in Sources */,
 				C9A0A3FF224B66140085756E /* SignUpVC.swift in Sources */,
+				681A6F71229AC5E900C9A6D7 /* SelectCategoryVC.swift in Sources */,
+				681A6F73229ACB7B00C9A6D7 /* PawnListConnectModel.swift in Sources */,
 				6850D4092264505C00536F9A /* ViewModelType.swift in Sources */,
 				682C0BCC225B0E8300954D25 /* PawnListViewModel.swift in Sources */,
 				6838CA2D224B149900FB802A /* ChattingVC.swift in Sources */,
+				68405CFB228A903100C833E5 /* SelectRegionVC.swift in Sources */,
 				6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

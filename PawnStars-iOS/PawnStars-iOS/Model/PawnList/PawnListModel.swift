@@ -9,11 +9,26 @@
 import Foundation
 
 struct PawnListModel : Codable {
-    var post_id : String
-    var photo : String
-    var author_id : String
-    var author_name : String
-    var title : String
-    var post_data : String
-    var price : String
+    let postId: Int
+    let price: String
+    let like: String
+    let photo: String?
+    let authorName: String
+    let category: String
+    let region: String
+    let date: String
+    let title: String
+   
+   
+    enum CodingKeys: String, CodingKey {
+        case postId = "post_id"
+        case price
+        case like
+        case photo
+        case authorName = "author"
+        case category
+        case region
+        case date
+        case title
+    }
 }

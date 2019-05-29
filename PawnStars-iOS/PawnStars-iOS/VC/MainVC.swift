@@ -8,13 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainVC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.viewControllers = [self]
+        self.navigationItem.title = "P A W N   S T A R S"
+    }
 
 }
 

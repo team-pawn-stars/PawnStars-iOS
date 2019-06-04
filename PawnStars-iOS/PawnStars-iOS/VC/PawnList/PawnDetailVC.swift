@@ -8,9 +8,12 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 
 class PawnDetailVC: UIViewController {
-    var id = 0
+    var id = BehaviorRelay<Int>(value: 0)
+    
     override func viewDidLoad() {
         
     }

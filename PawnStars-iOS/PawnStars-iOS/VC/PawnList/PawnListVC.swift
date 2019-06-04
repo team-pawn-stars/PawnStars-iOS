@@ -61,7 +61,7 @@ extension PawnListVC {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPawnDetail" {
             let pawnDetailVC = segue.destination as! PawnDetailVC
-            pawnDetailVC.id = self.id
+            pawnDetailVC.id.accept(self.id)
         }
     }
 }

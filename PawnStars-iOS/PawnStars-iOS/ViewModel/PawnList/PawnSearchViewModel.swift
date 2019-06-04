@@ -9,16 +9,19 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import RxOptional
 
 class PawnSearchViewModel: ViewModelType {
     var connectModel: PawnListConnectModel!
     
     struct Input {
         let searchString: ControlProperty<String?>
+        let cellSelected: Signal<IndexPath>
     }
     
     struct Output {
         let searchList: Driver<[PawnListModel]>
+        let selectedDone: Driver<Int>
     }
     
     struct Dependencies {
@@ -32,16 +35,24 @@ class PawnSearchViewModel: ViewModelType {
     private let dependencies = Dependencies(api: Api())
     
     func transform(input: PawnSearchViewModel.Input) -> PawnSearchViewModel.Output {
-        let items = input.searchString
+        let searchList = input.searchString
             .asObservable()
+            .filterNil()
             .distinctUntilChanged()
             .throttle(0.5, scheduler: MainScheduler.instance)
             .flatMapLatest {
                 self.dependencies.api.PawnSearch(region: self.connectModel.region.value,
-                                                 searchString: $0!)
+                                                 searchString: $0)
             }
             .asDriver(onErrorJustReturn: [])
         
-        return Output(searchList: items)
+        let selectedDone = Observable.combineLatest(searchList.asObservable(), input.cellSelected.asObservable()) { (items, indexpath) in
+            return items[indexpath.row]
+            }.map {
+                return $0.postId
+            }
+            .asDriver(onErrorJustReturn: 0)
+        
+        return Output(searchList: searchList, selectedDone: selectedDone)
     }
 }

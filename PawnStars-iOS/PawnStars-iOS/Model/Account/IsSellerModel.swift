@@ -2,7 +2,7 @@
 //  IsSellerModel.swift
 //  PawnStars-iOS
 //
-//  Created by daeun on 23/05/2019.
+//  Created by daeun on 05/06/2019.
 //  Copyright © 2019 PawnStars. All rights reserved.
 //
 

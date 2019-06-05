@@ -30,7 +30,8 @@ class WritingSellerViewModel: ViewModelType {
     
     struct HistoryInput {
         let historyTitle: Driver<String>
-        let historyDate: Driver<Date>
+        let historyDate: Driver<String>
+        let complete: PublishRelay<Void>
     }
     
     struct Output {
@@ -49,35 +50,54 @@ class WritingSellerViewModel: ViewModelType {
         let result = BehaviorRelay<Int?>(value: nil)
         let title = BehaviorRelay<String>(value: "")
         let price = BehaviorRelay<String>(value: "")
-        let category = Driver<[String]>.of(["디지털/가전","가구/인테리어","여성 의류","여성 잡화",
+        let category = Driver<[String]>.of(["전체","디지털/가전","가구/인테리어","여성 의류","여성 잡화",
                                             "남성 의류","남성 잡화","귀금속","기타"])
+        
+        let categoryKorean = ["전체","디지털/가전","가구/인테리어","여성 의류","여성 잡화",
+                             "남성 의류","남성 잡화","귀금속","기타"]
+        let categoryEnglish = [ "all","electronic","furniture","women_cloth","women_goods",
+                                "men_cloth", "men_goods","jewel","etc"]
         let region = Driver<[String]>.of(["서울","광주","대전","대구","부산",
                                           "울산","인천","강원","경기","경남",
                                           "전북","전남","제주","충북","충남"])
         let content = BehaviorRelay<String>(value: "")
 
-        var categoryString: String = ""
+        var categoryString: String = "all"
         
         input.category.asObservable().subscribe { event in
             if let array = event.element {
-                categoryString = array.last ?? ""
+                let index = categoryKorean.index(of: array[0])
+                categoryString = categoryEnglish[index ?? 0]
             }
-        }.disposed(by: disposeBag)
+        }
         
-        var regionCategory = ""
+        var regionCategory = "서울"
         
         input.region.asObservable().subscribe { event in
             if let array = event.element {
-                regionCategory = array.last ?? ""
+                regionCategory = array[0]
             }
-        }.disposed(by: disposeBag)
+        }
         
-        input.price.drive(price).disposed(by: disposeBag)
-        input.title.drive(title).disposed(by: disposeBag)
-        input.content.drive(content).disposed(by: disposeBag)
+        input.price.asObservable().subscribe { event in
+            if let priceString = event.element {
+                price.accept(priceString)
+            }
+        }
         
-        input.clickComplete.asObservable().subscribe { [weak self] _ in
-            guard let strongSelf = self else {return}
+        input.title.asObservable().subscribe { event in
+            if let titleString = event.element {
+                title.accept(titleString)
+            }
+        }
+        
+        input.content.asObservable().subscribe { event in
+            if let contentString = event.element {
+                content.accept(contentString)
+            }
+        }
+        
+        input.clickComplete.asObservable().subscribe { _ in
             api.writePawn(price: price.value, category: categoryString, region: regionCategory, title: title.value, content: content.value).subscribe { event in
                 if let resultInt = event.element {
                     result.accept(resultInt)
@@ -85,8 +105,8 @@ class WritingSellerViewModel: ViewModelType {
                 price.accept("")
                 title.accept("")
                 content.accept("")
-            }.disposed(by: strongSelf.disposeBag)
-        }.disposed(by: disposeBag)
+            }
+        }
         
         return Output(title: title.asDriver(), price: price.asDriver(), category: category, region: region, content: content.asDriver(), result: result.asDriver(), images: images.asDriver(), histories: histories.asDriver())
     }
@@ -101,14 +121,19 @@ class WritingSellerViewModel: ViewModelType {
     }
     
     func historyTransform(historyInput: HistoryInput) {
-        let history = Observable.combineLatest(historyInput.historyTitle.asObservable(),
-                                               historyInput.historyDate.asObservable())
-        history.asObservable().subscribe { [weak self] (value) in
+        
+        historyInput.complete.asObservable().subscribe { [weak self] _ in
             guard let strongSelf = self else {return}
-            if let value = value.element {
-                let (content, date) = value
-                strongSelf.histories.value.append(History(content: content, date: date))
-            }
-            }.disposed(by: disposeBag)
+            let history = Observable.combineLatest(historyInput.historyTitle.asObservable(),
+                                                   historyInput.historyDate.asObservable())
+            history.asObservable().subscribe { [weak self] (value) in
+                guard let strongSelf = self else {return}
+                if let value = value.element {
+                    let (content, date) = value
+                    strongSelf.histories.value.append(History(date: date, content: content))
+                }
+                }.disposed(by: strongSelf.disposeBag)
+        }.disposed(by: disposeBag)
+
     }
 }

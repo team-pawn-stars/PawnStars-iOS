@@ -26,11 +26,4 @@ struct History: Codable {
         case date
         case content
     }
-    
-    init(content: String, date: Date) {
-        self.content = content
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        self.date = formatter.string(from: date)
-    }
 }

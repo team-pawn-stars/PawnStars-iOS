@@ -158,15 +158,15 @@ class WritingApi: WritingProvider {
     private let connector = Connector()
     func writePawn(price: String, category: String, region: String, title: String, content: String) -> Observable<Int?> {
         return connector.post(path: WritingAPI.writePawn.getPath(),
-                              params: ["price": price, "category": category, "region":region,"title":title,"content":content],
+                              params: ["price": Int(price) ?? 0, "category": category, "region":region,"title":title,"content":content],
                               header: .Authorization).map { (response, data) -> Int? in
                                 switch response.statusCode {
                                 case 201:
                                     guard let model = try? JSONDecoder().decode(WritingSellerModel.self, from: data) else {
-                                        return (nil)
+                                        return (-1)
                                     }
                                     return model.postId
-                                default: return nil
+                                default: return -1
                                 }
         }
     }

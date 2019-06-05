@@ -22,6 +22,12 @@ protocol FlexProvider {
     func writeComment(flexPost: Int, content: String) -> Observable<Bool>
 }
 
+protocol WritingProvider {
+    func writePawn(price: String, category: String, region: String, title: String, content: String) -> Observable<Int?>
+    func writeImage(pawnPost: Int, photo: Data) -> Observable<Bool>
+    func writeHistory(pawnPost: Int, histories: [History]) -> Observable<Bool>
+}
+
 protocol ApiProvider : AccountProvider,FlexProvider { }
 
 class Api : ApiProvider{
@@ -160,5 +166,64 @@ class SignUpApi: SignInProvider {
                 return false
             }
         }
+    }
+}
+
+class WritingApi: WritingProvider {
+    
+    private let connector = Connector()
+    func writePawn(price: String, category: String, region: String, title: String, content: String) -> Observable<Int?> {
+        return connector.post(path: WritingAPI.writePawn.getPath(),
+                              params: ["price": Int(price) ?? 0, "category": category, "region":region,"title":title,"content":content],
+                              header: .Authorization).map { (response, data) -> Int? in
+                                switch response.statusCode {
+                                case 201:
+                                    guard let model = try? JSONDecoder().decode(WritingSellerModel.self, from: data) else {
+                                        return (-1)
+                                    }
+                                    return model.postId
+                                default: return -1
+                                }
+        }
+    }
+    
+    func writeImage(pawnPost: Int, photo: Data) -> Observable<Bool> {
+        return connector.post(path: WritingAPI.writePawnImage.getPath(),
+                              params: ["pawn_post": pawnPost, "photo": photo],
+                              header: .Authorization).map { (response,_) -> Bool in
+                                switch response.statusCode {
+                                case 201:
+                                    return true
+                                default: return false
+                                }
+        }
+    }
+    
+    func writeHistory(pawnPost: Int, histories: [History]) -> Observable<Bool> {
+        
+        let token = UserDefaults.standard.value(forKey: "Token") as? String ?? ""
+        let result = BehaviorRelay<Bool>(value: false)
+        let model = WritingSellerHistoryModel(pawnPost: pawnPost, histories: histories)
+        let jsonData = try? JSONEncoder().encode(model)
+        
+        let url = URL(string: connector.baseUrl + WritingAPI.writePawnHistory.getPath())
+        guard let strongUrl = url else {return result.asObservable()}
+        var request = URLRequest(url: strongUrl)
+
+        request.httpMethod = "POST"
+        request.httpBody = jsonData
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer " + token, forHTTPHeaderField: "Authorization")
+        
+        Alamofire.request(request).responseJSON { response in
+
+                if response.response?.statusCode == 201 {
+                    result.accept(true)
+                } else {
+                    result.accept(false)
+                }
+        }
+        
+        return result.asObservable()
     }
 }

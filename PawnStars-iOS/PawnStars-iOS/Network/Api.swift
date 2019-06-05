@@ -151,6 +151,22 @@ class SignUpApi: SignInProvider {
             }
         }
     }
+    
+    func isSeller() -> Observable<Bool> {
+        return connector.get(path: AccountAPI.isSeller.getPath(), params: nil, header: .Authorization).map { (response, data) -> Bool in
+            
+            switch response.statusCode {
+            case 200:
+                guard let model = try? JSONDecoder().decode(IsSellerModel.self, from: data) else {
+                    print("isSeller Model ERROR")
+                    return false
+                }
+                return model.isSeller
+            default:
+                return false
+            }
+        }
+    }
 }
 
 class WritingApi: WritingProvider {

@@ -51,7 +51,6 @@ extension PawnListVC {
         output.selectedDone
             .drive(onNext: { [weak self] id in
                 guard let `self` = self else { return }
-                print("fdas\(id)")
                 self.id = id
                 self.performSegue(withIdentifier: "toPawnDetail", sender: nil)
             }).disposed(by: disposeBag)

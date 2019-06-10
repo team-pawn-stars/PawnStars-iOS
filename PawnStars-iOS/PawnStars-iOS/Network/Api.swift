@@ -19,6 +19,7 @@ protocol AccountProvider {
 protocol PawnBuyer {
     func PawnList(category: String, sort_key: String, region: String) -> Observable<(StatusCode, [PawnListModel])>
     func PawnSearch(region: String, searchString: String) -> Observable<[PawnListModel]>
+    func PawnDetail(postId: Int) -> Observable<PawnDetailModel?>
 }
 
 
@@ -68,6 +69,24 @@ class Api : ApiProvider {
                     return []
                 }
                 return response
+        }
+    }
+    
+    func PawnDetail(postId: Int) -> Observable<PawnDetailModel?> {
+        return connector.get(path: PawnBuyerAPI.pawnDetail(postId: postId).getPath(),
+                             params: nil,
+                             header: Header.Authorization)
+            .map { [weak self] res, data -> PawnDetailModel? in
+                guard let `self` = self else { return nil }
+                
+                switch self.statusCode(code: res.statusCode){
+                case .success :
+                    guard let response = try? JSONDecoder().decode(PawnDetailModel.self, from: data) else {
+                        print("decode failure")
+                        return nil }
+                    return response
+                case .failure: return nil
+                }
         }
     }
     

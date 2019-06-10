@@ -9,12 +9,12 @@
 import Foundation
 
 enum PawnBuyerAPI : API {
-    case pawn
+    case pawn, pawnDetail(postId: Int)
     
     func getPath() -> String {
         switch self {
-        case .pawn:
-            return "pawn"
+        case .pawn: return "pawn"
+        case .pawnDetail(let postId): return "pawn/\(postId)/"
         }
     }
 }

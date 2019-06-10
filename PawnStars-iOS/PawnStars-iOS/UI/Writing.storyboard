@@ -48,10 +48,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="970"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="970" translatesAutoresizingMaskIntoConstraints="NO" id="gPh-go-dKt">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1262"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1352"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="제목" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C3b-aQ-YZh">
-                                                <rect key="frame" x="40" y="10" width="295" height="40"/>
+                                                <rect key="frame" x="40" y="100" width="295" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="iRp-kj-Ets"/>
                                                 </constraints>
@@ -60,14 +60,14 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZL-0H-64P">
-                                                <rect key="frame" x="30" y="55" width="315" height="1"/>
+                                                <rect key="frame" x="30" y="145" width="315" height="1"/>
                                                 <color key="backgroundColor" red="0.54117647059999996" green="0.0" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="DMi-2y-kbk"/>
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="가격" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NpD-bX-JOh">
-                                                <rect key="frame" x="55" y="66" width="280" height="40"/>
+                                                <rect key="frame" x="55" y="156" width="280" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="z0p-Aq-RxY"/>
                                                 </constraints>
@@ -76,34 +76,34 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avm-eK-KIR">
-                                                <rect key="frame" x="37.5" y="74" width="12.5" height="24"/>
+                                                <rect key="frame" x="37.5" y="164" width="12.5" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.54117647059999996" green="0.0" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zf4-rg-H2J">
-                                                <rect key="frame" x="30" y="111" width="315" height="1"/>
+                                                <rect key="frame" x="30" y="201" width="315" height="1"/>
                                                 <color key="backgroundColor" red="0.54117647059999996" green="0.0" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Qcj-zD-VSj"/>
                                                 </constraints>
                                             </view>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reG-L0-usR">
-                                                <rect key="frame" x="10" y="142" width="200" height="100"/>
+                                                <rect key="frame" x="10" y="232" width="200" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="PBw-Tx-GHj"/>
                                                     <constraint firstAttribute="height" constant="100" id="yYd-Ow-H9T"/>
                                                 </constraints>
                                             </pickerView>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVR-P8-Jx1">
-                                                <rect key="frame" x="185" y="142" width="170" height="100"/>
+                                                <rect key="frame" x="185" y="232" width="170" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="764-0L-Ize"/>
                                                     <constraint firstAttribute="width" constant="170" id="P6e-Oh-d4J"/>
                                                 </constraints>
                                             </pickerView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="내용을 적읍시다" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UQb-fW-f1t">
-                                                <rect key="frame" x="30" y="257" width="315" height="200"/>
+                                                <rect key="frame" x="30" y="347" width="315" height="200"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="ryz-ht-cBk"/>
@@ -112,20 +112,20 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KF1-xW-zuM">
-                                                <rect key="frame" x="289" y="465" width="66" height="27"/>
+                                                <rect key="frame" x="289" y="555" width="66" height="27"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="히스토리 추가">
                                                     <color key="titleColor" red="0.54117647059999996" green="0.0" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W1k-wW-m7z">
-                                                <rect key="frame" x="20" y="497" width="335" height="150"/>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W1k-wW-m7z">
+                                                <rect key="frame" x="20" y="587" width="335" height="150"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="dBa-Uv-qJ0"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="fTU-zk-BLx" customClass="WritingHistoryCell">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="historyCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="historyCell" id="fTU-zk-BLx" customClass="WritingHistoryCell" customModule="PawnStars_iOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="335" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fTU-zk-BLx" id="gNm-1L-sRF">
@@ -153,22 +153,22 @@
                                                             </constraints>
                                                         </tableViewCellContentView>
                                                         <connections>
-                                                            <outlet property="contentLabel" destination="tPW-M4-G0W" id="XPy-IY-rdK"/>
-                                                            <outlet property="dateLabel" destination="kkL-v5-ETn" id="Rx1-xn-e2j"/>
+                                                            <outlet property="contentLabel" destination="tPW-M4-G0W" id="Xkz-Nf-nwz"/>
+                                                            <outlet property="dateLabel" destination="kkL-v5-ETn" id="HCd-zS-qzr"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrf-Cw-D8i">
-                                                <rect key="frame" x="310" y="655" width="45" height="27"/>
+                                                <rect key="frame" x="310" y="745" width="45" height="27"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <state key="normal" title="사진 추가">
                                                     <color key="titleColor" red="0.54117647059999996" green="0.0" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8gb-ns-crY">
-                                                <rect key="frame" x="20" y="687" width="335" height="100"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="20" y="777" width="335" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="TZr-8s-9Oa"/>
                                                 </constraints>
@@ -179,14 +179,14 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VgV-sE-ndr" customClass="WritingSellerImageCell">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="photoCell" reuseIdentifier="photoCell" id="VgV-sE-ndr" customClass="WritingSellerImageCell" customModule="PawnStars_iOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s6A-V0-Vff">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s6A-V0-Vff">
                                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                                 </imageView>
                                                             </subviews>
@@ -198,13 +198,13 @@
                                                             <constraint firstItem="s6A-V0-Vff" firstAttribute="leading" secondItem="VgV-sE-ndr" secondAttribute="leading" id="ve5-Y3-xuz"/>
                                                         </constraints>
                                                         <connections>
-                                                            <outlet property="writingImageView" destination="s6A-V0-Vff" id="3Rh-Ac-I9c"/>
+                                                            <outlet property="writingImageView" destination="s6A-V0-Vff" id="UyG-NE-Qcr"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hy-Pg-iCI">
-                                                <rect key="frame" x="37.5" y="817" width="300" height="45"/>
+                                                <rect key="frame" x="37.5" y="907" width="300" height="45"/>
                                                 <color key="backgroundColor" red="0.54117647059999996" green="0.0" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="832-XL-vZj"/>
@@ -251,7 +251,7 @@
                                             <constraint firstItem="8gb-ns-crY" firstAttribute="top" secondItem="xrf-Cw-D8i" secondAttribute="bottom" constant="5" id="uC7-L8-mWW"/>
                                             <constraint firstAttribute="trailing" secondItem="NpD-bX-JOh" secondAttribute="trailing" constant="40" id="vAq-pU-hJK"/>
                                             <constraint firstItem="UQb-fW-f1t" firstAttribute="top" secondItem="HVR-P8-Jx1" secondAttribute="bottom" constant="15" id="vn7-Zc-QtJ"/>
-                                            <constraint firstItem="C3b-aQ-YZh" firstAttribute="top" secondItem="gPh-go-dKt" secondAttribute="top" constant="10" id="wAo-8e-V8Y"/>
+                                            <constraint firstItem="C3b-aQ-YZh" firstAttribute="top" secondItem="gPh-go-dKt" secondAttribute="top" constant="100" id="wAo-8e-V8Y"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -281,7 +281,7 @@
                         <outlet property="completeButton" destination="3hy-Pg-iCI" id="POl-lo-8q1"/>
                         <outlet property="contentTextView" destination="UQb-fW-f1t" id="Fkq-E6-Pi2"/>
                         <outlet property="historyTableView" destination="W1k-wW-m7z" id="8jd-ex-dXP"/>
-                        <outlet property="photoCollectionView" destination="8gb-ns-crY" id="Zu1-w0-VYa"/>
+                        <outlet property="photoCollectionView" destination="8gb-ns-crY" id="3Zf-L4-cKc"/>
                         <outlet property="priceTextField" destination="NpD-bX-JOh" id="KR4-jD-jtR"/>
                         <outlet property="regionPickerView" destination="HVR-P8-Jx1" id="asC-Vu-dbr"/>
                         <outlet property="titleTextField" destination="C3b-aQ-YZh" id="wPC-zj-gb8"/>

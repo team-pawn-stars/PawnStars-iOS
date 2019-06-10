@@ -66,6 +66,7 @@
 		C9A0A3FF224B66140085756E /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0A3FE224B66140085756E /* SignUpVC.swift */; };
 		C9B76C0D229FEDA300B01DB7 /* WritingSellerHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B76C0C229FEDA300B01DB7 /* WritingSellerHistoryModel.swift */; };
 		C9C2154E2294E34A008F64E4 /* FlexDetailContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C2154D2294E34A008F64E4 /* FlexDetailContentVC.swift */; };
+		C9CA1AA522AE1D1D00E3E979 /* IsSellerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA1AA422AE1D1D00E3E979 /* IsSellerModel.swift */; };
 		C9CA8A722297D45700B5F3B8 /* WritingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA8A712297D45600B5F3B8 /* WritingViewModel.swift */; };
 		C9CA8A752297F79500B5F3B8 /* WritingSellerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA8A742297F79500B5F3B8 /* WritingSellerVC.swift */; };
 		C9CA8A772297F7A300B5F3B8 /* WritingBuyerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA8A762297F7A300B5F3B8 /* WritingBuyerVC.swift */; };
@@ -74,7 +75,6 @@
 		C9CF5C2C22893B370026D5FD /* goIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CF5C2B22893B370026D5FD /* goIcon.png */; };
 		C9F8B4AB227A704900B5F4D9 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */; };
 		C9F8B4AD227A709100B5F4D9 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F8B4AC227A709100B5F4D9 /* ViewModelType.swift */; };
-		C9FAC4272296E5EB000FCE88 /* IsSellerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FAC4262296E5EB000FCE88 /* IsSellerModel.swift */; };
 		E651E6CB4C6E2C74CFAF7D47 /* Pods_PawnStars_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4B20795106F1E6B77A1298 /* Pods_PawnStars_iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -167,6 +167,7 @@
 		C9A0A3FE224B66140085756E /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		C9B76C0C229FEDA300B01DB7 /* WritingSellerHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingSellerHistoryModel.swift; sourceTree = "<group>"; };
 		C9C2154D2294E34A008F64E4 /* FlexDetailContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexDetailContentVC.swift; sourceTree = "<group>"; };
+		C9CA1AA422AE1D1D00E3E979 /* IsSellerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsSellerModel.swift; sourceTree = "<group>"; };
 		C9CA8A712297D45600B5F3B8 /* WritingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewModel.swift; sourceTree = "<group>"; };
 		C9CA8A742297F79500B5F3B8 /* WritingSellerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingSellerVC.swift; sourceTree = "<group>"; };
 		C9CA8A762297F7A300B5F3B8 /* WritingBuyerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingBuyerVC.swift; sourceTree = "<group>"; };
@@ -175,7 +176,6 @@
 		C9CF5C2B22893B370026D5FD /* goIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goIcon.png; sourceTree = "<group>"; };
 		C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInModel.swift; path = "PawnStars-iOS/Model/Account/SignInModel.swift"; sourceTree = SOURCE_ROOT; };
 		C9F8B4AC227A709100B5F4D9 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
-		C9FAC4262296E5EB000FCE88 /* IsSellerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsSellerModel.swift; sourceTree = "<group>"; };
 		D519196F4F62E43012E16369 /* Pods_PawnStars_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawnStars_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -453,6 +453,7 @@
 			isa = PBXGroup;
 			children = (
 				C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */,
+				C9CA1AA422AE1D1D00E3E979 /* IsSellerModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -523,15 +524,6 @@
 				683A20E02266AF3100CBF74A /* ApiResponses.swift */,
 			);
 			name = "Recovered References";
-			sourceTree = "<group>";
-		};
-		C9FAC4252296E5C7000FCE88 /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */,
-				C9FAC4262296E5EB000FCE88 /* IsSellerModel.swift */,
-			);
-			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -801,7 +793,6 @@
 			files = (
 				C9CA8A752297F79500B5F3B8 /* WritingSellerVC.swift in Sources */,
 				C9B76C0D229FEDA300B01DB7 /* WritingSellerHistoryModel.swift in Sources */,
-				C9FAC4272296E5EB000FCE88 /* IsSellerModel.swift in Sources */,
 				683A20DF2266AEBF00CBF74A /* Api.swift in Sources */,
 				C990617A2296A85A00FBAB64 /* RxExtensions.swift in Sources */,
 				6838CA2F224B14AC00FB802A /* WritingVC.swift in Sources */,
@@ -828,6 +819,7 @@
 				6838CA33224B178E00FB802A /* Shape.swift in Sources */,
 				6850D40D2264632B00536F9A /* APIProtocol.swift in Sources */,
 				683A20E12266AF3100CBF74A /* ApiResponses.swift in Sources */,
+				C9CA1AA522AE1D1D00E3E979 /* IsSellerModel.swift in Sources */,
 				6838CA29224B143900FB802A /* PawnListVC.swift in Sources */,
 				C90C5AA7229E2211003EB3C9 /* WritingSellerModel.swift in Sources */,
 				C991B994228506A20040CC8B /* FlexListModel.swift in Sources */,

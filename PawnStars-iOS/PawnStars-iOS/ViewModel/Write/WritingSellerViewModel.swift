@@ -25,7 +25,7 @@ class WritingSellerViewModel: ViewModelType {
     }
     
     struct ImageInput {
-        let image: Driver<Data>
+        let image: PublishRelay<Data>
     }
     
     struct HistoryInput {
@@ -101,10 +101,16 @@ class WritingSellerViewModel: ViewModelType {
             api.writePawn(price: price.value, category: categoryString, region: regionCategory, title: title.value, content: content.value).subscribe { event in
                 if let resultInt = event.element {
                     result.accept(resultInt)
+                    for i in self.images.value.indices {
+                        api.writeImage(pawnPost: resultInt ?? 0, photo: self.images.value[i])
+                    }
+                    api.writeHistory(pawnPost: resultInt ?? 0, histories: self.histories.value)
                 }
                 price.accept("")
                 title.accept("")
                 content.accept("")
+                self.images.value = []
+                self.histories.value = []
             }
         }
         

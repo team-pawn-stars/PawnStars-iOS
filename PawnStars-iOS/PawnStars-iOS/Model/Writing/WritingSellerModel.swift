@@ -1,17 +1,17 @@
 //
-//  IsSellerModel.swift
+//  WritingPawnModel.swift
 //  PawnStars-iOS
 //
-//  Created by daeun on 05/06/2019.
+//  Created by daeun on 29/05/2019.
 //  Copyright © 2019 PawnStars. All rights reserved.
 //
 
 import Foundation
 
-struct IsSellerModel: Codable {
-    let isSeller: Bool
+struct WritingSellerModel: Codable {
+    let postId: Int
     
     enum CodingKeys: String, CodingKey {
-        case isSeller = "is_seller"
+        case postId = "post_id"
     }
 }

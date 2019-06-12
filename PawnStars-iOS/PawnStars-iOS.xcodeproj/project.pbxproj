@@ -43,6 +43,8 @@
 		68444904224DA8FE00B5A002 /* locationIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68444901224DA8FD00B5A002 /* locationIcon@2x.png */; };
 		68444905224DA8FE00B5A002 /* locationIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68444902224DA8FE00B5A002 /* locationIcon@3x.png */; };
 		68444906224DA8FE00B5A002 /* locationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68444903224DA8FE00B5A002 /* locationIcon.png */; };
+		68465C6D22AF4F2400BB08F5 /* PawnImageContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68465C6C22AF4F2400BB08F5 /* PawnImageContentVC.swift */; };
+		68465C6F22AF501B00BB08F5 /* PawnImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68465C6E22AF501B00BB08F5 /* PawnImageViewModel.swift */; };
 		68579CCA229B80DC00ADB435 /* SearchPawnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68579CC9229B80DC00ADB435 /* SearchPawnVC.swift */; };
 		68579CCC229BA4E500ADB435 /* PawnSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68579CCB229BA4E500ADB435 /* PawnSearchViewModel.swift */; };
 		68579CCE229BB6D900ADB435 /* AccountApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68579CCD229BB6D900ADB435 /* AccountApi.swift */; };
@@ -149,6 +151,8 @@
 		68444901224DA8FD00B5A002 /* locationIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationIcon@2x.png"; sourceTree = "<group>"; };
 		68444902224DA8FE00B5A002 /* locationIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationIcon@3x.png"; sourceTree = "<group>"; };
 		68444903224DA8FE00B5A002 /* locationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationIcon.png; sourceTree = "<group>"; };
+		68465C6C22AF4F2400BB08F5 /* PawnImageContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnImageContentVC.swift; sourceTree = "<group>"; };
+		68465C6E22AF501B00BB08F5 /* PawnImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnImageViewModel.swift; sourceTree = "<group>"; };
 		6850D4082264505C00536F9A /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		68579CC9229B80DC00ADB435 /* SearchPawnVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPawnVC.swift; sourceTree = "<group>"; };
 		68579CCB229BA4E500ADB435 /* PawnSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnSearchViewModel.swift; sourceTree = "<group>"; };
@@ -366,6 +370,7 @@
 			children = (
 				6838CA28224B143900FB802A /* PawnListVC.swift */,
 				68405CF8228A892900C833E5 /* PawnDetailVC.swift */,
+				68465C6C22AF4F2400BB08F5 /* PawnImageContentVC.swift */,
 				68405CFA228A903100C833E5 /* SelectRegionVC.swift */,
 				681A6F70229AC5E900C9A6D7 /* SelectCategoryVC.swift */,
 				68579CC9229B80DC00ADB435 /* SearchPawnVC.swift */,
@@ -461,6 +466,7 @@
 				682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */,
 				68579CCB229BA4E500ADB435 /* PawnSearchViewModel.swift */,
 				684014C822A6A81100CC6788 /* PawnDetailViewModel.swift */,
+				68465C6E22AF501B00BB08F5 /* PawnImageViewModel.swift */,
 			);
 			path = PawnList;
 			sourceTree = "<group>";
@@ -844,6 +850,7 @@
 				C900977222919CEB00275B58 /* FlexDetailViewModel.swift in Sources */,
 				6838CA33224B178E00FB802A /* Shape.swift in Sources */,
 				68579CCE229BB6D900ADB435 /* AccountApi.swift in Sources */,
+				68465C6F22AF501B00BB08F5 /* PawnImageViewModel.swift in Sources */,
 				6838CA29224B143900FB802A /* PawnListVC.swift in Sources */,
 				C991B994228506A20040CC8B /* FlexListModel.swift in Sources */,
 				C994208322792CFC004CF8F5 /* SignUpLocationVC.swift in Sources */,
@@ -853,6 +860,7 @@
 				681A6F73229ACB7B00C9A6D7 /* PawnListConnectModel.swift in Sources */,
 				682C0BCC225B0E8300954D25 /* PawnListViewModel.swift in Sources */,
 				C91805B1228E4E3900C0F0D5 /* FlexDetailModel.swift in Sources */,
+				68465C6D22AF4F2400BB08F5 /* PawnImageContentVC.swift in Sources */,
 				6838CA2D224B149900FB802A /* ChattingVC.swift in Sources */,
 				68405CFB228A903100C833E5 /* SelectRegionVC.swift in Sources */,
 				6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */,

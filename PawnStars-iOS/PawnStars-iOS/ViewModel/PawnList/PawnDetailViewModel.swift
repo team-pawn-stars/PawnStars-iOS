@@ -11,8 +11,10 @@ import RxSwift
 import RxCocoa
 
 class PawnDetailViewModel {
+    let disposeBag = DisposeBag()
+
     struct Input {
-        let postId: Driver<Int>
+        let postId: BehaviorRelay<Int>
         let likeDidClicked: Signal<Void>
         let chatDidClicked: Signal<Void>
     }
@@ -28,11 +30,12 @@ class PawnDetailViewModel {
         let date: Driver<String>
         let totalLike: Driver<String>
         let history: Driver<[PawnHistoryModel]>
+        let price: Driver<String>
     }
     
     func transform(input: PawnDetailViewModel.Input) -> PawnDetailViewModel.Output {
         let api = Api()
-        let disposeBag = DisposeBag()
+        
         let title = BehaviorRelay<String>(value: "")
         let content = BehaviorRelay<String>(value: "")
         let category = BehaviorRelay<String>(value: "")
@@ -43,6 +46,8 @@ class PawnDetailViewModel {
         let date = BehaviorRelay<String>(value: "")
         let totalLike = BehaviorRelay<String>(value: "")
         let history = BehaviorRelay<[PawnHistoryModel]>(value: [])
+        let price = BehaviorRelay<String>(value: "")
+        
         
         input.postId.asObservable()
             .flatMapLatest { api.PawnDetail(postId: $0) }
@@ -57,10 +62,16 @@ class PawnDetailViewModel {
                 date.accept(model?.date ?? "")
                 totalLike.accept(model?.totalLike ?? "")
                 history.accept(model?.histories ?? [])
+                price.accept(model?.price ?? "")
             })
-            .disposed(by: disposeBag)
-
+        .disposed(by: disposeBag)
         
+        input.likeDidClicked.asObservable()
+            .withLatestFrom(input.postId)
+            .flatMapLatest { api.PawnLike(postId: $0) }
+            .map { return $0 }
+            .bind(to: isLiked)
+        .disposed(by: disposeBag)
         
         return Output(title: title.asDriver(),
                       content: content.asDriver(),
@@ -71,7 +82,8 @@ class PawnDetailViewModel {
                       photos: photos.asDriver(),
                       date: date.asDriver(),
                       totalLike: totalLike.asDriver(),
-                      history: history.asDriver())
+                      history: history.asDriver(),
+                      price: price.asDriver())
     }
     
 }

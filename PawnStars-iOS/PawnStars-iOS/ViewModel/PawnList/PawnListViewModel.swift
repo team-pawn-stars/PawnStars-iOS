@@ -12,6 +12,7 @@ import RxCocoa
 class PawnListViewModel: ViewModelType {
     let connectModel: PawnListConnectModel!
     let disposeBag = DisposeBag()
+    let userDefault = UserDefaults.standard
     
     struct Input{
         let ready: Driver<Void>
@@ -37,7 +38,7 @@ class PawnListViewModel: ViewModelType {
     
     struct Output {
         let items: Driver<[PawnListModel]>
-        let selectedDone: Driver<Int>
+        let selectedDone: Signal<Int>
     }
     
     struct Dependencies {
@@ -51,15 +52,16 @@ class PawnListViewModel: ViewModelType {
     private let dependencies = Dependencies(api: Api())
     
     func transform(input: PawnListViewModel.Input) -> PawnListViewModel.Output {
-        print("transform1 \(self.connectModel.category.value)")
-        
+        print("hello? \(self.userDefault.value(forKey: "category") as? String ?? "all")")
+        print("hello? \(self.userDefault.value(forKey: "orderBy") as? String ?? "new")")
+        print("hello? \(self.userDefault.value(forKey: "region") as? String ?? "서울")")
         
         let items = input.ready
             .asObservable()
             .flatMap { _ in
-                self.dependencies.api.PawnList(category: self.connectModel.category.value,
-                                               sort_key: self.connectModel.orderBy.value,
-                                               region: self.connectModel.region.value)
+                self.dependencies.api.PawnList(category: self.userDefault.value(forKey: "category") as? String ?? "all",
+                                               sort_key: self.userDefault.value(forKey: "orderBy") as? String ?? "new",
+                                               region: self.userDefault.value(forKey: "region") as? String ?? "서울")
             }
             .map { statusCode, data -> [PawnListModel] in
                 switch statusCode{
@@ -73,100 +75,94 @@ class PawnListViewModel: ViewModelType {
             return data[path.row]
         })
             .map { $0.postId }
-            .asDriver(onErrorJustReturn: 0)
-        
+            .distinctUntilChanged()
+            .asSignal(onErrorJustReturn: 0)
         
         
         return Output(items: items, selectedDone: selectedDone)
     }
     
     func secondTransform(input: SecondInput) {
-        print("transform2 \(self.connectModel.category.value)")
+//        self.connectModel.category.distinctUntilChanged()
+//            .subscribe(onNext: { s in
+//                print("transform2 \(s)")
+//            })
+//        .disposed(by: disposeBag)
+//
+//        self.connectModel.orderBy.distinctUntilChanged()
+//            .subscribe(onNext: { s in
+//                print("transform2\(s)")
+//            })
+//        .disposed(by: disposeBag)
         
         input.categoryDigital
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
             .subscribe {[weak self] _ in
-                print("fdsa\(self!.connectModel.category.value)")
-                
-                self?.connectModel.category.accept("electronic")
+                self?.userDefault.set("electronic", forKey: "category")
             }.disposed(by: disposeBag)
         
         input.categoryFurniture
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
             .subscribe(onNext: {[weak self] _ in
-                print("fdsa\(self!.connectModel.category.value)")
-                
-                self?.connectModel.category.accept("furniture")
+                self?.userDefault.set("furniture", forKey: "category")
             }).disposed(by: disposeBag)
         
         input.categoryJewelry
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
             .subscribe(onNext: {[weak self] _ in
-                print("fdsa\(self!.connectModel.category.value)")
-                
-                self?.connectModel.category.accept("jewelry")
+                self?.userDefault.set("jewelry", forKey: "category")
             }).disposed(by: disposeBag)
         
         input.categoryMenClothing
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
             .subscribe(onNext: {[weak self] _ in
-                print("fdsa\(self!.connectModel.category.value)")
-                
-                self?.connectModel.category.accept("men_cloth")
+                self?.userDefault.set("men_cloth", forKey: "category")
             }).disposed(by: disposeBag)
         
         input.categoryMenAccessories
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
-                print("fdsa\(self!.connectModel.category.value)")
-                
-                self?.connectModel.category.accept("men_goods")
+                self?.userDefault.set("men_goods", forKey: "category")
             }).disposed(by: disposeBag)
         
         input.categoryWomenClothing
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
-                print("fdsa\(self!.connectModel.category.value)")
-                
-                self?.connectModel.category.accept("women_cloth")
+                self?.userDefault.set("women_cloth", forKey: "category")
             }).disposed(by: disposeBag)
         
         input.categoryWomenAccessories
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
-                print("fdsa\(self!.connectModel.category.value)")
-                
-                self?.connectModel.category.accept("women_goods")
+                self?.userDefault.set("women_goods", forKey: "category")
             }).disposed(by: disposeBag)
         
         input.categoryEtc
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
-                print("fdsa\(self!.connectModel.category.value)")
-                
-                self?.connectModel.category.accept("etc")
+                self?.userDefault.set("etc", forKey: "category")
             }).disposed(by: disposeBag)
         
         input.sortLatest
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
-                self?.connectModel.orderBy.accept("new")
+                self?.userDefault.set("new", forKey: "orderBy")
             }).disposed(by: disposeBag)
         
         input.sortPopularity
             .asObservable()
             .debounce(0.3, scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
-                self?.connectModel.orderBy.accept("like")
+                self?.userDefault.set("like", forKey: "orderBy")
             }).disposed(by: disposeBag)
     }
     
@@ -174,7 +170,7 @@ class PawnListViewModel: ViewModelType {
         input.region
             .asObservable()
             .subscribe(onNext: { [weak self] region in
-                self?.connectModel.region.accept(region[0])
+                self?.userDefault.set(region[0], forKey: "region")
             }).disposed(by: disposeBag)
     }
     

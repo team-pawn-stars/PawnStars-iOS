@@ -14,7 +14,7 @@ import UIKit
 class SelectRegionVC: UIViewController {
     @IBOutlet weak var regionPickerView: UIPickerView!
     
-    var viewModel: PawnListViewModel!
+    var viewModel = PawnListViewModel()
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -24,8 +24,6 @@ class SelectRegionVC: UIViewController {
 
 extension SelectRegionVC {
     func bindViewModel(){
-        viewModel = PawnListViewModel()
-        
         Observable
             .just(["서울","광주","대전","대구","부산","울산","인천","강원","경기","경남","전북","전남","제주","충북","충남"])
             .bind(to: regionPickerView.rx.itemTitles) { _, element in

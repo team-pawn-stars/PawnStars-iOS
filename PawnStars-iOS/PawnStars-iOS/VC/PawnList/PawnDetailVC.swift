@@ -26,18 +26,20 @@ class PawnDetailVC: UIViewController {
     var id = BehaviorRelay<Int>(value: 0)
     var viewModel: PawnDetailViewModel!
     let disposeBag = DisposeBag()
+    private var pageViewController: UIPageViewController!
+    var viewControllers: [UIViewController] = []
     
     override func viewDidLoad() {
-        print("fdas\(id.value)")
         bindViewModel()
     }
+    
 }
 
 extension PawnDetailVC {
     func bindViewModel() {
         viewModel = PawnDetailViewModel()
         
-        let input = PawnDetailViewModel.Input(postId: id.asDriver(),
+        let input = PawnDetailViewModel.Input(postId: id,
                                               likeDidClicked: pawnLikeBtn.rx.tap.asSignal(),
                                               chatDidClicked: pawnChatingBtn.rx.tap.asSignal())
         
@@ -67,10 +69,104 @@ extension PawnDetailVC {
             }).disposed(by: disposeBag)
         
         output.totalLike
-        .drive(totalLike.rx.text)
+            .drive(totalLike.rx.text)
+            .disposed(by: disposeBag)
+        
+        output.history
+            .drive(historyTableView.rx.items(cellIdentifier: "historyCell", cellType: PawnHistoryCell.self)){ _, model, cell in
+                cell.historyContent.text = model.content
+                cell.historyDate.text = model.date
+            }
+            .disposed(by: disposeBag)
+        
+        output.price
+            .drive(pawnPrice.rx.text)
+            .disposed(by: disposeBag)
+        
+        output.photos
+            .drive(onNext: { [weak self] urls in
+                guard let `self` = self else { return }
+                for i in urls.indices {
+                    let vc = UIStoryboard(name: "PawnList", bundle: nil).instantiateViewController(withIdentifier: "imageContainerView") as! PawnImageContentVC
+                    
+                    vc.imageUrl.accept(urls[i])
+                    self.viewControllers.append(vc)
+                    
+                    self.pageViewController
+                        .setViewControllers([self.viewControllers[0]], direction: .forward, animated: false, completion: nil)
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        output.isLiked
+            .drive(onNext: { isLiked in
+                if isLiked{
+                    self.pawnLikeBtn.setBackgroundImage(UIImage(named: "fill_like"), for: .normal)
+                } else {
+                    self.pawnLikeBtn.setBackgroundImage(UIImage(named: "empty_like"), for: .normal)
+                }
+            })
         .disposed(by: disposeBag)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? UIPageViewController {
+            pageViewController = vc
+            pageViewController.dataSource = self
+            pageViewController.delegate = self
+            if viewControllers.count > 0 {
+                pageViewController.setViewControllers([viewControllers[0]], direction: .forward, animated: false, completion: nil)
+            }
+        }
+    }
 }
+
+extension PawnDetailVC: UIPageViewControllerDataSource {
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let curlIndex = viewControllers.index(of: viewController) else {return nil}
+        
+        let previousIndex = curlIndex - 1
+        
+        guard previousIndex >= 0 else{
+            return viewControllers.last
+        }
+        
+        guard viewControllers.count > previousIndex else{
+            return nil
+        }
+        
+        return viewControllers[previousIndex]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let curlIndex = viewControllers.index(of: viewController) else {return nil}
+        
+        let nextIndex = curlIndex + 1
+        
+        guard nextIndex < viewControllers.count else{
+            return viewControllers.first
+        }
+        
+        guard viewControllers.count > nextIndex else{
+            return nil
+        }
+        
+        return viewControllers[nextIndex]
+    }
+}
+
+extension PawnDetailVC: UIPageViewControllerDelegate {
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return viewControllers.count
+    }
+    
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return 0
+    }
+}
+
+
 
 class PawnHistoryCell: UITableViewCell {
     @IBOutlet weak var historyDate: UILabel!

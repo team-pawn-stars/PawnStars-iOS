@@ -18,8 +18,15 @@ class PawnListVC : UIViewController {
     var pawnlistViewModel: PawnListViewModel!
     let disposeBag = DisposeBag()
     
+    let selectRegionVC = UIStoryboard(name: "PawnList", bundle: nil).instantiateViewController(withIdentifier: "RegionVC") as! SelectRegionVC
+    let selectCategoryVC = UIStoryboard(name: "PawnList", bundle: nil).instantiateViewController(withIdentifier: "CategoryVC") as! SelectCategoryVC
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        pawnlistViewModel = PawnListViewModel()
+        selectRegionVC.viewModel = pawnlistViewModel
+        selectCategoryVC.viewModel = pawnlistViewModel
+        
         bindViewModel()
     }
     
@@ -30,11 +37,9 @@ class PawnListVC : UIViewController {
 
 extension PawnListVC {
     func bindViewModel(){
-        pawnlistViewModel = PawnListViewModel()
-        
         let input = PawnListViewModel.Input(ready: rx.viewWillAppear.asDriver(),
                                             cellSelected: pawnlistTableView.rx.itemSelected.asSignal())
-       
+        
         let output = pawnlistViewModel.transform(input: input)
         
         output.items
@@ -43,13 +48,15 @@ extension PawnListVC {
                 cell.pawnImage.kf.setImage(with: URL(string: model.photo ?? ""))
                 cell.pawnTitle.text = model.title
                 cell.pawnPrice.text = model.price
+                cell.pawnCategory.text = model.category
                 cell.pawnTotalLike.text = "\(model.like)"
                 cell.pawnContent.text = model.authorName
                 cell.pawnLocationWithCreated.text = "\(model.region), \(model.date)"
-        }.disposed(by: disposeBag)
+            }.disposed(by: disposeBag)
         
-        output.selectedDone
-            .drive(onNext: { [weak self] id in
+        
+        output.selectedDone.asObservable()
+        .subscribe(onNext: { [weak self] id in
                 guard let `self` = self else { return }
                 self.id = id
                 self.performSegue(withIdentifier: "toPawnDetail", sender: nil)
@@ -70,6 +77,7 @@ class PawnCell : UITableViewCell{
     @IBOutlet weak var pawnImage: UIImageView!
     @IBOutlet weak var pawnTitle: UILabel!
     @IBOutlet weak var pawnContent: UILabel!
+    @IBOutlet weak var pawnCategory: UILabel!
     @IBOutlet weak var pawnLocationWithCreated: UILabel!
     @IBOutlet weak var pawnPrice: UILabel!
     @IBOutlet weak var pawnTotalLike: UILabel!

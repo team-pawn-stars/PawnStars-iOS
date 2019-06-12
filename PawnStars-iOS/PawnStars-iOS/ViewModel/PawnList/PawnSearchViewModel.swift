@@ -51,7 +51,7 @@ class PawnSearchViewModel: ViewModelType {
             }.map {
                 return $0.postId
             }
-            .asDriver(onErrorJustReturn: 0)
+        .asDriver(onErrorJustReturn: 0)
         
         return Output(searchList: searchList, selectedDone: selectedDone)
     }

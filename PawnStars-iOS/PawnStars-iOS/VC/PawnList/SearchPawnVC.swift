@@ -30,6 +30,7 @@ extension SearchPawnVC {
         
         let input = PawnSearchViewModel.Input(searchString: pawnSearchBar.rx.text,
                                               cellSelected: pawnSearchList.rx.itemSelected.asSignal())
+        
         let output = viewModel.transform(input: input)
        
         output.searchList

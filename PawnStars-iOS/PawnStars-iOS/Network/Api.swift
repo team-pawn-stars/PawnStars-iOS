@@ -20,6 +20,7 @@ protocol PawnBuyer {
     func PawnList(category: String, sort_key: String, region: String) -> Observable<(StatusCode, [PawnListModel])>
     func PawnSearch(region: String, searchString: String) -> Observable<[PawnListModel]>
     func PawnDetail(postId: Int) -> Observable<PawnDetailModel?>
+    func PawnLike(postId: Int) -> Observable<Bool>
 }
 
 
@@ -84,10 +85,22 @@ class Api : ApiProvider {
                     guard let response = try? JSONDecoder().decode(PawnDetailModel.self, from: data) else {
                         print("decode failure")
                         return nil }
+                    
                     return response
-                case .failure: return nil
+                case .failure:
+                    return nil
                 }
         }
+    }
+    
+    func PawnLike(postId: Int) -> Observable<Bool> {
+        return connector.patch(path: PawnBuyerAPI.like(postId: postId).getPath(),
+                               params: nil,
+                               header: Header.Authorization)
+            .map { res, _ -> Bool in
+                if res.statusCode == 201 { return true }
+                else { return false }
+            }
     }
     
     func flexList(page: Int, sortKey: FlexSortKey) -> Observable<[FlexListModel]> {

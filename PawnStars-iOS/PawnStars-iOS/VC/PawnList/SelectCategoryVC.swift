@@ -23,7 +23,7 @@ class SelectCategoryVC: UIViewController  {
     @IBOutlet weak var sortLatest: DLRadioButton!
     @IBOutlet weak var sortPopularity: DLRadioButton!
     
-    var viewModel: PawnListViewModel!
+    var viewModel = PawnListViewModel()
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -33,7 +33,6 @@ class SelectCategoryVC: UIViewController  {
 
 extension SelectCategoryVC{
     func bindViewModel() {
-        viewModel = PawnListViewModel()
         
         let input = PawnListViewModel.SecondInput(categoryDigital: categoryDigital.rx.tap.asSignal(),
                                                   categoryFurniture: categoryFurniture.rx.tap.asSignal(),

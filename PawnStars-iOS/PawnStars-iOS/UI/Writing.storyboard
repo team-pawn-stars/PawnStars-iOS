@@ -102,7 +102,7 @@
                                                     <constraint firstAttribute="width" constant="170" id="P6e-Oh-d4J"/>
                                                 </constraints>
                                             </pickerView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="내용을 적읍시다" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UQb-fW-f1t">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="내용" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UQb-fW-f1t">
                                                 <rect key="frame" x="30" y="347" width="315" height="200"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -300,13 +300,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자랑할 유질물 선택하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgS-Re-Hdm">
-                                <rect key="frame" x="109.5" y="20" width="156" height="20.5"/>
+                                <rect key="frame" x="109.5" y="90" width="156" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.54117647059999996" green="0.0" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Xn-5I-zsN">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="542.5"/>
+                                <rect key="frame" x="0.0" y="125.5" width="375" height="472.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="130" id="kvD-d6-pLS" customClass="PawnListCell" customModule="PawnStars_iOS" customModuleProvider="target">
@@ -389,7 +389,7 @@
                             <constraint firstItem="5Xn-5I-zsN" firstAttribute="top" secondItem="EgS-Re-Hdm" secondAttribute="bottom" constant="15" id="5O7-xI-Ni2"/>
                             <constraint firstItem="nOJ-Q7-1DK" firstAttribute="trailing" secondItem="5Xn-5I-zsN" secondAttribute="trailing" id="IXo-f9-wja"/>
                             <constraint firstItem="nOJ-Q7-1DK" firstAttribute="bottom" secondItem="5Xn-5I-zsN" secondAttribute="bottom" id="O7N-kc-bLz"/>
-                            <constraint firstItem="EgS-Re-Hdm" firstAttribute="top" secondItem="nOJ-Q7-1DK" secondAttribute="top" id="WcU-3a-xJz"/>
+                            <constraint firstItem="EgS-Re-Hdm" firstAttribute="top" secondItem="nOJ-Q7-1DK" secondAttribute="top" constant="70" id="WcU-3a-xJz"/>
                             <constraint firstItem="EgS-Re-Hdm" firstAttribute="centerX" secondItem="Vh4-pw-zhj" secondAttribute="centerX" id="aMx-au-pxy"/>
                             <constraint firstItem="5Xn-5I-zsN" firstAttribute="leading" secondItem="nOJ-Q7-1DK" secondAttribute="leading" id="jaM-Hq-Jud"/>
                         </constraints>

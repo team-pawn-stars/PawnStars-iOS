@@ -434,7 +434,7 @@
                         <viewLayoutGuide key="safeArea" id="Kyy-la-a1h"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="XW8-0j-tVk"/>
-                    <navigationItem key="navigationItem" title="P A W N L I S T" id="ZvC-UZ-4uC">
+                    <navigationItem key="navigationItem" title="P A W N  S T A R S" id="ZvC-UZ-4uC">
                         <barButtonItem key="backBarButtonItem" title="Main" id="YNa-kl-euW"/>
                         <barButtonItem key="leftBarButtonItem" image="locationIcon.png" id="7Ro-K9-ico">
                             <connections>
@@ -1080,6 +1080,6 @@
         <image name="locationIcon.png" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mBl-1k-d4L"/>
+        <segue reference="B9m-Ho-N5z"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -22,6 +22,8 @@ class FlexVC : UIViewController {
     var postId = 0
     
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.isHidden = false
+        
         flexViewModel = FlexViewModel()
         
         let input = FlexViewModel.Input(selectIndex: sortSegmentControl.rx.selectedSegmentIndex.asDriver(), nextPage: nextButton.rx.tap.asSignal(), selectPostId: listTableView.rx.itemSelected.asDriver())

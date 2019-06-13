@@ -21,13 +21,14 @@ class PawnListVC : UIViewController {
     let selectRegionVC = UIStoryboard(name: "PawnList", bundle: nil).instantiateViewController(withIdentifier: "RegionVC") as! SelectRegionVC
     let selectCategoryVC = UIStoryboard(name: "PawnList", bundle: nil).instantiateViewController(withIdentifier: "CategoryVC") as! SelectCategoryVC
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
+        
         pawnlistViewModel = PawnListViewModel()
         selectRegionVC.viewModel = pawnlistViewModel
         selectCategoryVC.viewModel = pawnlistViewModel
-        
+    
         bindViewModel()
     }
     

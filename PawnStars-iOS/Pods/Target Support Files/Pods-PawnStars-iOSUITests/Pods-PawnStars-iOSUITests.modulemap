@@ -1,6 +1,0 @@
-framework module Pods_PawnStars_iOSUITests {
-  umbrella header "Pods-PawnStars-iOSUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

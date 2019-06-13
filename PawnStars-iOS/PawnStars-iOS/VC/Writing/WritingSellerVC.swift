@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import Kingfisher
 
-class WritingSellerVC: UIViewController {
+class WritingSellerVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
@@ -24,6 +24,7 @@ class WritingSellerVC: UIViewController {
     @IBOutlet weak var photoCollectionView: UICollectionView!
     @IBOutlet weak var completeButton: UIButton!
     
+    var imagePicker = UIImagePickerController()
     var writingSellerViewModel: WritingSellerViewModel!
     let disposeBag = DisposeBag()
     
@@ -65,13 +66,15 @@ class WritingSellerVC: UIViewController {
             if let result = event.element {
                 if result == -1 {
                     print("ERROR")
+                } else {
+                    self.showAlert(self: self, title: "성공", message: "", actionTitle: "확인")
                 }
             }
         }
         
         addHistoryButton.rx.tap.subscribe { _ in
             let complete = PublishRelay<Void>()
-            let alert = UIAlertController(title: "alert", message: "textField", preferredStyle: .alert)
+            let alert = UIAlertController(title: "히스토리 추가", message: "", preferredStyle: .alert)
             let ok = UIAlertAction(title: "추가", style: .default) { (ok) in
                 complete.accept(())
             }
@@ -87,11 +90,37 @@ class WritingSellerVC: UIViewController {
             }
             self.present(alert, animated: true, completion: nil)
             
-            let historyInput = WritingSellerViewModel.HistoryInput(historyTitle: alert.textFields![0].rx.text.orEmpty.asDriver(), historyDate: alert.textFields![1].rx.text.orEmpty.asDriver(), complete: complete)
+            let historyInput = WritingSellerViewModel.HistoryInput(historyTitle: alert.textFields![1].rx.text.orEmpty.asDriver(), historyDate: 
+                alert.textFields![0].rx.text.orEmpty.asDriver(), complete: complete)
             self.writingSellerViewModel.historyTransform(historyInput: historyInput)
         }
+        
+        addPhotoButton.rx.tap.subscribe { _ in
+            if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
+                self.imagePicker.delegate = self
+                self.imagePicker.sourceType = .photoLibrary
+                self.imagePicker.allowsEditing = false
+                self.present(self.imagePicker, animated: true, completion: nil)
+            }
+            
+        }
     }
-
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let image = info[.originalImage] as? UIImage {
+            guard let imageData = image.jpegData(compressionQuality: 0.5) else {
+                print("Could not get JPEG representation of UIImage")
+                return
+            }
+            let dataRelay = PublishRelay<Data>()
+            let input = WritingSellerViewModel.ImageInput(image: dataRelay)
+            self.writingSellerViewModel.imageTransform(imageInput: input)
+            dataRelay.accept(imageData)
+        } else {
+            print("Error")
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
 }
 
 

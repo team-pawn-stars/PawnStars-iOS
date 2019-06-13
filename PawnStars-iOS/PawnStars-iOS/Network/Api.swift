@@ -34,6 +34,7 @@ protocol WritingProvider {
     func writePawn(price: String, category: String, region: String, title: String, content: String) -> Observable<Int?>
     func writeImage(pawnPost: Int, photo: Data) -> Observable<Bool>
     func writeHistory(pawnPost: Int, histories: [History]) -> Observable<Bool>
+    func getLikePawnList() -> Observable<[WritingBuyerListModel]>
 }
 
 protocol ApiProvider : PawnBuyer,AccountProvider,FlexProvider { }
@@ -197,6 +198,7 @@ class SignUpApi: SignInProvider {
     func signUpBuyer(username: String, password: String,phoneNum: String, nickName: String) -> Observable<SignUpResult> {
         return connector.post(path: AccountAPI.signUpBuyer.getPath(), params: ["username":username,"password":password,"phone":phoneNum,"name":nickName], header: Header.Empty)
             .map{ (response, _) -> SignUpResult in
+                dump(response)
                 switch response.statusCode {
                 case 201: return SignUpResult.success
                 case 409: return SignUpResult.existId
@@ -219,7 +221,6 @@ class SignUpApi: SignInProvider {
     
     func isSeller() -> Observable<Bool> {
         return connector.get(path: AccountAPI.isSeller.getPath(), params: nil, header: .Authorization).map { (response, data) -> Bool in
-            
             switch response.statusCode {
             case 200:
                 guard let model = try? JSONDecoder().decode(IsSellerModel.self, from: data) else {
@@ -253,15 +254,28 @@ class WritingApi: WritingProvider {
     }
     
     func writeImage(pawnPost: Int, photo: Data) -> Observable<Bool> {
-        return connector.post(path: WritingAPI.writePawnImage.getPath(),
-                              params: ["pawn_post": pawnPost, "photo": photo],
-                              header: .Authorization).map { (response,_) -> Bool in
-                                switch response.statusCode {
-                                case 201:
-                                    return true
-                                default: return false
-                                }
+        let result = BehaviorRelay<Bool>(value: false)
+        let parameters = ["pawn_post": "\(pawnPost)"]
+        
+        Alamofire.upload(multipartFormData: { multipartFormData in
+            multipartFormData.append(photo, withName: "photo",fileName: "image.jpg", mimeType: "image/jpg")
+            for (key, value) in parameters {
+                multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
+            }
+        },to: connector.baseUrl + WritingAPI.writePawnImage.getPath())
+        { (responseResult) in
+            switch responseResult {
+            case .success(let upload, _, _):
+                upload.responseJSON { response in
+                    if response.error == nil {
+                        result.accept(true)
+                    }
+                }
+            case .failure(let encodingError):
+                print(encodingError)
+            }
         }
+        return result.asObservable()
     }
     
     func writeHistory(pawnPost: Int, histories: [History]) -> Observable<Bool> {
@@ -274,21 +288,33 @@ class WritingApi: WritingProvider {
         let url = URL(string: connector.baseUrl + WritingAPI.writePawnHistory.getPath())
         guard let strongUrl = url else {return result.asObservable()}
         var request = URLRequest(url: strongUrl)
-
+        
         request.httpMethod = "POST"
         request.httpBody = jsonData
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Bearer " + token, forHTTPHeaderField: "Authorization")
         
         Alamofire.request(request).responseJSON { response in
-
-                if response.response?.statusCode == 201 {
-                    result.accept(true)
-                } else {
-                    result.accept(false)
-                }
+            
+            if response.response?.statusCode == 201 {
+                result.accept(true)
+            } else {
+                result.accept(false)
+            }
         }
         
         return result.asObservable()
+    }
+    
+    func getLikePawnList() -> Observable<[WritingBuyerListModel]> {
+        return connector.get(path: WritingAPI.getPawnLike.getPath(), params: nil, header: .Authorization).map { (response, data) -> [WritingBuyerListModel] in
+            switch response.statusCode {
+            case 200: guard let model = try? JSONDecoder().decode([WritingBuyerListModel].self, from: data) else {
+                return []
+                }
+                return model
+            default: return []
+            }
+        }
     }
 }

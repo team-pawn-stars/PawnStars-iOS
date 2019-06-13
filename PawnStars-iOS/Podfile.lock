@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Differentiator (3.1.0)
+  - DLRadioButton (1.4.12)
+  - Kingfisher (5.5.0)
+  - RxAlamofire (4.4.1):
+    - RxAlamofire/Core (= 4.4.1)
+  - RxAlamofire/Core (4.4.1):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 4.5)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxOptional (3.6.2):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.5.0)
+  - TextFieldEffects (1.5.1)
+  - XLPagerTabStrip (8.1.1)
+
+DEPENDENCIES:
+  - DLRadioButton (~> 1.4)
+  - Kingfisher
+  - RxAlamofire
+  - RxCocoa (~> 4.0)
+  - RxDataSources (~> 3.0)
+  - RxOptional
+  - RxSwift (~> 4.0)
+  - TextFieldEffects
+  - XLPagerTabStrip (~> 8.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Differentiator
+    - DLRadioButton
+    - Kingfisher
+    - RxAlamofire
+    - RxCocoa
+    - RxDataSources
+    - RxOptional
+    - RxSwift
+    - TextFieldEffects
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  Kingfisher: 6fe5e67a90fd335e49b0f5c075ff55ac5ebedd94
+  RxAlamofire: ed65f451f5a9a59419b0b9e705043dc01410edd9
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxOptional: 80426a0ddbd092573e4c482d8cc13302078c4d5e
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
+  XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
+
+PODFILE CHECKSUM: 9be8594bfc9079244b8ce402105bc5e5f80db557
+
+COCOAPODS: 1.5.3

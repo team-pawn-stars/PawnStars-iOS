@@ -23,7 +23,6 @@ class PawnListVC : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
         pawnlistViewModel = PawnListViewModel()
         selectRegionVC.viewModel = pawnlistViewModel
         selectCategoryVC.viewModel = pawnlistViewModel

@@ -52,6 +52,10 @@ class PawnListViewModel: ViewModelType {
     private let dependencies = Dependencies(api: Api())
     
     func transform(input: PawnListViewModel.Input) -> PawnListViewModel.Output {
+        print("hello? \(self.userDefault.value(forKey: "category") as? String ?? "all")")
+        print("hello? \(self.userDefault.value(forKey: "orderBy") as? String ?? "new")")
+        print("hello? \(self.userDefault.value(forKey: "region") as? String ?? "서울")")
+        
         let items = input.ready
             .asObservable()
             .flatMap { _ in

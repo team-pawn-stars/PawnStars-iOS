@@ -12,7 +12,7 @@
         <!--MainVC-->
         <scene sceneID="CH8-Uc-38W">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4Fo-ho-Rtd" customClass="MainVC" customModule="PawnStars_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Main" automaticallyAdjustsScrollViewInsets="NO" id="4Fo-ho-Rtd" customClass="MainVC" customModule="PawnStars_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VtO-TG-eff">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

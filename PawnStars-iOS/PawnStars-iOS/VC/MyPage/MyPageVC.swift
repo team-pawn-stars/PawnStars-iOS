@@ -11,6 +11,6 @@ import UIKit
 
 class MyPageVC : UIViewController {
     override func viewDidLoad() {
-        
+        self.navigationController?.navigationBar.isHidden = false
     }
 }

@@ -16,10 +16,9 @@ class MainVC: UITabBarController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.isNavigationBarHidden = true
         self.navigationController?.viewControllers = [self]
         self.navigationItem.title = "P A W N   S T A R S"
     }
-
 }
 

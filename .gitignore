@@ -120,7 +120,7 @@ iOSInjectionProject/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
-
+*.lock
 Pods/
 
 # End of https://www.gitignore.io/api/macos,swift,xcode

@@ -26,6 +26,7 @@ protocol WritingProvider {
     func writePawn(price: String, category: String, region: String, title: String, content: String) -> Observable<Int?>
     func writeImage(pawnPost: Int, photo: Data) -> Observable<Bool>
     func writeHistory(pawnPost: Int, histories: [History]) -> Observable<Bool>
+    func getLikePawnList() -> Observable<[WritingBuyerListModel]>
 }
 
 protocol ApiProvider : AccountProvider,FlexProvider { }
@@ -238,5 +239,17 @@ class WritingApi: WritingProvider {
         }
         
         return result.asObservable()
+    }
+    
+    func getLikePawnList() -> Observable<[WritingBuyerListModel]> {
+        return connector.get(path: WritingAPI.getPawnLike.getPath(), params: nil, header: .Authorization).map { (response, data) -> [WritingBuyerListModel] in
+            switch response.statusCode {
+            case 200: guard let model = try? JSONDecoder().decode([WritingBuyerListModel].self, from: data) else {
+                return []
+                }
+                return model
+            default: return []
+            }
+        }
     }
 }

@@ -19,7 +19,7 @@ protocol ConnectorType {
 }
 
 class Connector : ConnectorType {
-    private let baseUrl = "http://whale.istruly.sexy:3214/"
+    let baseUrl = "http://whale.istruly.sexy:3214/"
 
     func get(path: String, params: Parameters?, header: Header) -> Observable<(HTTPURLResponse, Data)> {
         return requestData(.get,

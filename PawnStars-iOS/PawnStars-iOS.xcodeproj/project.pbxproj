@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		353E026C46F2466871DDD974 /* Pods_PawnStars_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8727BD731E11CF4EB441680F /* Pods_PawnStars_iOS.framework */; };
+		681A6F71229AC5E900C9A6D7 /* SelectCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681A6F70229AC5E900C9A6D7 /* SelectCategoryVC.swift */; };
+		681A6F73229ACB7B00C9A6D7 /* PawnListConnectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681A6F72229ACB7B00C9A6D7 /* PawnListConnectModel.swift */; };
+		68236B4A2266B89D007BB672 /* PawnBuyerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68236B492266B89D007BB672 /* PawnBuyerAPI.swift */; };
+		68242D5522A790230043441B /* fill_like.png in Resources */ = {isa = PBXBuildFile; fileRef = 68242D5322A790230043441B /* fill_like.png */; };
+		68242D5622A790230043441B /* empty_like.png in Resources */ = {isa = PBXBuildFile; fileRef = 68242D5422A790230043441B /* empty_like.png */; };
+		682C0BCA225B0E7600954D25 /* PawnListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0BC9225B0E7600954D25 /* PawnListModel.swift */; };
+		682C0BCC225B0E8300954D25 /* PawnListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */; };
 		6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9E4224B0ABE00FB802A /* AppDelegate.swift */; };
 		6838C9E7224B0ABE00FB802A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9E6224B0ABE00FB802A /* MainVC.swift */; };
 		6838C9EA224B0ABE00FB802A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6838C9E8224B0ABE00FB802A /* Main.storyboard */; };
-		6838C9ED224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9EB224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld */; };
 		6838C9EF224B0ABF00FB802A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6838C9EE224B0ABF00FB802A /* Assets.xcassets */; };
 		6838C9F2224B0ABF00FB802A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6838C9F0224B0ABF00FB802A /* LaunchScreen.storyboard */; };
 		6838C9FD224B0ABF00FB802A /* PawnStars_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9FC224B0ABF00FB802A /* PawnStars_iOSTests.swift */; };
@@ -22,23 +28,35 @@
 		6838CA20224B11E700FB802A /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6838CA1F224B11E700FB802A /* MyPage.storyboard */; };
 		6838CA22224B12B300FB802A /* Flex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6838CA21224B12B300FB802A /* Flex.storyboard */; };
 		6838CA29224B143900FB802A /* PawnListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA28224B143900FB802A /* PawnListVC.swift */; };
-		6838CA2B224B146700FB802A /* FlexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA2A224B146700FB802A /* FlexVC.swift */; };
 		6838CA2D224B149900FB802A /* ChattingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA2C224B149900FB802A /* ChattingVC.swift */; };
-		6838CA2F224B14AC00FB802A /* WritingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA2E224B14AC00FB802A /* WritingVC.swift */; };
 		6838CA31224B14DC00FB802A /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA30224B14DC00FB802A /* MyPageVC.swift */; };
 		6838CA33224B178E00FB802A /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA32224B178E00FB802A /* Shape.swift */; };
-		6838CA35224B179700FB802A /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA34224B179700FB802A /* Base.swift */; };
-		6838CA37224B17A700FB802A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA36224B17A700FB802A /* Colors.swift */; };
-		683A20DD2266A25000CBF74A /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20DC2266A25000CBF74A /* Connector.swift */; };
-		683A20DF2266AEBF00CBF74A /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20DE2266AEBF00CBF74A /* Api.swift */; };
-		683A20E12266AF3100CBF74A /* ApiResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20E02266AF3100CBF74A /* ApiResponses.swift */; };
+		683A20F82266B34A00CBF74A /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20F42266B34A00CBF74A /* Connector.swift */; };
+		683A20F92266B34A00CBF74A /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20F52266B34A00CBF74A /* Api.swift */; };
+		683A20FC2266B36100CBF74A /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683A20FB2266B36100CBF74A /* APIProtocol.swift */; };
+		684014C922A6A81100CC6788 /* PawnDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684014C822A6A81100CC6788 /* PawnDetailViewModel.swift */; };
+		684014CB22A6AA4700CC6788 /* PawnDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684014CA22A6AA4700CC6788 /* PawnDetailModel.swift */; };
+		68405CF9228A892A00C833E5 /* PawnDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68405CF8228A892900C833E5 /* PawnDetailVC.swift */; };
+		68405CFB228A903100C833E5 /* SelectRegionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68405CFA228A903100C833E5 /* SelectRegionVC.swift */; };
 		684448FD224D9EFB00B5A002 /* filterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 684448FA224D9EFB00B5A002 /* filterIcon.png */; };
 		684448FE224D9EFB00B5A002 /* filterIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 684448FB224D9EFB00B5A002 /* filterIcon@3x.png */; };
 		68444900224DA27D00B5A002 /* filterIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 684448FC224D9EFB00B5A002 /* filterIcon@2x.png */; };
 		68444904224DA8FE00B5A002 /* locationIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68444901224DA8FD00B5A002 /* locationIcon@2x.png */; };
 		68444905224DA8FE00B5A002 /* locationIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68444902224DA8FE00B5A002 /* locationIcon@3x.png */; };
 		68444906224DA8FE00B5A002 /* locationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68444903224DA8FE00B5A002 /* locationIcon.png */; };
-		6850D40D2264632B00536F9A /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6850D40C2264632B00536F9A /* APIProtocol.swift */; };
+		68465C6D22AF4F2400BB08F5 /* PawnImageContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68465C6C22AF4F2400BB08F5 /* PawnImageContentVC.swift */; };
+		68465C6F22AF501B00BB08F5 /* PawnImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68465C6E22AF501B00BB08F5 /* PawnImageViewModel.swift */; };
+		68579CCA229B80DC00ADB435 /* SearchPawnVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68579CC9229B80DC00ADB435 /* SearchPawnVC.swift */; };
+		68579CCC229BA4E500ADB435 /* PawnSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68579CCB229BA4E500ADB435 /* PawnSearchViewModel.swift */; };
+		68579CCE229BB6D900ADB435 /* AccountApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68579CCD229BB6D900ADB435 /* AccountApi.swift */; };
+		68579CD0229BB6EB00ADB435 /* FlexAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68579CCF229BB6EB00ADB435 /* FlexAPI.swift */; };
+		68F80968229BB9FE004B1B0D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0A3F4224B4E080085756E /* SignInVC.swift */; };
+		68F80969229BB9FE004B1B0D /* PawnStars_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6838C9EB224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld */; };
+		68F8096A229BB9FE004B1B0D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA36224B17A700FB802A /* Colors.swift */; };
+		68F8096B229BB9FE004B1B0D /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA34224B179700FB802A /* Base.swift */; };
+		68F8096C229BB9FE004B1B0D /* WritingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA2E224B14AC00FB802A /* WritingVC.swift */; };
+		68F8096D229BB9FE004B1B0D /* FlexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838CA2A224B146700FB802A /* FlexVC.swift */; };
+		68FC02ED22A757C6004D14F3 /* PawnHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC02EC22A757C6004D14F3 /* PawnHistoryModel.swift */; };
 		B2DB809BF5DBE17A1EB73D04 /* Pods_PawnStars_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D519196F4F62E43012E16369 /* Pods_PawnStars_iOSTests.framework */; };
 		C900977222919CEB00275B58 /* FlexDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C900977122919CEB00275B58 /* FlexDetailViewModel.swift */; };
 		C900977422919D2300275B58 /* FlexDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C900977322919D2300275B58 /* FlexDetailVC.swift */; };
@@ -50,16 +68,13 @@
 		C94D229C2266BA1100395826 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D229B2266BA1100395826 /* SignUpViewModel.swift */; };
 		C94D22A92266F60100395826 /* SignUpContentSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22A72266F60100395826 /* SignUpContentSecondVC.swift */; };
 		C94D22AA2266F60100395826 /* SignUpContentFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22A82266F60100395826 /* SignUpContentFirstVC.swift */; };
-		C94D22AE226701AF00395826 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D22AD226701AF00395826 /* AccountAPI.swift */; };
 		C990617622961E6700FBAB64 /* grayFlexIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C990617522961E6600FBAB64 /* grayFlexIcon.png */; };
 		C990617822962E3000FBAB64 /* FlexDetailContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990617722962E3000FBAB64 /* FlexDetailContentViewModel.swift */; };
 		C990617A2296A85A00FBAB64 /* RxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99061792296A85A00FBAB64 /* RxExtensions.swift */; };
 		C991B994228506A20040CC8B /* FlexListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B993228506A20040CC8B /* FlexListModel.swift */; };
-		C991B99622855E730040CC8B /* FlexAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B99522855E730040CC8B /* FlexAPI.swift */; };
 		C991B99922856C670040CC8B /* FlexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C991B99822856C670040CC8B /* FlexViewModel.swift */; };
 		C994208322792CFC004CF8F5 /* SignUpLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994208222792CFC004CF8F5 /* SignUpLocationVC.swift */; };
 		C9A0A3EE224B37290085756E /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3ED224B37290085756E /* SignIn.storyboard */; };
-		C9A0A3F5224B4E080085756E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0A3F4224B4E080085756E /* SignInVC.swift */; };
 		C9A0A3F7224B55AE0085756E /* appIconImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3F6224B55AE0085756E /* appIconImage.png */; };
 		C9A0A3F9224B568A0085756E /* appIconWhiteImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3F8224B56890085756E /* appIconWhiteImage.png */; };
 		C9A0A3FB224B64860085756E /* buyerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A0A3FA224B64860085756E /* buyerIcon.png */; };
@@ -98,6 +113,13 @@
 /* Begin PBXFileReference section */
 		1FA07F8B0DAEE704F188AAE8 /* Pods-PawnStars-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSUITests/Pods-PawnStars-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4D4B20795106F1E6B77A1298 /* Pods_PawnStars_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawnStars_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		681A6F70229AC5E900C9A6D7 /* SelectCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryVC.swift; sourceTree = "<group>"; };
+		681A6F72229ACB7B00C9A6D7 /* PawnListConnectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnListConnectModel.swift; sourceTree = "<group>"; };
+		68236B492266B89D007BB672 /* PawnBuyerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnBuyerAPI.swift; sourceTree = "<group>"; };
+		68242D5322A790230043441B /* fill_like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fill_like.png; sourceTree = "<group>"; };
+		68242D5422A790230043441B /* empty_like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_like.png; sourceTree = "<group>"; };
+		682C0BC9225B0E7600954D25 /* PawnListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnListModel.swift; sourceTree = "<group>"; };
+		682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnListViewModel.swift; sourceTree = "<group>"; };
 		6838C9E1224B0ABE00FB802A /* PawnStars-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PawnStars-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6838C9E4224B0ABE00FB802A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6838C9E6224B0ABE00FB802A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -125,16 +147,27 @@
 		6838CA32224B178E00FB802A /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		6838CA34224B179700FB802A /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		6838CA36224B17A700FB802A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		683A20DC2266A25000CBF74A /* Connector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
-		683A20DE2266AEBF00CBF74A /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		683A20E02266AF3100CBF74A /* ApiResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponses.swift; sourceTree = "<group>"; };
+		683A20F42266B34A00CBF74A /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Connector.swift; path = "PawnStars-iOS/Network/Connector.swift"; sourceTree = SOURCE_ROOT; };
+		683A20F52266B34A00CBF74A /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Api.swift; path = "PawnStars-iOS/Network/Api.swift"; sourceTree = SOURCE_ROOT; };
+		683A20FB2266B36100CBF74A /* APIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIProtocol.swift; path = "PawnStars-iOS/Network/API/APIProtocol.swift"; sourceTree = SOURCE_ROOT; };
+		684014C822A6A81100CC6788 /* PawnDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnDetailViewModel.swift; sourceTree = "<group>"; };
+		684014CA22A6AA4700CC6788 /* PawnDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnDetailModel.swift; sourceTree = "<group>"; };
+		68405CF8228A892900C833E5 /* PawnDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnDetailVC.swift; sourceTree = "<group>"; };
+		68405CFA228A903100C833E5 /* SelectRegionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionVC.swift; sourceTree = "<group>"; };
 		684448FA224D9EFB00B5A002 /* filterIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filterIcon.png; sourceTree = "<group>"; };
 		684448FB224D9EFB00B5A002 /* filterIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filterIcon@3x.png"; sourceTree = "<group>"; };
 		684448FC224D9EFB00B5A002 /* filterIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filterIcon@2x.png"; sourceTree = "<group>"; };
 		68444901224DA8FD00B5A002 /* locationIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationIcon@2x.png"; sourceTree = "<group>"; };
 		68444902224DA8FE00B5A002 /* locationIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationIcon@3x.png"; sourceTree = "<group>"; };
 		68444903224DA8FE00B5A002 /* locationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationIcon.png; sourceTree = "<group>"; };
-		6850D40C2264632B00536F9A /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		68465C6C22AF4F2400BB08F5 /* PawnImageContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnImageContentVC.swift; sourceTree = "<group>"; };
+		68465C6E22AF501B00BB08F5 /* PawnImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnImageViewModel.swift; sourceTree = "<group>"; };
+		6850D4082264505C00536F9A /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		68579CC9229B80DC00ADB435 /* SearchPawnVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPawnVC.swift; sourceTree = "<group>"; };
+		68579CCB229BA4E500ADB435 /* PawnSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnSearchViewModel.swift; sourceTree = "<group>"; };
+		68579CCD229BB6D900ADB435 /* AccountApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountApi.swift; sourceTree = "<group>"; };
+		68579CCF229BB6EB00ADB435 /* FlexAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexAPI.swift; sourceTree = "<group>"; };
+		68FC02EC22A757C6004D14F3 /* PawnHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawnHistoryModel.swift; sourceTree = "<group>"; };
 		83A749B205217C40CF08841C /* Pods-PawnStars-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOSTests/Pods-PawnStars-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		85AB777F8624D39841C109E8 /* Pods-PawnStars-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PawnStars-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PawnStars-iOS/Pods-PawnStars-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		8727BD731E11CF4EB441680F /* Pods_PawnStars_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PawnStars_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,12 +184,10 @@
 		C94D229B2266BA1100395826 /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = SignIn/SignUpViewModel.swift; sourceTree = "<group>"; };
 		C94D22A72266F60100395826 /* SignUpContentSecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpContentSecondVC.swift; sourceTree = "<group>"; };
 		C94D22A82266F60100395826 /* SignUpContentFirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpContentFirstVC.swift; sourceTree = "<group>"; };
-		C94D22AD226701AF00395826 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
 		C990617522961E6600FBAB64 /* grayFlexIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayFlexIcon.png; sourceTree = "<group>"; };
 		C990617722962E3000FBAB64 /* FlexDetailContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexDetailContentViewModel.swift; sourceTree = "<group>"; };
 		C99061792296A85A00FBAB64 /* RxExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExtensions.swift; sourceTree = "<group>"; };
 		C991B993228506A20040CC8B /* FlexListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexListModel.swift; sourceTree = "<group>"; };
-		C991B99522855E730040CC8B /* FlexAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexAPI.swift; sourceTree = "<group>"; };
 		C991B99822856C670040CC8B /* FlexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexViewModel.swift; sourceTree = "<group>"; };
 		C994208222792CFC004CF8F5 /* SignUpLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLocationVC.swift; sourceTree = "<group>"; };
 		C9A0A3ED224B37290085756E /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
@@ -234,6 +265,7 @@
 		682C0BC3225B0C9A00954D25 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6850D407226446AB00536F9A /* PawnList */,
 				C90C5AA5229E2200003EB3C9 /* Writing */,
 				C991B9922285068E0040CC8B /* Flex */,
 				C94D22A62266BAA800395826 /* Account */,
@@ -244,6 +276,7 @@
 		682C0BC4225B0CA400954D25 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				6850D4062264469D00536F9A /* PawnList */,
 				C9CA8A732297D46500B5F3B8 /* Write */,
 				C991B99722856BD00040CC8B /* Flex */,
 				C94D22992266BA0000395826 /* SignInViewModel.swift */,
@@ -278,7 +311,7 @@
 		6838C9E3224B0ABE00FB802A /* PawnStars-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6850D40A226461EF00536F9A /* Network */,
+				683A20F12266B30600CBF74A /* Network */,
 				682C0BC4225B0CA400954D25 /* ViewModel */,
 				682C0BC3225B0C9A00954D25 /* Model */,
 				C9A0A3F0224B382C0085756E /* Image */,
@@ -343,8 +376,8 @@
 			children = (
 				6838C9E8224B0ABE00FB802A /* Main.storyboard */,
 				6838CA19224B112500FB802A /* PawnList.storyboard */,
-				6838CA21224B12B300FB802A /* Flex.storyboard */,
 				6838CA1B224B113700FB802A /* Chatting.storyboard */,
+				6838CA21224B12B300FB802A /* Flex.storyboard */,
 				6838CA1D224B117F00FB802A /* Writing.storyboard */,
 				6838CA1F224B11E700FB802A /* MyPage.storyboard */,
 				C9A0A3ED224B37290085756E /* SignIn.storyboard */,
@@ -356,6 +389,11 @@
 			isa = PBXGroup;
 			children = (
 				6838CA28224B143900FB802A /* PawnListVC.swift */,
+				68405CF8228A892900C833E5 /* PawnDetailVC.swift */,
+				68465C6C22AF4F2400BB08F5 /* PawnImageContentVC.swift */,
+				68405CFA228A903100C833E5 /* SelectRegionVC.swift */,
+				681A6F70229AC5E900C9A6D7 /* SelectCategoryVC.swift */,
+				68579CC9229B80DC00ADB435 /* SearchPawnVC.swift */,
 			);
 			path = PawnList;
 			sourceTree = "<group>";
@@ -396,9 +434,33 @@
 			path = MyPage;
 			sourceTree = "<group>";
 		};
+		683A20F12266B30600CBF74A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				683A20FA2266B35800CBF74A /* API */,
+				683A20F52266B34A00CBF74A /* Api.swift */,
+				683A20F42266B34A00CBF74A /* Connector.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		683A20FA2266B35800CBF74A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				68579CCF229BB6EB00ADB435 /* FlexAPI.swift */,
+				683A20FB2266B36100CBF74A /* APIProtocol.swift */,
+				68236B492266B89D007BB672 /* PawnBuyerAPI.swift */,
+				68579CCD229BB6D900ADB435 /* AccountApi.swift */,
+			);
+			name = API;
+			path = ../Network/API;
+			sourceTree = "<group>";
+		};
 		684448F7224D9E3F00B5A002 /* PawnList */ = {
 			isa = PBXGroup;
 			children = (
+				68242D5422A790230043441B /* empty_like.png */,
+				68242D5322A790230043441B /* fill_like.png */,
 				684448FA224D9EFB00B5A002 /* filterIcon.png */,
 				684448FC224D9EFB00B5A002 /* filterIcon@2x.png */,
 				684448FB224D9EFB00B5A002 /* filterIcon@3x.png */,
@@ -420,25 +482,30 @@
 			path = Signin;
 			sourceTree = "<group>";
 		};
-		6850D40A226461EF00536F9A /* Network */ = {
+		6850D4062264469D00536F9A /* PawnList */ = {
 			isa = PBXGroup;
 			children = (
-				683A20DC2266A25000CBF74A /* Connector.swift */,
-				683A20DE2266AEBF00CBF74A /* Api.swift */,
-				6850D40B2264628600536F9A /* API */,
+				682C0BCB225B0E8300954D25 /* PawnListViewModel.swift */,
+				68579CCB229BA4E500ADB435 /* PawnSearchViewModel.swift */,
+				684014C822A6A81100CC6788 /* PawnDetailViewModel.swift */,
+				68465C6E22AF501B00BB08F5 /* PawnImageViewModel.swift */,
 			);
-			path = Network;
+			path = PawnList;
 			sourceTree = "<group>";
 		};
-		6850D40B2264628600536F9A /* API */ = {
+		6850D407226446AB00536F9A /* PawnList */ = {
 			isa = PBXGroup;
 			children = (
+				682C0BC9225B0E7600954D25 /* PawnListModel.swift */,
+				681A6F72229ACB7B00C9A6D7 /* PawnListConnectModel.swift */,
+				684014CA22A6AA4700CC6788 /* PawnDetailModel.swift */,
+				68FC02EC22A757C6004D14F3 /* PawnHistoryModel.swift */,
 				6850D40C2264632B00536F9A /* APIProtocol.swift */,
 				C94D22AD226701AF00395826 /* AccountAPI.swift */,
 				C991B99522855E730040CC8B /* FlexAPI.swift */,
 				C90C5AA3229E1F6E003EB3C9 /* WritingAPI.swift */,
 			);
-			path = API;
+			path = PawnList;
 			sourceTree = "<group>";
 		};
 		C90C5AA5229E2200003EB3C9 /* Writing */ = {
@@ -522,6 +589,15 @@
 		C9F8B4A5227A6ED700B5F4D9 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
+				6850D4082264505C00536F9A /* ViewModelType.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		C9FAC4252296E5C7000FCE88 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				C9F8B4AA227A704900B5F4D9 /* SignInModel.swift */,
 				683A20E02266AF3100CBF74A /* ApiResponses.swift */,
 				C9FAC4262296E5EB000FCE88 /* IsSellerModel.swift */,
 			);
@@ -645,8 +721,10 @@
 				6838C9EF224B0ABF00FB802A /* Assets.xcassets in Resources */,
 				68444906224DA8FE00B5A002 /* locationIcon.png in Resources */,
 				684448FD224D9EFB00B5A002 /* filterIcon.png in Resources */,
+				68242D5522A790230043441B /* fill_like.png in Resources */,
 				C9A0A3EE224B37290085756E /* SignIn.storyboard in Resources */,
 				6838CA20224B11E700FB802A /* MyPage.storyboard in Resources */,
+				68242D5622A790230043441B /* empty_like.png in Resources */,
 				C9A0A3FD224B648B0085756E /* pawnIcon.png in Resources */,
 				684448FE224D9EFB00B5A002 /* filterIcon@3x.png in Resources */,
 				C990617622961E6700FBAB64 /* grayFlexIcon.png in Resources */,
@@ -793,22 +871,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F8096C229BB9FE004B1B0D /* WritingVC.swift in Sources */,
+				68579CCA229B80DC00ADB435 /* SearchPawnVC.swift in Sources */,
+				682C0BCA225B0E7600954D25 /* PawnListModel.swift in Sources */,
+				683A20F92266B34A00CBF74A /* Api.swift in Sources */,
+				68F80969229BB9FE004B1B0D /* PawnStars_iOS.xcdatamodeld in Sources */,
+				68405CF9228A892A00C833E5 /* PawnDetailVC.swift in Sources */,
+				684014CB22A6AA4700CC6788 /* PawnDetailModel.swift in Sources */,
+				68F80968229BB9FE004B1B0D /* SignInVC.swift in Sources */,
+				68579CCC229BA4E500ADB435 /* PawnSearchViewModel.swift in Sources */,
+				68F8096A229BB9FE004B1B0D /* Colors.swift in Sources */,
+				68579CD0229BB6EB00ADB435 /* FlexAPI.swift in Sources */,
+				68F8096B229BB9FE004B1B0D /* Base.swift in Sources */,
+				683A20FC2266B36100CBF74A /* APIProtocol.swift in Sources */,
+				68F8096D229BB9FE004B1B0D /* FlexVC.swift in Sources */,
+				68236B4A2266B89D007BB672 /* PawnBuyerAPI.swift in Sources */,
+				683A20F82266B34A00CBF74A /* Connector.swift in Sources */,
+				C9FAC4272296E5EB000FCE88 /* IsSellerModel.swift in Sources */,
 				C9CA8A752297F79500B5F3B8 /* WritingSellerVC.swift in Sources */,
 				C9B76C0D229FEDA300B01DB7 /* WritingSellerHistoryModel.swift in Sources */,
 				683A20DF2266AEBF00CBF74A /* Api.swift in Sources */,
 				C990617A2296A85A00FBAB64 /* RxExtensions.swift in Sources */,
-				6838CA2F224B14AC00FB802A /* WritingVC.swift in Sources */,
 				C94D229C2266BA1100395826 /* SignUpViewModel.swift in Sources */,
 				C94D22A92266F60100395826 /* SignUpContentSecondVC.swift in Sources */,
 				6838C9ED224B0ABE00FB802A /* PawnStars_iOS.xcdatamodeld in Sources */,
 				C9CA8A722297D45700B5F3B8 /* WritingViewModel.swift in Sources */,
 				C991B99922856C670040CC8B /* FlexViewModel.swift in Sources */,
+				68FC02ED22A757C6004D14F3 /* PawnHistoryModel.swift in Sources */,
 				C94D22AA2266F60100395826 /* SignUpContentFirstVC.swift in Sources */,
 				C900977422919D2300275B58 /* FlexDetailVC.swift in Sources */,
 				C9F8B4AB227A704900B5F4D9 /* SignInModel.swift in Sources */,
-				C9A0A3F5224B4E080085756E /* SignInVC.swift in Sources */,
+				684014C922A6A81100CC6788 /* PawnDetailViewModel.swift in Sources */,
 				C9C2154E2294E34A008F64E4 /* FlexDetailContentVC.swift in Sources */,
 				C94D229A2266BA0000395826 /* SignInViewModel.swift in Sources */,
+				C990617822962E3000FBAB64 /* FlexDetailContentViewModel.swift in Sources */,
+				C9F8B4AD227A709100B5F4D9 /* ViewModelType.swift in Sources */,
+				C900977222919CEB00275B58 /* FlexDetailViewModel.swift in Sources */,
+				6838CA33224B178E00FB802A /* Shape.swift in Sources */,
+				68579CCE229BB6D900ADB435 /* AccountApi.swift in Sources */,
+				68465C6F22AF501B00BB08F5 /* PawnImageViewModel.swift in Sources */,
 				6838CA37224B17A700FB802A /* Colors.swift in Sources */,
 				C9CA8A792297FED400B5F3B8 /* WritingSellerViewModel.swift in Sources */,
 				6838CA35224B179700FB802A /* Base.swift in Sources */,
@@ -826,15 +927,18 @@
 				C90C5AA7229E2211003EB3C9 /* WritingSellerModel.swift in Sources */,
 				C991B994228506A20040CC8B /* FlexListModel.swift in Sources */,
 				C994208322792CFC004CF8F5 /* SignUpLocationVC.swift in Sources */,
-				C94D22AE226701AF00395826 /* AccountAPI.swift in Sources */,
 				6838CA31224B14DC00FB802A /* MyPageVC.swift in Sources */,
 				C9A0A3FF224B66140085756E /* SignUpVC.swift in Sources */,
+				681A6F71229AC5E900C9A6D7 /* SelectCategoryVC.swift in Sources */,
+				681A6F73229ACB7B00C9A6D7 /* PawnListConnectModel.swift in Sources */,
+				682C0BCC225B0E8300954D25 /* PawnListViewModel.swift in Sources */,
 				C90C5AA4229E1F6E003EB3C9 /* WritingAPI.swift in Sources */,
 				683A20DD2266A25000CBF74A /* Connector.swift in Sources */,
 				C91805B1228E4E3900C0F0D5 /* FlexDetailModel.swift in Sources */,
+				68465C6D22AF4F2400BB08F5 /* PawnImageContentVC.swift in Sources */,
 				6838CA2D224B149900FB802A /* ChattingVC.swift in Sources */,
+				68405CFB228A903100C833E5 /* SelectRegionVC.swift in Sources */,
 				6838C9E5224B0ABE00FB802A /* AppDelegate.swift in Sources */,
-				C991B99622855E730040CC8B /* FlexAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1011,7 +1115,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GKCL5G86VR;
 				INFOPLIST_FILE = "PawnStars-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1030,7 +1134,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GKCL5G86VR;
 				INFOPLIST_FILE = "PawnStars-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

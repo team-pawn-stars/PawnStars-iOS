@@ -8,5 +8,8 @@
 
 import Foundation
 
+<<<<<<< HEAD:PawnStars-iOS/PawnStars-iOS/Network/ApiResponses.swift
+=======
 class bb {
 }
+>>>>>>> master:PawnStars-iOS/ApiResponses.swift

@@ -13,8 +13,16 @@ import RxAlamofire
 import Alamofire
 
 protocol AccountProvider {
-    func statusCode(code : Int) -> StatusCode
+    
 }
+
+protocol PawnBuyer {
+    func PawnList(category: String, sort_key: String, region: String) -> Observable<(StatusCode, [PawnListModel])>
+    func PawnSearch(region: String, searchString: String) -> Observable<[PawnListModel]>
+    func PawnDetail(postId: Int) -> Observable<PawnDetailModel?>
+    func PawnLike(postId: Int) -> Observable<Bool>
+}
+
 
 protocol FlexProvider {
     func flexList(page: Int, sortKey: FlexSortKey) -> Observable<[FlexListModel]>
@@ -28,10 +36,9 @@ protocol WritingProvider {
     func writeHistory(pawnPost: Int, histories: [History]) -> Observable<Bool>
 }
 
-protocol ApiProvider : AccountProvider,FlexProvider { }
+protocol ApiProvider : PawnBuyer,AccountProvider,FlexProvider { }
 
-class Api : ApiProvider{
-    
+class Api : ApiProvider {
     private let connector = Connector()
     
     func statusCode(code: Int) -> StatusCode {
@@ -39,6 +46,64 @@ class Api : ApiProvider{
         case 200,201: return StatusCode.success
         default: return StatusCode.failure
         }
+    }
+    
+    func PawnList(category: String, sort_key: String, region: String) -> Observable<(StatusCode, [PawnListModel])> {
+        return connector.get(path: PawnBuyerAPI.pawn.getPath(),
+                             params: ["region" : region,
+                                      "category": category,
+                                      "sort_key": sort_key],
+                             header: Header.Empty)
+            .map { res,data -> (StatusCode, [PawnListModel]) in
+                guard let response = try? JSONDecoder().decode([PawnListModel].self, from: data) else {
+                    print("decode failure")
+                    return (StatusCode.failure, [])
+                }
+                return (self.statusCode(code: res.statusCode), response)
+        }
+    }
+    
+    func PawnSearch(region: String, searchString: String) -> Observable<[PawnListModel]> {
+        return connector.get(path: PawnBuyerAPI.pawn.getPath(),
+                             params: ["region" : region,
+                                      "query" : searchString], header: Header.Empty)
+            .map { res,data -> [PawnListModel] in
+                guard let response = try? JSONDecoder().decode([PawnListModel].self, from: data) else {
+                    print("decode failure")
+                    return []
+                }
+                return response
+        }
+    }
+    
+    func PawnDetail(postId: Int) -> Observable<PawnDetailModel?> {
+        return connector.get(path: PawnBuyerAPI.pawnDetail(postId: postId).getPath(),
+                             params: nil,
+                             header: Header.Authorization)
+            .map { [weak self] res, data -> PawnDetailModel? in
+                guard let `self` = self else { return nil }
+                
+                switch self.statusCode(code: res.statusCode){
+                case .success :
+                    guard let response = try? JSONDecoder().decode(PawnDetailModel.self, from: data) else {
+                        print("decode failure")
+                        return nil }
+                    
+                    return response
+                case .failure:
+                    return nil
+                }
+        }
+    }
+    
+    func PawnLike(postId: Int) -> Observable<Bool> {
+        return connector.patch(path: PawnBuyerAPI.like(postId: postId).getPath(),
+                               params: nil,
+                               header: Header.Authorization)
+            .map { res, _ -> Bool in
+                if res.statusCode == 201 { return true }
+                else { return false }
+            }
     }
     
     func flexList(page: Int, sortKey: FlexSortKey) -> Observable<[FlexListModel]> {

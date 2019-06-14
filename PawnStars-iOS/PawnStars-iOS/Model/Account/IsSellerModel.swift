@@ -10,8 +10,10 @@ import Foundation
 
 struct IsSellerModel: Codable {
     let isSeller: Bool
+    let name: String
     
     enum CodingKeys: String, CodingKey {
         case isSeller = "is_seller"
+        case name
     }
 }
